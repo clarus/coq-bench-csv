@@ -1,3 +1,4 @@
+Name,Version,Status,Dry command,Dry status,Dry duration,Dry output,Dry JSON,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output
 coq:aac-tactics,1.0.0,Error,opam install --root=.opam_run -y --json=output.json --dry-run coq:aac-tactics.1.0.0,0,2,"The following actions will be performed:
  - install   coq:aac-tactics.1.0.0
 === 1 to install ===
@@ -29,8 +30,12 @@ Installing coq:aac-tactics.1.0.0.
 [coq:aac-tactics.1.0.0] Downloading https://github.com/coq-contribs/aac-tactics/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   131    0   131    0     0    210      0 --:--:-- --:--:-- --:--:--   210
-  0     0    0   860    0     0    663      0 --:--:--  0:00:01 --:--:--   663  0     0    0 66350    0     0  26761      0 --:--:--  0:00:02 --:--:-- 55359  0     0    0 78327    0     0  31587      0 --:--:--  0:00:02 --:--:-- 65428
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   131    0   131    0     0    210      0 --:--:-- --:--:-- --:--:--   210
+  0     0    0   860    0     0    663      0 --:--:--  0:00:01 --:--:--   663
+  0     0    0 66350    0     0  26761      0 --:--:--  0:00:02 --:--:-- 55359
+  0     0    0 78327    0     0  31587      0 --:--:--  0:00:02 --:--:-- 65428
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -169,8 +174,10 @@ Installing coq:abp.1.0.0.
 [coq:abp.1.0.0] Downloading https://github.com/coq-contribs/abp/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    206      0 --:--:-- --:--:-- --:--:--   206
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0 28557    0     0  18352      0 --:--:--  0:00:01 --:--:-- 37575
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   123    0   123    0     0    206      0 --:--:-- --:--:-- --:--:--   206
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0 28557    0     0  18352      0 --:--:--  0:00:01 --:--:-- 37575
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -244,7 +251,12 @@ Installing coq:compcert.2.0.0.
 [coq:compcert.2.0.0] Downloading http://compcert.inria.fr/release/compcert-2.0.tgz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17 2047k   17  363k    0     0   267k      0  0:00:07  0:00:01  0:00:06  267k 50 2047k   50 1033k    0     0   473k      0  0:00:04  0:00:02  0:00:02  473k 85 2047k   85 1744k    0     0   527k      0  0:00:03  0:00:03 --:--:--  527k100 2047k  100 2047k    0     0   565k      0  0:00:03  0:00:03 --:--:--  565k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 17 2047k   17  363k    0     0   267k      0  0:00:07  0:00:01  0:00:06  267k
+ 50 2047k   50 1033k    0     0   473k      0  0:00:04  0:00:02  0:00:02  473k
+ 85 2047k   85 1744k    0     0   527k      0  0:00:03  0:00:03 --:--:--  527k
+100 2047k  100 2047k    0     0   565k      0  0:00:03  0:00:03 --:--:--  565k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -376,9 +388,12 @@ Installing coq:concurrency.0.0.1.
 [coq:concurrency.0.0.1] Downloading https://github.com/clarus/coq-concurrency/archive/0.0.1.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    73    0    73    0     0    102      0 --:--:-- --:--:-- --:--:--   102100   128    0   128    0     0    179      0 --:--:-- --:--:-- --:--:--   179
-  0     0    0   129    0     0    149      0 --:--:-- --:--:-- --:--:--   149
- 12  6937   12   862    0     0    489      0  0:00:14  0:00:01  0:00:13   489100  6937  100  6937    0     0   3932      0  0:00:01  0:00:01 --:--:-- 1977k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100    73    0    73    0     0    102      0 --:--:-- --:--:-- --:--:--   102
+100   128    0   128    0     0    179      0 --:--:-- --:--:-- --:--:--   179
+  0     0    0   129    0     0    149      0 --:--:-- --:--:-- --:--:--   149
+ 12  6937   12   862    0     0    489      0  0:00:14  0:00:01  0:00:13   489
+100  6937  100  6937    0     0   3932      0  0:00:01  0:00:01 --:--:-- 1977k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -478,8 +493,12 @@ Installing coq:containers.1.0.0.
 [coq:containers.1.0.0] Downloading https://github.com/coq-contribs/containers/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    162      0 --:--:-- --:--:-- --:--:--   162
- 15  162k   15 25516    0     0  14074      0  0:00:11  0:00:01  0:00:10 14074 50  162k   50 83277    0     0  29516      0  0:00:05  0:00:02  0:00:03 57302100  162k  100  162k    0     0  47300      0  0:00:03  0:00:03 --:--:-- 82827
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   130    0   130    0     0    162      0 --:--:-- --:--:-- --:--:--   162
+ 15  162k   15 25516    0     0  14074      0  0:00:11  0:00:01  0:00:10 14074
+ 50  162k   50 83277    0     0  29516      0  0:00:05  0:00:02  0:00:03 57302
+100  162k  100  162k    0     0  47300      0  0:00:03  0:00:03 --:--:-- 82827
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -782,8 +801,11 @@ Installing coq:counting.1.0.0.
 [coq:counting.1.0.0] Downloading https://github.com/coq-contribs/counting/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   128    0   128    0     0    211      0 --:--:-- --:--:-- --:--:--   211
-  0     0    0   863    0     0    728      0 --:--:--  0:00:01 --:--:--   728  0     0    0  3158    0     0   2657      0 --:--:--  0:00:01 --:--:-- 1120k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   128    0   128    0     0    211      0 --:--:-- --:--:-- --:--:--   211
+  0     0    0   863    0     0    728      0 --:--:--  0:00:01 --:--:--   728
+  0     0    0  3158    0     0   2657      0 --:--:--  0:00:01 --:--:-- 1120k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1281,7 +1303,9 @@ Installing coq:flocq.2.2.0.
 [coq:flocq.2.2.0] Downloading https://gforge.inria.fr/frs/download.php/32825/flocq-2.2.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   152k      0 --:--:-- --:--:-- --:--:--  152k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  141k  100  141k    0     0   152k      0 --:--:-- --:--:-- --:--:--  152k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1446,7 +1470,9 @@ Installing coq:flocq.2.3.0.
 [coq:flocq.2.3.0] Downloading https://gforge.inria.fr/frs/download.php/33502/flocq-2.3.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  151k  100  151k    0     0   173k      0 --:--:-- --:--:-- --:--:--  173k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  151k  100  151k    0     0   173k      0 --:--:-- --:--:-- --:--:--  173k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1626,7 +1652,9 @@ Installing coq:flocq.2.4.0.
 [coq:flocq.2.4.0] Downloading https://gforge.inria.fr/frs/download.php/file/33979/flocq-2.4.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  187k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  187k  100  187k    0     0   284k      0 --:--:-- --:--:-- --:--:--  284k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  187k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  187k  100  187k    0     0   284k      0 --:--:-- --:--:-- --:--:--  284k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1920,8 +1948,10 @@ Installing coq:function-ninjas.1.0-beta0.
 [coq:function-ninjas.1.0-beta0] Downloading https://github.com/clarus/coq-function-ninjas/archive/beta0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100   133    0   133    0     0    107      0 --:--:--  0:00:01 --:--:--   107
-  0     0    0  1685    0     0    869      0 --:--:--  0:00:01 --:--:--   869
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100   133    0   133    0     0    107      0 --:--:--  0:00:01 --:--:--   107
+  0     0    0  1685    0     0    869      0 --:--:--  0:00:01 --:--:--   869
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1969,8 +1999,10 @@ Installing coq:function-ninjas.1.0.0.
 [coq:function-ninjas.1.0.0] Downloading https://github.com/clarus/coq-function-ninjas/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    215      0 --:--:-- --:--:-- --:--:--   215
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0  1687    0     0   1406      0 --:--:--  0:00:01 --:--:--  5255
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   133    0   133    0     0    215      0 --:--:-- --:--:-- --:--:--   215
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0  1687    0     0   1406      0 --:--:--  0:00:01 --:--:--  5255
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2193,8 +2225,10 @@ Installing coq:list-string.0.0.1.
 [coq:list-string.0.0.1] Downloading https://github.com/clarus/coq-list-string/archive/0.0.1.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    225      0 --:--:-- --:--:-- --:--:--   225
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0  2814    0     0   2278      0 --:--:--  0:00:01 --:--:--  6830
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   129    0   129    0     0    225      0 --:--:-- --:--:-- --:--:--   225
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0  2814    0     0   2278      0 --:--:--  0:00:01 --:--:--  6830
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2246,8 +2280,10 @@ Installing coq:list-string.1.0.0.
 [coq:list-string.1.0.0] Downloading https://github.com/clarus/coq-list-string/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    198      0 --:--:-- --:--:-- --:--:--   198
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0  6919    0     0   4929      0 --:--:--  0:00:01 --:--:-- 15725
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   129    0   129    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0  6919    0     0   4929      0 --:--:--  0:00:01 --:--:-- 15725
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2339,8 +2375,10 @@ Installing coq:math-classes.1.0.1.
 [coq:math-classes.1.0.1] Downloading https://github.com/clarus/math-classes/archive/1.0.1.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   126    0   126    0     0    211      0 --:--:-- --:--:-- --:--:--   211
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  152k  100  152k    0     0  92161      0  0:00:01  0:00:01 --:--:--  194k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   126    0   126    0     0    211      0 --:--:-- --:--:-- --:--:--   211
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  152k  100  152k    0     0  92161      0  0:00:01  0:00:01 --:--:--  194k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2647,7 +2685,8 @@ Installing coq:ssreflect.1.5.0.
 [coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  212k  100  212k    0     0   435k      0 --:--:-- --:--:-- --:--:--  435k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  212k  100  212k    0     0   435k      0 --:--:-- --:--:-- --:--:--  435k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
