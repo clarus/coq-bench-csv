@@ -1,0 +1,1079 @@
+coq:aac-tactics,1.0.0,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:aac-tactics.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:aac-tactics.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:aac-tactics.1.0.0:
+  make -j4
+  make install
+Installing coq:aac-tactics.1.0.0.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:aac-tactics"",
+          ""version"": ""1.0.0""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:aac-tactics.1.0.0,0,2,"",opam install --root=.opam_run -y --verbose coq:aac-tactics.1.0.0,0,26,"The following actions will be performed:
+ - install   coq:aac-tactics.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:aac-tactics.1.0.0] Downloading https://github.com/coq-contribs/aac-tactics/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0100   131    0   131    0     0     21      0 --:--:--  0:00:06 --:--:--    28
+  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0100 78327  100 78327    0     0  11151      0  0:00:07  0:00:07 --:--:-- 85323
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:aac-tactics.1.0.0:
+  make -j4
+  make install
+ocamldep -slash  ""coq.mli"" > ""coq.mli.d"" || ( RV=$?; rm -f ""coq.mli.d""; exit ${RV} )
+ocamldep -slash  ""helper.mli"" > ""helper.mli.d"" || ( RV=$?; rm -f ""helper.mli.d""; exit ${RV} )
+ocamldep -slash  ""search_monad.mli"" > ""search_monad.mli.d"" || ( RV=$?; rm -f ""search_monad.mli.d""; exit ${RV} )
+ocamldep -slash  ""matcher.mli"" > ""matcher.mli.d"" || ( RV=$?; rm -f ""matcher.mli.d""; exit ${RV} )
+ocamldep -slash  ""theory.mli"" > ""theory.mli.d"" || ( RV=$?; rm -f ""theory.mli.d""; exit ${RV} )
+ocamldep -slash  ""print.mli"" > ""print.mli.d"" || ( RV=$?; rm -f ""print.mli.d""; exit ${RV} )
+ocamldep -slash  ""rewrite.mli"" > ""rewrite.mli.d"" || ( RV=$?; rm -f ""rewrite.mli.d""; exit ${RV} )
+coqdep -c -slash -R . AAC_tactics -c ""aac.mlpack"" > ""aac.mlpack.d"" || ( RV=$?; rm -f ""aac.mlpack.d""; exit ${RV} )
+ocamldep -slash  ""coq.ml"" > ""coq.ml.d"" || ( RV=$?; rm -f ""coq.ml.d""; exit ${RV} )
+ocamldep -slash  ""helper.ml"" > ""helper.ml.d"" || ( RV=$?; rm -f ""helper.ml.d""; exit ${RV} )
+ocamldep -slash  ""search_monad.ml"" > ""search_monad.ml.d"" || ( RV=$?; rm -f ""search_monad.ml.d""; exit ${RV} )
+ocamldep -slash  ""matcher.ml"" > ""matcher.ml.d"" || ( RV=$?; rm -f ""matcher.ml.d""; exit ${RV} )
+ocamldep -slash  ""theory.ml"" > ""theory.ml.d"" || ( RV=$?; rm -f ""theory.ml.d""; exit ${RV} )
+ocamldep -slash  ""print.ml"" > ""print.ml.d"" || ( RV=$?; rm -f ""print.ml.d""; exit ${RV} )
+ocamldep -slash  -pp ""/root/run/.opam_run/system/bin/camlp5o -I /usr/lib/ocaml/ -I . -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma  -impl"" -impl ""rewrite.ml4"" > ""rewrite.ml4.d"" || ( RV=$?; rm -f ""rewrite.ml4.d""; exit ${RV} )
+coqdep -c -slash -R . AAC_tactics ""AAC.v"" > ""AAC.v.d"" || ( RV=$?; rm -f ""AAC.v.d""; exit ${RV} )
+coqdep -c -slash -R . AAC_tactics ""Instances.v"" > ""Instances.v.d"" || ( RV=$?; rm -f ""Instances.v.d""; exit ${RV} )
+coqdep -c -slash -R . AAC_tactics ""Tutorial.v"" > ""Tutorial.v.d"" || ( RV=$?; rm -f ""Tutorial.v.d""; exit ${RV} )
+coqdep -c -slash -R . AAC_tactics ""Caveats.v"" > ""Caveats.v.d"" || ( RV=$?; rm -f ""Caveats.v.d""; exit ${RV} )
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 coq.mli
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 helper.mli
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 search_monad.mli
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 rewrite.mli
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 search_monad.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 matcher.mli
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac helper.ml
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac search_monad.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 coq.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 helper.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 matcher.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 theory.mli
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac coq.ml
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac matcher.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 theory.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 print.mli
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 print.ml
+ocamlc -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -pp ""/root/run/.opam_run/system/bin/camlp5o -I /usr/lib/ocaml/ -I . -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma  -impl"" -impl rewrite.ml4
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac theory.ml
+ocamlc -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -pack -o aac.cmo coq.cmo helper.cmo search_monad.cmo matcher.cmo theory.cmo print.cmo rewrite.cmo
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac print.ml
+ocamlopt -c -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -for-pack Aac -pp ""/root/run/.opam_run/system/bin/camlp5o -I /usr/lib/ocaml/ -I . -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma  -impl"" -impl rewrite.ml4
+ocamlopt -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -pack -o aac.cmx coq.cmx helper.cmx search_monad.cmx matcher.cmx theory.cmx print.cmx rewrite.cmx
+ocamlopt -rectypes   -I /root/run/.opam_run/system/lib/coq/kernel -I /root/run/.opam_run/system/lib/coq/lib -I /root/run/.opam_run/system/lib/coq/library -I /root/run/.opam_run/system/lib/coq/parsing -I /root/run/.opam_run/system/lib/coq/pretyping -I /root/run/.opam_run/system/lib/coq/interp -I /root/run/.opam_run/system/lib/coq/proofs -I /root/run/.opam_run/system/lib/coq/tactics -I /root/run/.opam_run/system/lib/coq/toplevel -I /root/run/.opam_run/system/lib/coq/plugins/cc -I /root/run/.opam_run/system/lib/coq/plugins/decl_mode -I /root/run/.opam_run/system/lib/coq/plugins/dp -I /root/run/.opam_run/system/lib/coq/plugins/extraction -I /root/run/.opam_run/system/lib/coq/plugins/field -I /root/run/.opam_run/system/lib/coq/plugins/firstorder -I /root/run/.opam_run/system/lib/coq/plugins/fourier -I /root/run/.opam_run/system/lib/coq/plugins/funind -I /root/run/.opam_run/system/lib/coq/plugins/micromega -I /root/run/.opam_run/system/lib/coq/plugins/nsatz -I /root/run/.opam_run/system/lib/coq/plugins/omega -I /root/run/.opam_run/system/lib/coq/plugins/quote -I /root/run/.opam_run/system/lib/coq/plugins/ring -I /root/run/.opam_run/system/lib/coq/plugins/romega -I /root/run/.opam_run/system/lib/coq/plugins/rtauto -I /root/run/.opam_run/system/lib/coq/plugins/setoid_ring -I /root/run/.opam_run/system/lib/coq/plugins/subtac -I /root/run/.opam_run/system/lib/coq/plugins/subtac/test -I /root/run/.opam_run/system/lib/coq/plugins/syntax -I /root/run/.opam_run/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -shared -o aac.cmxs aac.cmx
+coqc  -q  -R . AAC_tactics   AAC
+coqc  -q  -R . AAC_tactics   Instances
+coqc  -q  -R . AAC_tactics   Caveats
+coqc  -q  -R . AAC_tactics   Tutorial
+All solutions:
+occurence 0: transitivity through (forall x : Z, (- (x + x) + (b + b + c))%Z)
+1 possible(s) substitution(s)
+0:	[x: a; ]
+
+occurence 1: transitivity through (forall x : Z, (x + x + (- (a + a) + c))%Z)
+1 possible(s) substitution(s)
+0:	[x: b; ]
+
+
+All solutions:
+occurence 0: transitivity through (forall x : X, plus x x)
+1 possible(s) substitution(s)
+0:	[x: (f (a + a)); ]
+
+occurence 1: transitivity through (forall x : X,
+                                    plus (f (x + x)) (f (a + a)))
+1 possible(s) substitution(s)
+0:	[x: a; ]
+
+
+All solutions:
+occurence 0: transitivity through (forall x y : X, dot (a * x * y) b)
+3 possible(s) substitution(s)
+0:	[x: c; y: (d * c * d); ]
+1:	[x: (c * d); y: (c * d); ]
+2:	[x: (c * d * c); y: d; ]
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (y * 1)
+
+occurence 1: transitivity through 
+(1 * y)
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (c * b + a + 0)
+
+occurence 1: transitivity through 
+(a + b * (c + 0))
+
+occurence 2: transitivity through 
+(a + c * (b + 0))
+
+
+All solutions:
+occurence 0: transitivity through (forall x y : X, dot (a * x * y) b)
+4 possible(s) substitution(s)
+0:	[x: c; y: (d * c * d * b); ]
+1:	[x: (c * d); y: (c * d * b); ]
+2:	[x: (c * d * c); y: (d * b); ]
+3:	[x: (c * d * c * d); y: b; ]
+
+occurence 1: transitivity through (forall x y : X, dot (a * x * y * b) b)
+3 possible(s) substitution(s)
+0:	[x: c; y: (d * c * d); ]
+1:	[x: (c * d); y: (c * d); ]
+2:	[x: (c * d * c); y: d; ]
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (c + b + a + 0)
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through ((c + b + a) * 1)
+
+occurence 1: transitivity through 
+(c + a + b * 1)
+
+occurence 2: transitivity through 
+(a + (c + b) * 1)
+
+occurence 3: transitivity through 
+(b + a + c * 1)
+
+occurence 4: transitivity through 
+(c + (b + a) * 1)
+
+occurence 5: transitivity through 
+(c + b + a * 1)
+
+occurence 6: transitivity through 
+(b + (c + a) * 1)
+
+
+All solutions:
+occurence 0: transitivity through (forall x y : X, dot (a * x * y) b)
+1 possible(s) substitution(s)
+0:	[x: (c * d + c * d); y: b; ]
+
+
+All solutions:
+occurence 0: transitivity through (forall x y : nat, (x * x + y * x + c)%nat)
+1 possible(s) substitution(s)
+0:	[x: a; y: b; ]
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (forall x y : nat, (x * x + y * x + c)%nat)
+1 possible(s) substitution(s)
+0:	[x: a; y: b; ]
+
+occurence 1: transitivity through ((a * b + a * a + c) * (1 * 1 + 0 * 1))
+
+occurence 2: transitivity through 
+(a * b + c + a * a * (1 * 1 + 0 * 1))
+
+occurence 3: transitivity through 
+(c + (a * b + a * a) * (1 * 1 + 0 * 1))
+
+occurence 4: transitivity through 
+(a * a + c + a * b * (1 * 1 + 0 * 1))
+
+occurence 5: transitivity through 
+(a * b + (a * a + c) * (1 * 1 + 0 * 1))
+
+occurence 6: transitivity through 
+(a * b + a * a + c * (1 * 1 + 0 * 1))
+
+occurence 7: transitivity through 
+(a * a + (a * b + c) * (1 * 1 + 0 * 1))
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through ((a * b + a * a + c) * 1)
+
+occurence 1: transitivity through 
+(a * b + c + a * a * 1)
+
+occurence 2: transitivity through 
+(c + (a * b + a * a) * 1)
+
+occurence 3: transitivity through 
+(a * a + c + a * b * 1)
+
+occurence 4: transitivity through 
+(a * b + (a * a + c) * 1)
+
+occurence 5: transitivity through 
+(a * b + a * a + c * 1)
+
+occurence 6: transitivity through 
+(a * a + (a * b + c) * 1)
+
+
+All solutions:
+occurence 0: transitivity through (forall x : X, dot (a * x) a)
+1 possible(s) substitution(s)
+0:	[x: 1; ]
+
+
+All solutions:
+occurence 0: transitivity through (forall x y z : X,
+                                   plus (x * y + x * z) (a * b))
+2 possible(s) substitution(s)
+0:	[x: a; y: c; z: (b * c); ]
+1:	[x: a; y: (b * c); z: c; ]
+
+occurence 1: transitivity through (forall x y z : X,
+                                    plus (x * y + x * z) (a * c))
+2 possible(s) substitution(s)
+0:	[x: a; y: (b * c); z: b; ]
+1:	[x: a; y: b; z: (b * c); ]
+
+occurence 2: transitivity through (forall x y z : X,
+                                    plus (x * y + x * z) (a * b * c))
+2 possible(s) substitution(s)
+0:	[x: a; y: c; z: b; ]
+1:	[x: a; y: b; z: c; ]
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (forall x y z : X, plus (x * y) (x * z))
+6 possible(s) substitution(s)
+0:	[x: 1; y: (a * (b * c + c)); z: (a * b); ]
+1:	[x: a; y: (b * c + c); z: b; ]
+2:	[x: 1; y: 0; z: (a * (b * c + c) + a * b); ]
+3:	[x: 1; y: (a * (b * c + c) + a * b); z: 0; ]
+4:	[x: 1; y: (a * b); z: (a * (b * c + c)); ]
+5:	[x: a; y: b; z: (b * c + c); ]
+
+occurence 1: transitivity through (forall x y z : X,
+                                    plus (x * y + x * z) (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: (a * (b * c + c)); z: 0; ]
+1:	[x: 1; y: 0; z: (a * (b * c + c)); ]
+
+occurence 2: transitivity through (forall x y z : X,
+                                    plus (a * (x * y + x * z)) (a * b))
+4 possible(s) substitution(s)
+0:	[x: 1; y: (b * c); z: c; ]
+1:	[x: 1; y: 0; z: (b * c + c); ]
+2:	[x: 1; y: (b * c + c); z: 0; ]
+3:	[x: 1; y: c; z: (b * c); ]
+
+occurence 3: transitivity through (forall x y z : X,
+                                    plus (a * (x * y + x * z + c)) (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: (b * c); z: 0; ]
+1:	[x: 1; y: 0; z: (b * c); ]
+
+occurence 4: transitivity through (forall x y z : X,
+                                    plus (x * y + x * z) (a * (b * c + c)))
+2 possible(s) substitution(s)
+0:	[x: 1; y: (a * b); z: 0; ]
+1:	[x: 1; y: 0; z: (a * b); ]
+
+occurence 5: transitivity through (forall x y z : X,
+                                    plus (a * (b * (x * y + x * z) + c))
+                                      (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: c; z: 0; ]
+1:	[x: 1; y: 0; z: c; ]
+
+occurence 6: transitivity through (forall x y z : X,
+                                    plus (a * ((x * y + x * z) * c + c))
+                                      (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: b; z: 0; ]
+1:	[x: 1; y: 0; z: b; ]
+
+occurence 7: transitivity through (forall x y z : X,
+                                    plus (a * (x * y + x * z + b * c))
+                                      (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: c; z: 0; ]
+1:	[x: 1; y: 0; z: c; ]
+
+occurence 8: transitivity through (forall x y z : X,
+                                    plus ((x * y + x * z) * (b * c + c))
+                                      (a * b))
+2 possible(s) substitution(s)
+0:	[x: 1; y: a; z: 0; ]
+1:	[x: 1; y: 0; z: a; ]
+
+occurence 9: transitivity through (forall x y z : X,
+                                    plus (a * (x * y + x * z))
+                                      (a * (b * c + c)))
+2 possible(s) substitution(s)
+0:	[x: 1; y: b; z: 0; ]
+1:	[x: 1; y: 0; z: b; ]
+
+occurence 10: transitivity through (forall x y z : X,
+                                     plus ((x * y + x * z) * b)
+                                       (a * (b * c + c)))
+2 possible(s) substitution(s)
+0:	[x: 1; y: a; z: 0; ]
+1:	[x: 1; y: 0; z: a; ]
+
+occurence 11: transitivity through (a * (b * c + c) +
+                                     (1 * 1 + 1 * 0) * (a * b))
+
+occurence 12: transitivity through 
+(a * (b * c + c) + a * b * (1 * 1 + 1 * 0))
+
+occurence 13: transitivity through 
+(a * (b * c + c) + a * ((1 * 1 + 1 * 0) * b))
+
+occurence 14: transitivity through 
+(a * b + (1 * 1 + 1 * 0) * (a * (b * c + c)))
+
+occurence 15: transitivity through 
+(a * b + a * (b * c + c) * (1 * 1 + 1 * 0))
+
+occurence 16: transitivity through 
+(a * b + a * (b * c + (1 * 1 + 1 * 0) * c))
+
+occurence 17: transitivity through 
+(a * b + a * (b * c + c * (1 * 1 + 1 * 0)))
+
+occurence 18: transitivity through 
+(a * b + a * (c + (1 * 1 + 1 * 0) * (b * c)))
+
+occurence 19: transitivity through 
+(a * b + a * (c + b * c * (1 * 1 + 1 * 0)))
+
+occurence 20: transitivity through 
+(a * b + a * (c + b * ((1 * 1 + 1 * 0) * c)))
+
+occurence 21: transitivity through 
+(a * b + a * ((1 * 1 + 1 * 0) * (b * c + c)))
+
+occurence 22: transitivity through 
+((a * (b * c + c) + a * b) * (1 * 1 + 1 * 0))
+
+occurence 23: transitivity through 
+((1 * 1 + 1 * 0) * (a * (b * c + c) + a * b))
+
+occurence 24: transitivity through 
+(a * (b * c + c) + (1 * 0 + 1 * 1) * (a * b))
+
+occurence 25: transitivity through 
+(a * (b * c + c) + a * b * (1 * 0 + 1 * 1))
+
+occurence 26: transitivity through 
+(a * (b * c + c) + a * ((1 * 0 + 1 * 1) * b))
+
+occurence 27: transitivity through 
+(a * b + (1 * 0 + 1 * 1) * (a * (b * c + c)))
+
+occurence 28: transitivity through 
+(a * b + a * (b * c + c) * (1 * 0 + 1 * 1))
+
+occurence 29: transitivity through 
+(a * b + a * (b * c + (1 * 0 + 1 * 1) * c))
+
+occurence 30: transitivity through 
+(a * b + a * (b * c + c * (1 * 0 + 1 * 1)))
+
+occurence 31: transitivity through 
+(a * b + a * (c + (1 * 0 + 1 * 1) * (b * c)))
+
+occurence 32: transitivity through 
+(a * b + a * (c + b * c * (1 * 0 + 1 * 1)))
+
+occurence 33: transitivity through 
+(a * b + a * (c + b * ((1 * 0 + 1 * 1) * c)))
+
+occurence 34: transitivity through 
+(a * b + a * ((1 * 0 + 1 * 1) * (b * c + c)))
+
+occurence 35: transitivity through 
+((a * (b * c + c) + a * b) * (1 * 0 + 1 * 1))
+
+occurence 36: transitivity through 
+((1 * 0 + 1 * 1) * (a * (b * c + c) + a * b))
+
+occurence 37: transitivity through 
+(a * (b * c + c) + a * b + (1 * 0 + 1 * 0))
+
+occurence 38: transitivity through 
+(a * (b * c + c) + a * (b + (1 * 0 + 1 * 0)))
+
+occurence 39: transitivity through 
+(a * (b * c + c) + (a + (1 * 0 + 1 * 0)) * b)
+
+occurence 40: transitivity through 
+(a * b + a * (b * c + c + (1 * 0 + 1 * 0)))
+
+occurence 41: transitivity through 
+(a * b + a * (c + b * (c + (1 * 0 + 1 * 0))))
+
+occurence 42: transitivity through 
+(a * b + a * (c + (b + (1 * 0 + 1 * 0)) * c))
+
+occurence 43: transitivity through 
+(a * b + (a + (1 * 0 + 1 * 0)) * (b * c + c))
+
+occurence 44: transitivity through 
+(a * (b * c + c) + a * b + (0 * 1 + 0 * 1))
+
+occurence 45: transitivity through 
+(a * (b * c + c) + a * (b + (0 * 1 + 0 * 1)))
+
+occurence 46: transitivity through 
+(a * (b * c + c) + (a + (0 * 1 + 0 * 1)) * b)
+
+occurence 47: transitivity through 
+(a * b + a * (b * c + c + (0 * 1 + 0 * 1)))
+
+occurence 48: transitivity through 
+(a * b + a * (c + b * (c + (0 * 1 + 0 * 1))))
+
+occurence 49: transitivity through 
+(a * b + a * (c + (b + (0 * 1 + 0 * 1)) * c))
+
+occurence 50: transitivity through 
+(a * b + (a + (0 * 1 + 0 * 1)) * (b * c + c))
+
+occurence 51: transitivity through 
+(a * (b * c + c) + a * b * (1 + (1 * 0 + 1 * 0)))
+
+occurence 52: transitivity through 
+(a * (b * c + c) + a * ((1 + (1 * 0 + 1 * 0)) * b))
+
+occurence 53: transitivity through 
+(a * (b * c + c) + (1 + (1 * 0 + 1 * 0)) * (a * b))
+
+occurence 54: transitivity through 
+(a * b + a * (b * c + c) * (1 + (1 * 0 + 1 * 0)))
+
+occurence 55: transitivity through 
+(a * b + a * (c + b * c * (1 + (1 * 0 + 1 * 0))))
+
+occurence 56: transitivity through 
+(a * b + a * (c + b * ((1 + (1 * 0 + 1 * 0)) * c)))
+
+occurence 57: transitivity through 
+(a * b + a * (c + (1 + (1 * 0 + 1 * 0)) * (b * c)))
+
+occurence 58: transitivity through 
+(a * b + a * ((1 + (1 * 0 + 1 * 0)) * (b * c + c)))
+
+occurence 59: transitivity through 
+(a * b + (1 + (1 * 0 + 1 * 0)) * (a * (b * c + c)))
+
+occurence 60: transitivity through 
+(a * (b * c + c) + a * b * (1 + (0 * 1 + 0 * 1)))
+
+occurence 61: transitivity through 
+(a * (b * c + c) + a * ((1 + (0 * 1 + 0 * 1)) * b))
+
+occurence 62: transitivity through 
+(a * (b * c + c) + (1 + (0 * 1 + 0 * 1)) * (a * b))
+
+occurence 63: transitivity through 
+(a * b + a * (b * c + c) * (1 + (0 * 1 + 0 * 1)))
+
+occurence 64: transitivity through 
+(a * b + a * (c + b * c * (1 + (0 * 1 + 0 * 1))))
+
+occurence 65: transitivity through 
+(a * b + a * (c + b * ((1 + (0 * 1 + 0 * 1)) * c)))
+
+occurence 66: transitivity through 
+(a * b + a * (c + (1 + (0 * 1 + 0 * 1)) * (b * c)))
+
+occurence 67: transitivity through 
+(a * b + a * ((1 + (0 * 1 + 0 * 1)) * (b * c + c)))
+
+occurence 68: transitivity through 
+(a * b + (1 + (0 * 1 + 0 * 1)) * (a * (b * c + c)))
+
+
+All solutions:
+occurence 0: transitivity through (forall x y z : nat, max (x + y) (x + z))
+2 possible(s) substitution(s)
+0:	[x: a; y: b; z: c; ]
+1:	[x: a; y: c; z: b; ]
+
+
+All solutions:
+occurence 0: transitivity through (forall x y z : nat, max (x + y) (x + z))
+2 possible(s) substitution(s)
+0:	[x: a; y: b; z: c; ]
+1:	[x: a; y: c; z: b; ]
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+All solutions:
+occurence 0: transitivity through (Z.abs a + - Z.abs b + 0)
+
+occurence 1: transitivity through 
+(Z.abs a + - (Z.abs b + 0))
+
+occurence 2: transitivity through 
+(Z.abs a + - Z.abs (b + 0))
+
+occurence 3: transitivity through 
+(- Z.abs b + Z.abs (a + 0))
+
+
+Warning: [aac_tactics] This pattern can be instanciated to match units, some solutions can be missing
+for i in aac.cmxs; do \
+ install -d `dirname /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i`; \
+ install $i /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i; \
+done
+for i in Caveats.vo Tutorial.vo Instances.vo AAC.vo; do \
+ install -d `dirname /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i`; \
+ install $i /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i; \
+done
+for i in aac.cmo; do \
+ install -d `dirname /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i`; \
+ install $i /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i; \
+done
+for i in aac.cmi coq.cmi helper.cmi matcher.cmi print.cmi rewrite.cmi search_monad.cmi theory.cmi; do \
+ install -d `dirname /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i`; \
+ install $i /root/run/.opam_run/system/lib/coq/user-contrib/AAC_tactics/$i; \
+done
+Installing coq:aac-tactics.1.0.0.
+"
+coq:abp,1.0.0,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:abp.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:abp.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:abp.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:abp.1.0.0.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:abp"",
+          ""version"": ""1.0.0""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:abp.1.0.0,0,2,"",opam install --root=.opam_run -y --verbose coq:abp.1.0.0,0,9,"The following actions will be performed:
+ - install   coq:abp.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:abp.1.0.0] Downloading https://github.com/coq-contribs/abp/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    178      0 --:--:-- --:--:-- --:--:--   178
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 28557  100 28557    0     0  18761      0  0:00:01  0:00:01 --:--:-- 40449
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:abp.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -slash -R . ABP ""ABP/BISIMULATION/Lemmas.v"" > ""ABP/BISIMULATION/Lemmas.v.d"" || ( RV=$?; rm -f ""ABP/BISIMULATION/Lemmas.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/BISIMULATION/Correctness.v"" > ""ABP/BISIMULATION/Correctness.v.d"" || ( RV=$?; rm -f ""ABP/BISIMULATION/Correctness.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/BISIMULATION/Protocol.v"" > ""ABP/BISIMULATION/Protocol.v.d"" || ( RV=$?; rm -f ""ABP/BISIMULATION/Protocol.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/BISIMULATION/Processes.v"" > ""ABP/BISIMULATION/Processes.v.d"" || ( RV=$?; rm -f ""ABP/BISIMULATION/Processes.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/BISIMULATION/Hypotheses.v"" > ""ABP/BISIMULATION/Hypotheses.v.d"" || ( RV=$?; rm -f ""ABP/BISIMULATION/Hypotheses.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Evt.v"" > ""ABP/TRACES/Evt.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Evt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Lemmas.v"" > ""ABP/TRACES/Lemmas.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Lemmas.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Correction.v"" > ""ABP/TRACES/Correction.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Correction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Protocol.v"" > ""ABP/TRACES/Protocol.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Protocol.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Unique.v"" > ""ABP/TRACES/Unique.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Unique.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Processes.v"" > ""ABP/TRACES/Processes.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Processes.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""ABP/TRACES/Hypotheses.v"" > ""ABP/TRACES/Hypotheses.v.d"" || ( RV=$?; rm -f ""ABP/TRACES/Hypotheses.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""INTERPRETER/Interpreter.v"" > ""INTERPRETER/Interpreter.v.d"" || ( RV=$?; rm -f ""INTERPRETER/Interpreter.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ABP ""INTERPRETER/Processes.v"" > ""INTERPRETER/Processes.v.d"" || ( RV=$?; rm -f ""INTERPRETER/Processes.v.d""; exit ${RV} )
+""coqc""  -q  -R . ABP   INTERPRETER/Processes
+""coqc""  -q  -R . ABP   ABP/TRACES/Processes
+""coqc""  -q  -R . ABP   ABP/BISIMULATION/Processes
+""coqc""  -q  -R . ABP   INTERPRETER/Interpreter
+""coqc""  -q  -R . ABP   ABP/BISIMULATION/Protocol
+""coqc""  -q  -R . ABP   ABP/TRACES/Protocol
+""coqc""  -q  -R . ABP   ABP/BISIMULATION/Hypotheses
+""coqc""  -q  -R . ABP   ABP/TRACES/Hypotheses
+""coqc""  -q  -R . ABP   ABP/BISIMULATION/Lemmas
+""coqc""  -q  -R . ABP   ABP/TRACES/Lemmas
+""coqc""  -q  -R . ABP   ABP/BISIMULATION/Correctness
+""coqc""  -q  -R . ABP   ABP/TRACES/Unique
+""coqc""  -q  -R . ABP   ABP/TRACES/Evt
+""coqc""  -q  -R . ABP   ABP/TRACES/Correction
+for i in INTERPRETER/Processes.vo INTERPRETER/Interpreter.vo ABP/TRACES/Hypotheses.vo ABP/TRACES/Processes.vo ABP/TRACES/Unique.vo ABP/TRACES/Protocol.vo ABP/TRACES/Correction.vo ABP/TRACES/Lemmas.vo ABP/TRACES/Evt.vo ABP/BISIMULATION/Hypotheses.vo ABP/BISIMULATION/Processes.vo ABP/BISIMULATION/Protocol.vo ABP/BISIMULATION/Correctness.vo ABP/BISIMULATION/Lemmas.vo; do \
+ install -d `dirname ""/root/run/.opam_run/system/lib/coq/user-contrib""/ABP/$i`; \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/ABP/$i; \
+done
+Installing coq:abp.1.0.0.
+"
+coq:concurrency,0.0.1,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:concurrency.0.0.1,0,2,"The following actions will be performed:
+ - install   coq:concurrency.0.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:concurrency.0.0.1:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:concurrency.0.0.1.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:concurrency"",
+          ""version"": ""0.0.1""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:concurrency.0.0.1,0,2,"",opam install --root=.opam_run -y --verbose coq:concurrency.0.0.1,0,12,"The following actions will be performed:
+ - install   coq:concurrency.0.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:concurrency.0.0.1] Downloading https://github.com/clarus/coq-concurrency/archive/0.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    74    0    74    0     0    100      0 --:--:-- --:--:-- --:--:--   100100   128    0   128    0     0    173      0 --:--:-- --:--:-- --:--:--   173
+  0     0    0   129    0     0    141      0 --:--:-- --:--:-- --:--:--   141
+100  6937  100  6937    0     0   4425      0  0:00:01  0:00:01 --:--:--  4425
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:concurrency.0.0.1:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -slash -R . Concurrency ""Computation.v"" > ""Computation.v.d"" || ( RV=$?; rm -f ""Computation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""Extraction.v"" > ""Extraction.v.d"" || ( RV=$?; rm -f ""Extraction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""HttpServer.v"" > ""HttpServer.v.d"" || ( RV=$?; rm -f ""HttpServer.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""Pervasives.v"" > ""Pervasives.v.d"" || ( RV=$?; rm -f ""Pervasives.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""StdLib.v"" > ""StdLib.v.d"" || ( RV=$?; rm -f ""StdLib.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""String.v"" > ""String.v.d"" || ( RV=$?; rm -f ""String.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . Concurrency ""Test.v"" > ""Test.v.d"" || ( RV=$?; rm -f ""Test.v.d""; exit ${RV} )
+""coqc""  -q  -R . Concurrency   Computation
+""coqc""  -q  -R . Concurrency   String
+eq_refl:eqb ""hi"" ""hi"" = true
+     : eqb ""hi"" ""hi"" = true
+eq_refl:eqb ""hi"" ""bye"" = false
+     : eqb ""hi"" ""bye"" = false
+eq_refl:reverse ""hello"" = ""olleh""
+     : reverse ""hello"" = ""olleh""
+eq_refl:split ""go stop go"" "" "" = [""go""; ""stop""; ""go""]
+     : split ""go stop go"" "" "" = [""go""; ""stop""; ""go""]
+eq_refl:split ""grr"" "" "" = [""grr""]
+     : split ""grr"" "" "" = [""grr""]
+""coqc""  -q  -R . Concurrency   Pervasives
+eq_refl:run Memory.Nil (hello_world tt) = [inl ""world!""; inl ""Hello ""]
+     : run Memory.Nil (hello_world tt) = [inl ""world!""; inl ""Hello ""]
+eq_refl:run (Memory.Cons 12 Memory.Nil) (read_and_print tt) = [inr 12]
+     : run (Memory.Cons 12 Memory.Nil) (read_and_print tt) = [inr 12]
+eq_refl
+:run (Memory.Cons 12 Memory.Nil) (hello_read_print tt) =
+ [inr 12; inl ""world!""; inl ""Hello ""]
+     : run (Memory.Cons 12 Memory.Nil) (hello_read_print tt) =
+       [inr 12; inl ""world!""; inl ""Hello ""]
+eq_refl:run (Memory.Cons 15 Memory.Nil) (double_print 12) = [24]
+     : run (Memory.Cons 15 Memory.Nil) (double_print 12) = [24]
+eq_refl
+:to_string {| path := [""some""; ""dir""]; base := ""file.txt"" |} =
+ ""some/dir/file.txt""
+     : to_string {| path := [""some""; ""dir""]; base := ""file.txt"" |} =
+       ""some/dir/file.txt""
+""coqc""  -q  -R . Concurrency   StdLib
+""coqc""  -q  -R . Concurrency   Test
+""coqc""  -q  -R . Concurrency   Extraction
+eq_refl:run [] = [Output.file (File.Output.read resolv)]
+     : run [] = [Output.file (File.Output.read resolv)]
+eq_refl
+:run [File.Input.read resolv ""nameserver 34.123.45.46""] =
+ [Output.log (Log.Output.write ""nameserver 34.123.45.46"");
+ Output.file (File.Output.read resolv)]
+     : run [File.Input.read resolv ""nameserver 34.123.45.46""] =
+       [Output.log (Log.Output.write ""nameserver 34.123.45.46"");
+       Output.file (File.Output.read resolv)]
+""coqc""  -q  -R . Concurrency   HttpServer
+eq_refl:run [] = [Output.socket (TCPServerSocket.Output.bind 8383)]
+     : run [] = [Output.socket (TCPServerSocket.Output.bind 8383)]
+eq_refl
+:run [TCPServerSocket.Input.bound (TCPServerSocket.Id.new 12)] =
+ [Output.log (Log.Output.write ""Server socket opened."");
+ Output.socket (TCPServerSocket.Output.bind 8383)]
+     : run [TCPServerSocket.Input.bound (TCPServerSocket.Id.new 12)] =
+       [Output.log (Log.Output.write ""Server socket opened."");
+       Output.socket (TCPServerSocket.Output.bind 8383)]
+eq_refl
+:run
+   [TCPServerSocket.Input.bound (TCPServerSocket.Id.new 12);
+   TCPServerSocket.Input.accepted (TCPServerSocket.ConnectionId.new 23);
+   TCPServerSocket.Input.read (TCPServerSocket.ConnectionId.new 23) ""hi""] =
+ [Output.socket
+    (TCPServerSocket.Output.close_connection
+       (TCPServerSocket.ConnectionId.new 23));
+ Output.socket
+   (TCPServerSocket.Output.write (TCPServerSocket.ConnectionId.new 23) ""hi"");
+ Output.log (Log.Output.write ""Input: hi"");
+ Output.log (Log.Output.write ""Client connection accepted."");
+ Output.log (Log.Output.write ""Server socket opened."");
+ Output.socket (TCPServerSocket.Output.bind 8383)]
+     : run
+         [TCPServerSocket.Input.bound (TCPServerSocket.Id.new 12);
+         TCPServerSocket.Input.accepted (TCPServerSocket.ConnectionId.new 23);
+         TCPServerSocket.Input.read (TCPServerSocket.ConnectionId.new 23)
+           ""hi""] =
+       [Output.socket
+          (TCPServerSocket.Output.close_connection
+             (TCPServerSocket.ConnectionId.new 23));
+       Output.socket
+         (TCPServerSocket.Output.write (TCPServerSocket.ConnectionId.new 23)
+            ""hi""); Output.log (Log.Output.write ""Input: hi"");
+       Output.log (Log.Output.write ""Client connection accepted."");
+       Output.log (Log.Output.write ""Server socket opened."");
+       Output.socket (TCPServerSocket.Output.bind 8383)]
+eq_refl
+:parse
+   ""GET /page.html HTTP/1.0
+Host: example.com
+Referer: http://example.com/
+User-Agent: CERN-LineMode/2.15 libwww/2.17b3"" =
+ Some (Method.get, Url.new ""/page.html"")
+     : parse
+         ""GET /page.html HTTP/1.0
+Host: example.com
+Referer: http://example.com/
+User-Agent: CERN-LineMode/2.15 libwww/2.17b3"" =
+       Some (Method.get, Url.new ""/page.html"")
+eq_refl:run [] = [Output.socket (TCPServerSocket.Output.bind 80)]
+     : run [] = [Output.socket (TCPServerSocket.Output.bind 80)]
+eq_refl
+:run
+   [Input.socket (TCPServerSocket.Input.accepted client);
+   Input.socket (TCPServerSocket.Input.read client ""wrong request"")] =
+ [Output.log (Log.Output.write ""Invalid request: wrong request"");
+ Output.log (Log.Output.write ""Client connection accepted."");
+ Output.socket (TCPServerSocket.Output.bind 80)]
+     : run
+         [Input.socket (TCPServerSocket.Input.accepted client);
+         Input.socket (TCPServerSocket.Input.read client ""wrong request"")] =
+       [Output.log (Log.Output.write ""Invalid request: wrong request"");
+       Output.log (Log.Output.write ""Client connection accepted."");
+       Output.socket (TCPServerSocket.Output.bind 80)]
+eq_refl
+:run
+   [Input.socket (TCPServerSocket.Input.accepted client);
+   Input.socket (TCPServerSocket.Input.read client request)] =
+ [Output.log (Log.Output.write ""File info/contact.html requested"");
+ Output.log (Log.Output.write ""Client connection accepted."");
+ Output.socket (TCPServerSocket.Output.bind 80)]
+     : run
+         [Input.socket (TCPServerSocket.Input.accepted client);
+         Input.socket (TCPServerSocket.Input.read client request)] =
+       [Output.log (Log.Output.write ""File info/contact.html requested"");
+       Output.log (Log.Output.write ""Client connection accepted."");
+       Output.socket (TCPServerSocket.Output.bind 80)]
+for i in Test.vo String.vo StdLib.vo Pervasives.vo HttpServer.vo Extraction.vo Computation.vo; do \
+ install -d `dirname ""/root/run/.opam_run/system/lib/coq/user-contrib""/Concurrency/$i`; \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/Concurrency/$i; \
+done
+Installing coq:concurrency.0.0.1.
+"
+coq:coquelicot,2.0.1,DepsError,opam install --root=.opam_run -y --json=output.json --dry-run coq:coquelicot.2.0.1,768,1,"Your request can't be satisfied:
+  - No package matches coq:coquelicot.
+
+No solution found, exiting
+",[],true,0,0,"",true,0,0,""
+coq:corn,1.0.0,DepsError,opam install --root=.opam_run -y --json=output.json --dry-run coq:corn.1.0.0,768,1,"Your request can't be satisfied:
+  - No package matches coq:corn.
+
+No solution found, exiting
+",[],true,0,0,"",true,0,0,""
+coq:counting,1.0.0,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:counting.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:counting.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:counting.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:counting.1.0.0.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:counting"",
+          ""version"": ""1.0.0""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:counting.1.0.0,0,2,"",opam install --root=.opam_run -y --verbose coq:counting.1.0.0,0,4,"The following actions will be performed:
+ - install   coq:counting.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:counting.1.0.0] Downloading https://github.com/coq-contribs/counting/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   128    0   128    0     0    174      0 --:--:-- --:--:-- --:--:--   174
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3158  100  3158    0     0   2133      0  0:00:01  0:00:01 --:--:-- 10286
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:counting.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+ocamldep -slash -I src ""src/counting_plugin_mod.ml"" > ""src/counting_plugin_mod.ml.d"" || ( RV=$?; rm -f ""src/counting_plugin_mod.ml.d""; exit ${RV} )
+""coqdep"" -c -slash -I src ""src/counting.ml4"" > ""src/counting.ml4.d"" || ( RV=$?; rm -f ""src/counting.ml4.d""; exit ${RV} )
+""coqdep"" -c -slash -I src -R theories Counting ""theories/Counting.v"" > ""theories/Counting.v.d"" || ( RV=$?; rm -f ""theories/Counting.v.d""; exit ${RV} )
+""coqdep"" -c -slash -I src -R theories Counting ""tests/TestCounting.v"" > ""tests/TestCounting.v.d"" || ( RV=$?; rm -f ""tests/TestCounting.v.d""; exit ${RV} )
+*** Warning: in file theories/Counting.v, declared ML module counting_plugin has not been found!
+ocamlopt -c -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 -pp '""/root/run/.opam_run/system/bin/camlp5o"" -I ""/usr/lib/ocaml/"" -I . -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl' -impl src/counting.ml4
+ocamlopt -c -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 src/counting_plugin_mod.ml
+ocamlc -c -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 -pp '""/root/run/.opam_run/system/bin/camlp5o"" -I ""/usr/lib/ocaml/"" -I . -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl' -impl src/counting.ml4
+ocamlc -c -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 src/counting_plugin_mod.ml
+ocamlopt -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 -shared -o src/counting_plugin_mod.cmxs src/counting_plugin_mod.cmx
+ocamlc -rectypes -g -a -o src/counting_plugin.cma src/counting.cmo src/counting_plugin_mod.cmo
+ocamlopt -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 -shared -o src/counting_plugin.cmxs src/counting.cmx src/counting_plugin_mod.cmx
+ocamlopt -rectypes  -I src -I ""/root/run/.opam_run/system/lib/coq/kernel"" -I ""/root/run/.opam_run/system/lib/coq/lib"" -I ""/root/run/.opam_run/system/lib/coq/library"" -I ""/root/run/.opam_run/system/lib/coq/parsing"" -I ""/root/run/.opam_run/system/lib/coq/pretyping"" -I ""/root/run/.opam_run/system/lib/coq/interp"" -I ""/root/run/.opam_run/system/lib/coq/proofs"" -I ""/root/run/.opam_run/system/lib/coq/tactics"" -I ""/root/run/.opam_run/system/lib/coq/tools"" -I ""/root/run/.opam_run/system/lib/coq/toplevel"" -I ""/root/run/.opam_run/system/lib/coq/plugins/""cc -I ""/root/run/.opam_run/system/lib/coq/plugins/""decl_mode -I ""/root/run/.opam_run/system/lib/coq/plugins/""extraction -I ""/root/run/.opam_run/system/lib/coq/plugins/""field -I ""/root/run/.opam_run/system/lib/coq/plugins/""firstorder -I ""/root/run/.opam_run/system/lib/coq/plugins/""fourier -I ""/root/run/.opam_run/system/lib/coq/plugins/""funind -I ""/root/run/.opam_run/system/lib/coq/plugins/""micromega -I ""/root/run/.opam_run/system/lib/coq/plugins/""nsatz -I ""/root/run/.opam_run/system/lib/coq/plugins/""omega -I ""/root/run/.opam_run/system/lib/coq/plugins/""quote -I ""/root/run/.opam_run/system/lib/coq/plugins/""ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""romega -I ""/root/run/.opam_run/system/lib/coq/plugins/""rtauto -I ""/root/run/.opam_run/system/lib/coq/plugins/""setoid_ring -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac -I ""/root/run/.opam_run/system/lib/coq/plugins/""subtac/test -I ""/root/run/.opam_run/system/lib/coq/plugins/""syntax -I ""/root/run/.opam_run/system/lib/coq/plugins/""xml -I /.opam/system/lib/camlp5 -shared -o src/counting.cmxs src/counting.cmx
+coqc  -q  -I src -R theories Counting   theories/Counting
+coqc  -q  -I src -R theories Counting   tests/TestCounting
+install -d ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting; \
+for i in src/counting.cmxs src/counting_plugin_mod.cmxs ; do \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting/`basename $i`; \
+done
+cd ""theories""; for i in Counting.vo; do \
+ install -d ""`dirname """"""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting/$i`""; \
+ install -m 0644 $i """"""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting/$i; \
+done
+install -d ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting; \
+for i in src/counting.cmo src/counting_plugin_mod.cmo ; do \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting/`basename $i`; \
+done
+install -d ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting; \
+for i in src/counting.cmi src/counting_plugin_mod.cmi ; do \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/Counting/`basename $i`; \
+done
+Installing coq:counting.1.0.0.
+"
+coq:function-ninjas,1.0.0,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:function-ninjas.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  ln -s /.opam/system/lib/coq:function-ninjas /.opam/system/lib/coq/user-contrib/FunctionNinjas
+Installing coq:function-ninjas.1.0.0.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:function-ninjas"",
+          ""version"": ""1.0.0""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:function-ninjas.1.0.0,0,2,"",opam install --root=.opam_run -y --verbose coq:function-ninjas.1.0.0,0,4,"The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:function-ninjas.1.0.0] Downloading https://github.com/clarus/coq-function-ninjas/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0     98      0 --:--:--  0:00:01 --:--:--    98
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  1687  100  1687    0     0    818      0  0:00:02  0:00:02 --:--:--  3421
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0/files/coq:function-ninjas.install to ~/root/run/.opam_run/system/build/coq:function-ninjas.1.0.0/
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  ln -s /.opam/system/lib/coq:function-ninjas /.opam/system/lib/coq/user-contrib/FunctionNinjas
+""coqdep"" -c -slash -R . FunctionNinjas ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
+""coqc""  -q  -R . FunctionNinjas   All
+Installing coq:function-ninjas.1.0.0.
+"
+coq:interval,1.0.0,DepsError,opam install --root=.opam_run -y --json=output.json --dry-run coq:interval.1.0.0,768,1,"Your request can't be satisfied:
+  - No package matches coq:interval.
+
+No solution found, exiting
+",[],true,0,0,"",true,0,0,""
+coq:interval,1.1.0,DepsError,opam install --root=.opam_run -y --json=output.json --dry-run coq:interval.1.1.0,768,1,"Your request can't be satisfied:
+  - No package matches coq:interval.
+
+No solution found, exiting
+",[],true,0,0,"",true,0,0,""
+coq:list-string,0.0.1,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:list-string.0.0.1,0,2,"The following actions will be performed:
+ - install   coq:list-string.0.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.0.0.1:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:list-string.0.0.1.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:list-string"",
+          ""version"": ""0.0.1""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:list-string.0.0.1,0,2,"",opam install --root=.opam_run -y --verbose coq:list-string.0.0.1,0,7,"The following actions will be performed:
+ - install   coq:list-string.0.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:list-string.0.0.1] Downloading https://github.com/clarus/coq-list-string/archive/0.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  2814  100  2814    0     0   1862      0  0:00:01  0:00:01 --:--:--  7544
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.0.0.1:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -slash -R . ListString ""ListStringComparison.v"" > ""ListStringComparison.v.d"" || ( RV=$?; rm -f ""ListStringComparison.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""ListStringDefinition.v"" > ""ListStringDefinition.v.d"" || ( RV=$?; rm -f ""ListStringDefinition.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""ListString.v"" > ""ListString.v.d"" || ( RV=$?; rm -f ""ListString.v.d""; exit ${RV} )
+""coqc""  -q  -R . ListString   ListStringDefinition
+""coqc""  -q  -R . ListString   ListStringComparison
+""coqc""  -q  -R . ListString   ListString
+for i in ListString.vo ListStringDefinition.vo ListStringComparison.vo; do \
+ install -d `dirname ""/root/run/.opam_run/system/lib/coq/user-contrib""/ListString/$i`; \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/ListString/$i; \
+done
+Installing coq:list-string.0.0.1.
+"
+coq:list-string,1.0.0,Success,opam install --root=.opam_run -y --json=output.json --dry-run coq:list-string.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:list-string.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:list-string.1.0.0.
+","[
+  {
+    ""to-remove"": [],
+    ""to-proceed"": [
+      {
+        ""install"": {
+          ""name"": ""coq:list-string"",
+          ""version"": ""1.0.0""
+        }
+      }
+    ]
+  }
+]",opam install --root=.opam_run -y --deps-only coq:list-string.1.0.0,0,2,"",opam install --root=.opam_run -y --verbose coq:list-string.1.0.0,0,13,"The following actions will be performed:
+ - install   coq:list-string.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:list-string.1.0.0] Downloading https://github.com/clarus/coq-list-string/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    170      0 --:--:-- --:--:-- --:--:--   170
+100  6919  100  6919    0     0   5027      0  0:00:01  0:00:01 --:--:--  5027
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -slash -R . ListString ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Bool.v"" > ""Bool.v.d"" || ( RV=$?; rm -f ""Bool.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Case.v"" > ""Case.v.d"" || ( RV=$?; rm -f ""Case.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Char.v"" > ""Char.v.d"" || ( RV=$?; rm -f ""Char.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Comparison.v"" > ""Comparison.v.d"" || ( RV=$?; rm -f ""Comparison.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Conversion.v"" > ""Conversion.v.d"" || ( RV=$?; rm -f ""Conversion.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Etc.v"" > ""Etc.v.d"" || ( RV=$?; rm -f ""Etc.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""LString.v"" > ""LString.v.d"" || ( RV=$?; rm -f ""LString.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""Trim.v"" > ""Trim.v.d"" || ( RV=$?; rm -f ""Trim.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . ListString ""UnitTests.v"" > ""UnitTests.v.d"" || ( RV=$?; rm -f ""UnitTests.v.d""; exit ${RV} )
+""coqc""  -q  -R . ListString   Bool
+""coqc""  -q  -R . ListString   LString
+""coqc""  -q  -R . ListString   Char
+""coqc""  -q  -R . ListString   Conversion
+""coqc""  -q  -R . ListString   Case
+""coqc""  -q  -R . ListString   Comparison
+""coqc""  -q  -R . ListString   Trim
+""coqc""  -q  -R . ListString   Etc
+""coqc""  -q  -R . ListString   UnitTests
+""coqc""  -q  -R . ListString   All
+for i in UnitTests.vo Trim.vo LString.vo Etc.vo Conversion.vo Comparison.vo Char.vo Case.vo Bool.vo All.vo; do \
+ install -d `dirname ""/root/run/.opam_run/system/lib/coq/user-contrib""/ListString/$i`; \
+ install -m 0644 $i ""/root/run/.opam_run/system/lib/coq/user-contrib""/ListString/$i; \
+done
+Installing coq:list-string.1.0.0.
+"
