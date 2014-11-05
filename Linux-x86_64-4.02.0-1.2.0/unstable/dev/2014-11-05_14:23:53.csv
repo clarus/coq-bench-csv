@@ -1,5 +1,5 @@
 Name,Version,Status,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes
-coq:aac-tactics,1.0.0,Error,opam install -y --dry-run coq:aac-tactics.1.0.0 coq.dev,0,4,"[NOTE] Package coq is already installed (current version is dev).
+coq:aac-tactics,1.0.0,Error,opam install -y --dry-run coq:aac-tactics.1.0.0 coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:aac-tactics.1.0.0
 === 1 to install ===
@@ -11,7 +11,7 @@ Building coq:aac-tactics.1.0.0:
   make -j4
   make install
 Installing coq:aac-tactics.1.0.0.
-",true,0,0,"",opam install -y --deps-only coq:aac-tactics.1.0.0,0,1,"",opam install -y --verbose coq:aac-tactics.1.0.0,1024,4,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:aac-tactics.1.0.0,0,1,"",opam install -y --verbose coq:aac-tactics.1.0.0,1024,3,"The following actions will be performed:
  - install   coq:aac-tactics.1.0.0
 === 1 to install ===
 
@@ -19,8 +19,8 @@ Installing coq:aac-tactics.1.0.0.
 [coq:aac-tactics.1.0.0] Downloading https://github.com/coq-contribs/aac-tactics/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   131    0   131    0     0    354      0 --:--:-- --:--:-- --:--:--   355
- 60 78327   60 47067    0     0  47801      0  0:00:01 --:--:--  0:00:01 47801100 78327  100 78327    0     0  73428      0  0:00:01  0:00:01 --:--:--  372k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   131    0   131    0     0    346      0 --:--:-- --:--:-- --:--:--   347
+  1 78327    1   856    0     0   1138      0  0:01:08 --:--:--  0:01:08  1138100 78327  100 78327    0     0  75555      0  0:00:01  0:00:01 --:--:--  266k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -51,18 +51,18 @@ coqdep -c -slash -R . AAC_tactics ""Instances.v"" > ""Instances.v.d"" || ( RV=$?
 coqdep -c -slash -R . AAC_tactics ""Tutorial.v"" > ""Tutorial.v.d"" || ( RV=$?; rm -f ""Tutorial.v.d""; exit ${RV} )
 coqdep -c -slash -R . AAC_tactics ""Caveats.v"" > ""Caveats.v.d"" || ( RV=$?; rm -f ""Caveats.v.d""; exit ${RV} )
 warning: option -slash has no effect and is deprecated.
-Error while loading ""grammar.cma"": file not found in path.
 warning: option -slash has no effect and is deprecated.
+Error while loading ""grammar.cma"": file not found in path.
 File ""rewrite.ml4"", line 1:
 Error: Error while running external preprocessor
-Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlppa76303
+Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlppa719aa
 
 warning: option -slash has no effect and is deprecated.
 ocamldep -slash  -pp ""/.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl"" -impl ""rewrite.ml4"" > ""rewrite.ml4.d"" || ( RV=$?; rm -f ""rewrite.ml4.d""; exit ${RV} )
 Error while loading ""grammar.cma"": file not found in path.
 File ""rewrite.ml4"", line 1:
 Error: Error while running external preprocessor
-Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlppb80389
+Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlpp6f099e
 
 coqc  -q  -R . AAC_tactics   AAC
 ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 -pp ""/.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl"" -impl rewrite.ml4
@@ -70,22 +70,22 @@ ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/l
 ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 coq.mli
 ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 helper.mli
 ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 search_monad.ml
-File ""coq.mli"", line 151, characters 34-50:
-Error: Unbound type constructor Term.rel_context
-Makefile:201: recipe for target 'coq.cmi' failed
-make: *** [coq.cmi] Error 2
-make: *** Waiting for unfinished jobs....
 Error while loading ""grammar.cma"": file not found in path.
 File ""rewrite.ml4"", line 1:
 Error: Error while running external preprocessor
-Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlppe71e07
+Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlpp139c38
 
 Makefile:207: recipe for target 'rewrite.cmo' failed
 make: *** [rewrite.cmo] Error 2
+make: *** Waiting for unfinished jobs....
+File ""coq.mli"", line 151, characters 34-50:
+Error: Unbound type constructor Term.rel_context
+make: *** [coq.cmi] Error 2
+Makefile:201: recipe for target 'coq.cmi' failed
 File ""./AAC.v"", line 497, characters 8-20:
 Error: The constructor vcons (in type vT) expects 2 arguments.
-Makefile:237: recipe for target 'AAC.vo' failed
 make: *** [AAC.vo] Error 1
+Makefile:237: recipe for target 'AAC.vo' failed
 [ERROR] The compilation of coq:aac-tactics.1.0.0 failed.
 Removing coq:aac-tactics.1.0.0.
   rm -R /.opam/system/lib/coq/user-contrib/AAC_tactics
@@ -99,9 +99,9 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/AAC_tactics': No such file
 # path                 /.opam/system/build/coq:aac-tactics.1.0.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-269-c61e7b.env
-# stdout-file          /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-269-c61e7b.out
-# stderr-file          /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-269-c61e7b.err
+# env-file             /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-270-c61e7b.env
+# stdout-file          /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-270-c61e7b.out
+# stderr-file          /.opam/system/build/coq:aac-tactics.1.0.0/coq:aac-tactics-270-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ocamldep -slash  -pp ""/.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl"" -impl ""rewrite.ml4"" > ""rewrite.ml4.d"" || ( RV=$?; rm -f ""rewrite.ml4.d""; exit ${RV} )
@@ -111,25 +111,25 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/AAC_tactics': No such file
 # ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 coq.mli
 # ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 helper.mli
 # ocamlc -c -rectypes   -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml -I /.opam/system/lib/camlp5 search_monad.ml
-# Makefile:201: recipe for target 'coq.cmi' failed
 # Makefile:207: recipe for target 'rewrite.cmo' failed
+# Makefile:201: recipe for target 'coq.cmi' failed
 # Makefile:237: recipe for target 'AAC.vo' failed
 ### stderr ###
 # ...[truncated]
-# make: *** Waiting for unfinished jobs....
-# Error while loading ""grammar.cma"": file not found in path.
-# File ""rewrite.ml4"", line 1:
-# Error: Error while running external preprocessor
-# Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlppe71e07
+# Command line: /.opam/system/bin/camlp5o -I /usr/local/lib/ocaml/ -I . -I /.opam/system/lib/coq/kernel -I /.opam/system/lib/coq/lib -I /.opam/system/lib/coq/library -I /.opam/system/lib/coq/parsing -I /.opam/system/lib/coq/pretyping -I /.opam/system/lib/coq/interp -I /.opam/system/lib/coq/proofs -I /.opam/system/lib/coq/tactics -I /.opam/system/lib/coq/toplevel -I /.opam/system/lib/coq/plugins/cc -I /.opam/system/lib/coq/plugins/decl_mode -I /.opam/system/lib/coq/plugins/dp -I /.opam/system/lib/coq/plugins/extraction -I /.opam/system/lib/coq/plugins/field -I /.opam/system/lib/coq/plugins/firstorder -I /.opam/system/lib/coq/plugins/fourier -I /.opam/system/lib/coq/plugins/funind -I /.opam/system/lib/coq/plugins/micromega -I /.opam/system/lib/coq/plugins/nsatz -I /.opam/system/lib/coq/plugins/omega -I /.opam/system/lib/coq/plugins/quote -I /.opam/system/lib/coq/plugins/ring -I /.opam/system/lib/coq/plugins/romega -I /.opam/system/lib/coq/plugins/rtauto -I /.opam/system/lib/coq/plugins/setoid_ring -I /.opam/system/lib/coq/plugins/subtac -I /.opam/system/lib/coq/plugins/subtac/test -I /.opam/system/lib/coq/plugins/syntax -I /.opam/system/lib/coq/plugins/xml pa_extend.cmo pa_macro.cmo q_MLast.cmo grammar.cma -loc loc -impl 'rewrite.ml4' > /tmp/ocamlpp139c38
 # 
 # make: *** [rewrite.cmo] Error 2
+# make: *** Waiting for unfinished jobs....
+# File ""coq.mli"", line 151, characters 34-50:
+# Error: Unbound type constructor Term.rel_context
+# make: *** [coq.cmi] Error 2
 # File ""./AAC.v"", line 497, characters 8-20:
 # Error: The constructor vcons (in type vT) expects 2 arguments.
 # make: *** [AAC.vo] Error 1
 
 'opam install -y --verbose coq:aac-tactics.1.0.0' failed.
 ",true,0,0,"","",""
-coq:abp,1.0.0,Success,opam install -y --dry-run coq:abp.1.0.0 coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:abp,1.0.0,Success,opam install -y --dry-run coq:abp.1.0.0 coq.dev,0,3,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:abp.1.0.0
 === 1 to install ===
@@ -142,7 +142,7 @@ Building coq:abp.1.0.0:
   make -j4
   make install
 Installing coq:abp.1.0.0.
-",true,0,0,"",opam install -y --deps-only coq:abp.1.0.0,0,1,"",opam install -y --verbose coq:abp.1.0.0,0,3,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:abp.1.0.0,0,1,"",opam install -y --verbose coq:abp.1.0.0,0,4,"The following actions will be performed:
  - install   coq:abp.1.0.0
 === 1 to install ===
 
@@ -150,8 +150,8 @@ Installing coq:abp.1.0.0.
 [coq:abp.1.0.0] Downloading https://github.com/coq-contribs/abp/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    344      0 --:--:-- --:--:-- --:--:--   344
-100 28557  100 28557    0     0  35798      0 --:--:-- --:--:-- --:--:-- 35798
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    357      0 --:--:-- --:--:-- --:--:--   358
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 28557  100 28557    0     0  35732      0 --:--:-- --:--:-- --:--:-- 78238
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -216,7 +216,7 @@ Building coq:compcert.2.0.0:
   make -j4
   make install
 Installing coq:compcert.2.0.0.
-",true,0,0,"",opam install -y --deps-only coq:compcert.2.0.0,0,1,"",opam install -y --verbose coq:compcert.2.0.0,1024,2,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:compcert.2.0.0,0,1,"",opam install -y --verbose coq:compcert.2.0.0,1024,3,"The following actions will be performed:
  - install   coq:compcert.2.0.0
 === 1 to install ===
 
@@ -224,7 +224,7 @@ Installing coq:compcert.2.0.0.
 [coq:compcert.2.0.0] Downloading http://compcert.inria.fr/release/compcert-2.0.tgz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2047k  100 2047k    0     0   9.9M      0 --:--:-- --:--:-- --:--:-- 10.0M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2047k  100 2047k    0     0  10.0M      0 --:--:-- --:--:-- --:--:-- 10.0M
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -282,10 +282,10 @@ H1 : x * c < y * c
 Unable to unify ""(?M1961 * ?M1963 ?= ?M1962 * ?M1963) = Gt -> False"" with
  ""(0 ?= y) = Lt"".
 Makefile:197: recipe for target 'lib/Coqlib.vo' failed
-make[1]: *** [lib/Coqlib.vo] Error 1
 make[1]: Leaving directory '/.opam/system/build/coq:compcert.2.0.0'
-Makefile:125: recipe for target 'all' failed
+make[1]: *** [lib/Coqlib.vo] Error 1
 make: *** [all] Error 2
+Makefile:125: recipe for target 'all' failed
 [ERROR] The compilation of coq:compcert.2.0.0 failed.
 Removing coq:compcert.2.0.0.
   Nothing to do.
@@ -298,9 +298,9 @@ Removing coq:compcert.2.0.0.
 # path                 /.opam/system/build/coq:compcert.2.0.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:compcert.2.0.0/coq:compcert-819-c61e7b.env
-# stdout-file          /.opam/system/build/coq:compcert.2.0.0/coq:compcert-819-c61e7b.out
-# stderr-file          /.opam/system/build/coq:compcert.2.0.0/coq:compcert-819-c61e7b.err
+# env-file             /.opam/system/build/coq:compcert.2.0.0/coq:compcert-820-c61e7b.env
+# stdout-file          /.opam/system/build/coq:compcert.2.0.0/coq:compcert-820-c61e7b.out
+# stderr-file          /.opam/system/build/coq:compcert.2.0.0/coq:compcert-820-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ocamlopt -o tools/ndfun str.cmxa tools/ndfun.ml
@@ -368,7 +368,7 @@ Building coq:concurrency:proxy.dev:
   make
   make install
 Installing coq:concurrency:proxy.dev.
-",true,0,0,"",opam install -y --deps-only coq:concurrency:proxy.dev,0,35,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:concurrency:proxy.dev,0,37,"The following actions will be performed:
  - install   ocamlfind.1.5.5                       [required by lwt, base64]
  - install   camlp4.4.02.0+system                  [required by lwt]
  - install   ppx_tools.0.99.2                      [required by lwt]
@@ -385,13 +385,13 @@ Installing coq:concurrency:proxy.dev.
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/camlp4/camlp4.4.02.0+system/files/install to ~/.opam/system/build/camlp4.4.02.0+system/
 Copying ~/.opam/repo/default/packages/camlp4/camlp4.4.02.0+system/files/check-camlp4.sh to ~/.opam/system/build/camlp4.4.02.0+system/
-Building camlp4.4.02.0+system:
-  sh ./check-camlp4.sh
 Building ocamlfind.1.5.5:
   ./configure -bindir /.opam/system/bin -sitelib /.opam/system/lib -mandir /.opam/system/man -config /.opam/system/lib/findlib.conf -no-topfind
   make all
   make opt
   make install
+Building camlp4.4.02.0+system:
+  sh ./check-camlp4.sh
 Installing camlp4.4.02.0+system.
 Installing ocamlfind.1.5.5.
 Building ppx_tools.0.99.2:
@@ -416,8 +416,8 @@ Installing lwt.2.4.6.
 [coq:concurrency:proxy.dev] Downloading https://github.com/coq-concurrency/proxy/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    347      0 --:--:-- --:--:-- --:--:--   346
-  0     0    0  5922    0     0   7856      0 --:--:-- --:--:-- --:--:--  7856
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    339      0 --:--:-- --:--:-- --:--:--   340
+  0     0    0  5922    0     0   7745      0 --:--:-- --:--:-- --:--:--  7745
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -468,7 +468,7 @@ Building coq:concurrency:system.dev:
   make -j4
   make install
 Installing coq:concurrency:system.dev.
-",true,0,0,"",opam install -y --deps-only coq:concurrency:system.dev,0,5,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:concurrency:system.dev,0,6,"The following actions will be performed:
  - install   coq:list-string.dev                   [required by coq:concurrency:system]
 === 1 to install ===
 
@@ -489,8 +489,8 @@ Installing coq:list-string.dev.
 [coq:concurrency:system.dev] Downloading https://github.com/coq-concurrency/system/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    366      0 --:--:-- --:--:-- --:--:--   366
-  0     0    0  8022    0     0  11426      0 --:--:-- --:--:-- --:--:-- 11426
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    330      0 --:--:-- --:--:-- --:--:--   330
+  0     0    0  8022    0     0  10099      0 --:--:-- --:--:-- --:--:-- 10099
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -522,9 +522,9 @@ Removing coq:concurrency:system.dev.
 # path                 /.opam/system/build/coq:concurrency:system.dev
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3586-c61e7b.env
-# stdout-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3586-c61e7b.out
-# stderr-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3586-c61e7b.err
+# env-file             /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3587-c61e7b.env
+# stdout-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3587-c61e7b.out
+# stderr-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-3587-c61e7b.err
 ### stdout ###
 # ""coqdep"" -c -R ""."" Concurrency ""Computation.v"" > ""Computation.v.d"" || ( RV=$?; rm -f ""Computation.v.d""; exit ${RV} )
 # ""coqdep"" -c -R ""."" Concurrency ""Events.v"" > ""Events.v.d"" || ( RV=$?; rm -f ""Events.v.d""; exit ${RV} )
@@ -579,17 +579,17 @@ Building coq:list-string.dev:
   make -j4
   make install
 Installing coq:list-string.dev.
-Building coq:iterable.dev:
-  ./configure.sh
-  make -j4
-  make install
-Installing coq:iterable.dev.
 Building ocamlfind.1.5.5:
   ./configure -bindir /.opam/system/bin -sitelib /.opam/system/lib -mandir /.opam/system/man -config /.opam/system/lib/findlib.conf -no-topfind
   make all
   make opt
   make install
 Installing ocamlfind.1.5.5.
+Building coq:iterable.dev:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:iterable.dev.
 Building coq:concurrency:system.dev:
   ./configure.sh
   make -j4
@@ -618,7 +618,7 @@ Building coq:concurrency:web-server.dev:
   make -j4
   sh -c cd extraction && make
 Installing coq:concurrency:web-server.dev.
-",true,0,0,"",opam install -y --deps-only coq:concurrency:web-server.dev,1024,37,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:concurrency:web-server.dev,1024,38,"The following actions will be performed:
  - install   ocamlfind.1.5.5                       [required by lwt, base64]
  - install   coq:error-handlers.dev                [required by coq:concurrency:web-server]
  - install   coq:function-ninjas.dev               [required by coq:concurrency:web-server]
@@ -649,11 +649,11 @@ Copying ~/.opam/repo/default/packages/camlp4/camlp4.4.02.0+system/files/install 
 Copying ~/.opam/repo/default/packages/camlp4/camlp4.4.02.0+system/files/check-camlp4.sh to ~/.opam/system/build/camlp4.4.02.0+system/
 Building camlp4.4.02.0+system:
   sh ./check-camlp4.sh
-Building coq:function-ninjas.dev:
+Building coq:error-handlers.dev:
   ./configure.sh
   make -j4
   make install
-Building coq:error-handlers.dev:
+Building coq:function-ninjas.dev:
   ./configure.sh
   make -j4
   make install
@@ -710,9 +710,9 @@ Installing coq:concurrency:proxy.dev.
 # path                 /.opam/system/build/coq:concurrency:system.dev
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4351-548b09.env
-# stdout-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4351-548b09.out
-# stderr-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4351-548b09.err
+# env-file             /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4352-548b09.env
+# stdout-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4352-548b09.out
+# stderr-file          /.opam/system/build/coq:concurrency:system.dev/coq:concurrency:system-4352-548b09.err
 ### stdout ###
 # ""coqdep"" -c -R ""."" Concurrency ""Computation.v"" > ""Computation.v.d"" || ( RV=$?; rm -f ""Computation.v.d""; exit ${RV} )
 # ""coqdep"" -c -R ""."" Concurrency ""Events.v"" > ""Events.v.d"" || ( RV=$?; rm -f ""Events.v.d""; exit ${RV} )
@@ -744,7 +744,7 @@ These actions have been completed successfully
 The following failed
  - install   coq:concurrency:system.dev
 
-The former state can be restored with opam switch import ""/.opam/system/backup/state-20141005140315.export""
+The former state can be restored with opam switch import ""/.opam/system/backup/state-20141005141931.export""
 ",true,0,0,"",true,0,0,"","",""
 coq:containers,1.0.0,Error,opam install -y --dry-run coq:containers.1.0.0 coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
@@ -767,8 +767,8 @@ Installing coq:containers.1.0.0.
 [coq:containers.1.0.0] Downloading https://github.com/coq-contribs/containers/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    340      0 --:--:-- --:--:-- --:--:--   340
- 38  162k   38 63587    0     0  53932      0  0:00:03  0:00:01  0:00:02 53932100  162k  100  162k    0     0  98919      0  0:00:01  0:00:01 --:--:--  200k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    220      0 --:--:-- --:--:-- --:--:--   220
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  162k  100  162k    0     0    99k      0  0:00:01  0:00:01 --:--:--  176k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -821,13 +821,13 @@ ocamlc -c -rectypes -thread  -I src -I ""/.opam/system/lib/coq/kernel"" -I ""/.o
 ocamlopt -c -rectypes -thread  -I src -I ""/.opam/system/lib/coq/kernel"" -I ""/.opam/system/lib/coq/lib"" -I ""/.opam/system/lib/coq/library"" -I ""/.opam/system/lib/coq/parsing"" -I ""/.opam/system/lib/coq/pretyping"" -I ""/.opam/system/lib/coq/interp"" -I ""/.opam/system/lib/coq/printing"" -I ""/.opam/system/lib/coq/intf"" -I ""/.opam/system/lib/coq/proofs"" -I ""/.opam/system/lib/coq/tactics"" -I ""/.opam/system/lib/coq/tools"" -I ""/.opam/system/lib/coq/toplevel"" -I ""/.opam/system/lib/coq/stm"" -I ""/.opam/system/lib/coq/grammar"" -I ""/.opam/system/lib/coq/config"" -I ""/.opam/system/lib/coq//plugins/Derive"" -I ""/.opam/system/lib/coq//plugins/btauto"" -I ""/.opam/system/lib/coq//plugins/cc"" -I ""/.opam/system/lib/coq//plugins/decl_mode"" -I ""/.opam/system/lib/coq//plugins/extraction"" -I ""/.opam/system/lib/coq//plugins/firstorder"" -I ""/.opam/system/lib/coq//plugins/fourier"" -I ""/.opam/system/lib/coq//plugins/funind"" -I ""/.opam/system/lib/coq//plugins/micromega"" -I ""/.opam/system/lib/coq//plugins/nsatz"" -I ""/.opam/system/lib/coq//plugins/omega"" -I ""/.opam/system/lib/coq//plugins/quote"" -I ""/.opam/system/lib/coq//plugins/romega"" -I ""/.opam/system/lib/coq//plugins/rtauto"" -I ""/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/.opam/system/lib/coq//plugins/syntax"" -I ""/.opam/system/lib/coq//plugins/xml"" -I /.opam/system/lib/camlp5 src/containers_plugin_mod.ml
 File ""src/printing.mli"", line 2, characters 16-37:
 Error: Unbound type constructor Topconstr.constr_expr
+Makefile:396: recipe for target 'src/printing.cmi' failed
 make: *** [src/printing.cmi] Error 2
 make: *** Waiting for unfinished jobs....
-Makefile:396: recipe for target 'src/printing.cmi' failed
 File ""./theories/OrderedType.v"", line 66, characters 10-29:
 Error: Not the right number of missing arguments (expected 0).
-make: *** [theories/OrderedType.vo] Error 1
 Makefile:435: recipe for target 'theories/OrderedType.vo' failed
+make: *** [theories/OrderedType.vo] Error 1
 [ERROR] The compilation of coq:containers.1.0.0 failed.
 Removing coq:containers.1.0.0.
   Nothing to do.
@@ -911,9 +911,9 @@ Removing coq:ssreflect.1.5.0.
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6698-c61e7b.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6698-c61e7b.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6698-c61e7b.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6697-c61e7b.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6697-c61e7b.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6697-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
@@ -975,8 +975,8 @@ Installing coq:counting.1.0.0.
 [coq:counting.1.0.0] Downloading https://github.com/coq-contribs/counting/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   128    0   128    0     0    336      0 --:--:-- --:--:-- --:--:--   335
-100  3158  100  3158    0     0   4124      0 --:--:-- --:--:-- --:--:--  4124
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   128    0   128    0     0    334      0 --:--:-- --:--:-- --:--:--   335
+ 27  3158   27   860    0     0   1118      0  0:00:02 --:--:--  0:00:02  1118100  3158  100  3158    0     0   4107      0 --:--:-- --:--:-- --:--:-- 2244k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1075,21 +1075,6 @@ Vernacexpr). You can:
 Specific classifiers have precedence over global classifiers. Only one
 classifier is called.
 
-Warning: Vernac entry ""SizeOf"" misses a classifier. A classifier is a
-function that returns an expression of type vernac_classification (see
-Vernacexpr). You can:
-- Use '... EXTEND SizeOf CLASSIFIED AS QUERY ...' if the new vernacular
-  command does not alter the system state;
-- Use '... EXTEND SizeOf CLASSIFIED AS SIDEFF ...' if the new vernacular
-  command alters the system state but not the parser nor it starts a proof or
-  ends one;
-- Use '... EXTEND SizeOf CLASSIFIED BY f ...' to specify a global function f.
-   The function f will be called passing ""SizeOf"" as the only argument;
-- Add a specific classifier in each clause using the syntax:
-  '[...] => [ f ] -> [...]'. 
-Specific classifiers have precedence over global classifiers. Only one
-classifier is called.
-
 Warning: Vernac entry ""StartCounting"" misses a classifier. A classifier is a
 function that returns an expression of type vernac_classification (see
 Vernacexpr). You can:
@@ -1101,6 +1086,21 @@ Vernacexpr). You can:
 - Use '... EXTEND StartCounting CLASSIFIED BY f ...' to specify a global
   function f.  The function f will be called passing ""StartCounting"" as the
   only argument;
+- Add a specific classifier in each clause using the syntax:
+  '[...] => [ f ] -> [...]'. 
+Specific classifiers have precedence over global classifiers. Only one
+classifier is called.
+
+Warning: Vernac entry ""SizeOf"" misses a classifier. A classifier is a
+function that returns an expression of type vernac_classification (see
+Vernacexpr). You can:
+- Use '... EXTEND SizeOf CLASSIFIED AS QUERY ...' if the new vernacular
+  command does not alter the system state;
+- Use '... EXTEND SizeOf CLASSIFIED AS SIDEFF ...' if the new vernacular
+  command alters the system state but not the parser nor it starts a proof or
+  ends one;
+- Use '... EXTEND SizeOf CLASSIFIED BY f ...' to specify a global function f.
+   The function f will be called passing ""SizeOf"" as the only argument;
 - Add a specific classifier in each clause using the syntax:
   '[...] => [ f ] -> [...]'. 
 Specific classifiers have precedence over global classifiers. Only one
@@ -1178,17 +1178,17 @@ Warning 8: this pattern-matching is not exhaustive.
 Here is an example of a value that is not matched:
 Proj (_, _)
 File ""src/counting.ml4"", line 59, characters 54-55:
-Error: This expression has type
-         Entries.const_entry_body = Entries.proof_output Future.computation
-       but an expression was expected of type Term.constr = Constr.t
-make: *** [src/counting.cmx] Error 2
-Makefile:327: recipe for target 'src/counting.cmx' failed
 File ""src/counting.ml4"", line 59, characters 54-55:
 Error: This expression has type
          Entries.const_entry_body = Entries.proof_output Future.computation
        but an expression was expected of type Term.constr = Constr.t
-make: *** [src/counting.cmo] Error 2
+Error: This expression has type
+         Entries.const_entry_body = Entries.proof_output Future.computation
+       but an expression was expected of type Term.constr = Constr.t
 Makefile:324: recipe for target 'src/counting.cmo' failed
+make: *** [src/counting.cmo] Error 2
+make: *** [src/counting.cmx] Error 2
+Makefile:327: recipe for target 'src/counting.cmx' failed
 [ERROR] The compilation of coq:counting.1.0.0 failed.
 Removing coq:counting.1.0.0.
   rm -R /.opam/system/lib/coq/user-contrib/Counting
@@ -1202,9 +1202,9 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/Counting': No such file or
 # path                 /.opam/system/build/coq:counting.1.0.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:counting.1.0.0/coq:counting-6967-c61e7b.env
-# stdout-file          /.opam/system/build/coq:counting.1.0.0/coq:counting-6967-c61e7b.out
-# stderr-file          /.opam/system/build/coq:counting.1.0.0/coq:counting-6967-c61e7b.err
+# env-file             /.opam/system/build/coq:counting.1.0.0/coq:counting-6966-c61e7b.env
+# stdout-file          /.opam/system/build/coq:counting.1.0.0/coq:counting-6966-c61e7b.out
+# stderr-file          /.opam/system/build/coq:counting.1.0.0/coq:counting-6966-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Counting -I ""src"" ""tests/TestCounting.v"" > ""tests/TestCounting.v.d"" || ( RV=$?; rm -f ""tests/TestCounting.v.d""; exit ${RV} )
@@ -1215,20 +1215,20 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/Counting': No such file or
 # ocamlopt -c -rectypes -thread  -I ""src"" -I ""/.opam/system/lib/coq/kernel"" -I ""/.opam/system/lib/coq/lib"" -I ""/.opam/system/lib/coq/library"" -I ""/.opam/system/lib/coq/parsing"" -I ""/.opam/system/lib/coq/pretyping"" -I ""/.opam/system/lib/coq/interp"" -I ""/.opam/system/lib/coq/printing"" -I ""/.opam/system/lib/coq/intf"" -I ""/.opam/system/lib/coq/proofs"" -I ""/.opam/system/lib/coq/tactics"" -I ""/.opam/system/lib/coq/tools"" -I ""/.opam/system/lib/coq/toplevel"" -I ""/.opam/system/lib/coq/stm"" -I ""/.opam/system/lib/coq/grammar"" -I ""/.opam/system/lib/coq/config"" -I ""/.opam/system/lib/coq//plugins/Derive"" -I ""/.opam/system/lib/coq//plugins/btauto"" -I ""/.opam/system/lib/coq//plugins/cc"" -I ""/.opam/system/lib/coq//plugins/decl_mode"" -I ""/.opam/system/lib/coq//plugins/extraction"" -I ""/.opam/system/lib/coq//plugins/firstorder"" -I ""/.opam/system/lib/coq//plugins/fourier"" -I ""/.opam/system/lib/coq//plugins/funind"" -I ""/.opam/system/lib/coq//plugins/micromega"" -I ""/.opam/system/lib/coq//plugins/nsatz"" -I ""/.opam/system/lib/coq//plugins/omega"" -I ""/.opam/system/lib/coq//plugins/quote"" -I ""/.opam/system/lib/coq//plugins/romega"" -I ""/.opam/system/lib/coq//plugins/rtauto"" -I ""/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/.opam/system/lib/coq//plugins/syntax"" -I ""/.opam/system/lib/coq//plugins/xml"" -I /.opam/system/lib/camlp5 src/counting_plugin_mod.ml
 # ocamlopt -rectypes -thread  -I ""src"" -I ""/.opam/system/lib/coq/kernel"" -I ""/.opam/system/lib/coq/lib"" -I ""/.opam/system/lib/coq/library"" -I ""/.opam/system/lib/coq/parsing"" -I ""/.opam/system/lib/coq/pretyping"" -I ""/.opam/system/lib/coq/interp"" -I ""/.opam/system/lib/coq/printing"" -I ""/.opam/system/lib/coq/intf"" -I ""/.opam/system/lib/coq/proofs"" -I ""/.opam/system/lib/coq/tactics"" -I ""/.opam/system/lib/coq/tools"" -I ""/.opam/system/lib/coq/toplevel"" -I ""/.opam/system/lib/coq/stm"" -I ""/.opam/system/lib/coq/grammar"" -I ""/.opam/system/lib/coq/config"" -I ""/.opam/system/lib/coq//plugins/Derive"" -I ""/.opam/system/lib/coq//plugins/btauto"" -I ""/.opam/system/lib/coq//plugins/cc"" -I ""/.opam/system/lib/coq//plugins/decl_mode"" -I ""/.opam/system/lib/coq//plugins/extraction"" -I ""/.opam/system/lib/coq//plugins/firstorder"" -I ""/.opam/system/lib/coq//plugins/fourier"" -I ""/.opam/system/lib/coq//plugins/funind"" -I ""/.opam/system/lib/coq//plugins/micromega"" -I ""/.opam/system/lib/coq//plugins/nsatz"" -I ""/.opam/system/lib/coq//plugins/omega"" -I ""/.opam/system/lib/coq//plugins/quote"" -I ""/.opam/system/lib/coq//plugins/romega"" -I ""/.opam/system/lib/coq//plugins/rtauto"" -I ""/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/.opam/system/lib/coq//plugins/syntax"" -I ""/.opam/system/lib/coq//plugins/xml"" -I /.opam/system/lib/camlp5 -shared -o src/counting_plugin_mod.cmxs src/counting_plugin_mod.cmx
 # Makefile:348: recipe for target 'theories/Counting.vo' failed
-# Makefile:327: recipe for target 'src/counting.cmx' failed
 # Makefile:324: recipe for target 'src/counting.cmo' failed
+# Makefile:327: recipe for target 'src/counting.cmx' failed
 ### stderr ###
 # ...[truncated]
+# File ""src/counting.ml4"", line 59, characters 54-55:
 # File ""src/counting.ml4"", line 59, characters 54-55:
 # Error: This expression has type
 #          Entries.const_entry_body = Entries.proof_output Future.computation
 #        but an expression was expected of type Term.constr = Constr.t
-# make: *** [src/counting.cmx] Error 2
-# File ""src/counting.ml4"", line 59, characters 54-55:
 # Error: This expression has type
 #          Entries.const_entry_body = Entries.proof_output Future.computation
 #        but an expression was expected of type Term.constr = Constr.t
 # make: *** [src/counting.cmo] Error 2
+# make: *** [src/counting.cmx] Error 2
 
 'opam install -y --verbose coq:counting.1.0.0' failed.
 ",true,0,0,"","",""
@@ -1286,9 +1286,9 @@ Removing coq:ssreflect.1.5.0.
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7159-ad8886.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7159-ad8886.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7159-ad8886.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7158-ad8886.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7158-ad8886.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7158-ad8886.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
@@ -1362,9 +1362,9 @@ Removing coq:ssreflect.1.5.0.
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7314-d2d111.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7314-d2d111.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7314-d2d111.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7313-d2d111.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7313-d2d111.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-7313-d2d111.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
@@ -1390,7 +1390,7 @@ The following failed
 Due to the errors, the following have been cancelled
  - install   coq:math-comp.1.5.0
 ",true,0,0,"",true,0,0,"","",""
-coq:error-handlers,dev,Error,opam install -y --dry-run coq:error-handlers.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:error-handlers,dev,UninstallError,opam install -y --dry-run coq:error-handlers.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:error-handlers.dev
 === 1 to install ===
@@ -1411,8 +1411,8 @@ Installing coq:error-handlers.dev.
 [coq:error-handlers.dev] Downloading https://github.com/clarus/coq-error-handlers/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    385      0 --:--:-- --:--:-- --:--:--   385
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1604  100  1604    0     0   2335      0 --:--:-- --:--:-- --:--:--  9380
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    375      0 --:--:-- --:--:-- --:--:--   375
+100  1604  100  1604    0     0   2294      0 --:--:-- --:--:-- --:--:--  2294
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1448,7 +1448,7 @@ Building coq:flocq.2.2.0:
   ./remake -j4
   ./remake install
 Installing coq:flocq.2.2.0.
-",true,0,0,"",opam install -y --deps-only coq:flocq.2.2.0,0,1,"",opam install -y --verbose coq:flocq.2.2.0,1024,4,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.2.0,0,1,"",opam install -y --verbose coq:flocq.2.2.0,1024,5,"The following actions will be performed:
  - install   coq:flocq.2.2.0
 === 1 to install ===
 
@@ -1456,7 +1456,7 @@ Installing coq:flocq.2.2.0.
 [coq:flocq.2.2.0] Downloading https://gforge.inria.fr/frs/download.php/32825/flocq-2.2.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   772k      0 --:--:-- --:--:-- --:--:--  774k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  141k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   472k      0 --:--:-- --:--:-- --:--:--  472k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1476,7 +1476,7 @@ checking for coqc... /.opam/system/bin/coqc
 checking for coqdep... /.opam/system/bin/coqdep
 checking for coqdoc... /.opam/system/bin/coqdoc
 configure: building remake...
-/tmp/ccIsWHLC.o: In function `server_mode(std::string const&, std::list<std::string, std::allocator<std::string> > const&)':
+/tmp/ccNSXsO7.o: In function `server_mode(std::string const&, std::list<std::string, std::allocator<std::string> > const&)':
 remake.cpp:(.text+0x7788): warning: the use of `tempnam' is dangerous, better use `mkstemp'
 configure: creating ./config.status
 config.status: creating Remakefile
@@ -1485,22 +1485,22 @@ Building src/Flocq_version.vo
 Building src/Core/Fcore_Raux.vo
 Building src/Core/Fcore_Zaux.vo
 Building src/Core/Fcore_defs.vo
-*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
-*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
 Building src/Core/Fcore_digits.vo
+*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
+*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
 Building src/Core/Fcore_float_prop.vo
 *** Warning: in file src/Core/Fcore_digits.v, library ZOdiv.v is required and has not been found in the loadpath!
 *** Warning: in file src/Core/Fcore_digits.v, library ZOdiv.v is required and has not been found in the loadpath!
 Building src/Core/Fcore_FIX.vo
-Building src/Core/Fcore_FLT.vo
-Warning: Obsolete option ""-dont-load-proofs"".
-Warning: Obsolete option ""-dont-load-proofs"".
 Building src/Core/Fcore_generic_fmt.vo
-Building src/Core/Fcore_FLX.vo
+Warning: Obsolete option ""-dont-load-proofs"".
 Building src/Core/Fcore_rnd.vo
+Warning: Obsolete option ""-dont-load-proofs"".
 Building src/Core/Fcore_rnd_ne.vo
-Building src/Core/Fcore_FTZ.vo
+Building src/Core/Fcore_FLT.vo
 Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore_FLX.vo
+Building src/Core/Fcore_FTZ.vo
 Building src/Core/Fcore.vo
 Building src/Calc/Fcalc_bracket.vo
 Building src/Calc/Fcalc_digits.vo
@@ -1509,8 +1509,8 @@ Building src/Calc/Fcalc_ops.vo
 Building src/Calc/Fcalc_round.vo
 Building src/Calc/Fcalc_sqrt.vo
 Building src/Prop/Fprop_div_sqrt_error.vo
-Building src/Prop/Fprop_mult_error.vo
 Building src/Prop/Fprop_relative.vo
+Building src/Prop/Fprop_mult_error.vo
 Building src/Prop/Fprop_plus_error.vo
 Building src/Prop/Fprop_Sterbenz.vo
 Building src/Appli/Fappli_rnd_odd.vo
@@ -1520,32 +1520,32 @@ File ""./src/Core/Fcore_Zaux.v"", line 21, characters 0-21:
 Error: Cannot find library ZOdiv in loadpath
 Failed to build src/Core/Fcore_Zaux.vo
 Failed to build all
-Failed to build src/Core/Fcore_Raux.vo
 Failed to build src/Core/Fcore_digits.vo
+Failed to build src/Core/Fcore_Raux.vo
+Failed to build src/Prop/Fprop_Sterbenz.vo
 Failed to build src/Appli/Fappli_IEEE.vo
 Failed to build src/Prop/Fprop_plus_error.vo
-Failed to build src/Prop/Fprop_Sterbenz.vo
 Failed to build src/Appli/Fappli_IEEE_bits.vo
+Failed to build src/Calc/Fcalc_sqrt.vo
 Failed to build src/Calc/Fcalc_round.vo
 Failed to build src/Calc/Fcalc_ops.vo
-Failed to build src/Calc/Fcalc_sqrt.vo
 Failed to build src/Calc/Fcalc_div.vo
 Failed to build src/Calc/Fcalc_digits.vo
-Failed to build src/Appli/Fappli_rnd_odd.vo
-Failed to build src/Prop/Fprop_mult_error.vo
-Failed to build src/Prop/Fprop_div_sqrt_error.vo
 Failed to build src/Calc/Fcalc_bracket.vo
+Failed to build src/Prop/Fprop_mult_error.vo
+Failed to build src/Appli/Fappli_rnd_odd.vo
 Failed to build src/Core/Fcore.vo
+Failed to build src/Prop/Fprop_div_sqrt_error.vo
 Failed to build src/Core/Fcore_ulp.vo
 Failed to build src/Core/Fcore_FTZ.vo
-Failed to build src/Core/Fcore_rnd_ne.vo
-Failed to build src/Prop/Fprop_relative.vo
-Failed to build src/Core/Fcore_generic_fmt.vo
-Failed to build src/Core/Fcore_rnd.vo
-Failed to build src/Core/Fcore_FLX.vo
 Failed to build src/Core/Fcore_FLT.vo
+Failed to build src/Core/Fcore_FLX.vo
+Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Core/Fcore_rnd.vo
 Failed to build src/Core/Fcore_float_prop.vo
 Failed to build src/Core/Fcore_FIX.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
 Failed to build src/Core/Fcore_defs.vo
 [ERROR] The compilation of coq:flocq.2.2.0 failed.
 Removing coq:flocq.2.2.0.
@@ -1559,16 +1559,16 @@ Removing coq:flocq.2.2.0.
 # path                 /.opam/system/build/coq:flocq.2.2.0
 # compiler             system (4.02.0)
 # exit-code            1
-# env-file             /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7711-c61e7b.env
-# stdout-file          /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7711-c61e7b.out
-# stderr-file          /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7711-c61e7b.err
+# env-file             /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7710-c61e7b.env
+# stdout-file          /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7710-c61e7b.out
+# stderr-file          /.opam/system/build/coq:flocq.2.2.0/coq:flocq-7710-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Building src/Calc/Fcalc_round.vo
 # Building src/Calc/Fcalc_sqrt.vo
 # Building src/Prop/Fprop_div_sqrt_error.vo
-# Building src/Prop/Fprop_mult_error.vo
 # Building src/Prop/Fprop_relative.vo
+# Building src/Prop/Fprop_mult_error.vo
 # Building src/Prop/Fprop_plus_error.vo
 # Building src/Prop/Fprop_Sterbenz.vo
 # Building src/Appli/Fappli_rnd_odd.vo
@@ -1577,14 +1577,14 @@ Removing coq:flocq.2.2.0.
 ### stderr ###
 # ...[truncated]
 # Failed to build src/Core/Fcore_FTZ.vo
-# Failed to build src/Core/Fcore_rnd_ne.vo
-# Failed to build src/Prop/Fprop_relative.vo
-# Failed to build src/Core/Fcore_generic_fmt.vo
-# Failed to build src/Core/Fcore_rnd.vo
-# Failed to build src/Core/Fcore_FLX.vo
 # Failed to build src/Core/Fcore_FLT.vo
+# Failed to build src/Core/Fcore_FLX.vo
+# Failed to build src/Prop/Fprop_relative.vo
+# Failed to build src/Core/Fcore_rnd_ne.vo
+# Failed to build src/Core/Fcore_rnd.vo
 # Failed to build src/Core/Fcore_float_prop.vo
 # Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_generic_fmt.vo
 # Failed to build src/Core/Fcore_defs.vo
 
 'opam install -y --verbose coq:flocq.2.2.0' failed.
@@ -1602,7 +1602,7 @@ Building coq:flocq.2.3.0:
   ./remake -j4
   ./remake install
 Installing coq:flocq.2.3.0.
-",true,0,0,"",opam install -y --deps-only coq:flocq.2.3.0,0,1,"",opam install -y --verbose coq:flocq.2.3.0,1024,16,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.3.0,0,1,"",opam install -y --verbose coq:flocq.2.3.0,1024,17,"The following actions will be performed:
  - install   coq:flocq.2.3.0
 === 1 to install ===
 
@@ -1610,7 +1610,7 @@ Installing coq:flocq.2.3.0.
 [coq:flocq.2.3.0] Downloading https://gforge.inria.fr/frs/download.php/33502/flocq-2.3.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  151k  100  151k    0     0   885k      0 --:--:-- --:--:-- --:--:--  887k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  151k  100  151k    0     0   543k      0 --:--:-- --:--:-- --:--:--  544k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1630,7 +1630,7 @@ checking for coqc... /.opam/system/bin/coqc
 checking for coqdep... /.opam/system/bin/coqdep
 checking for coqdoc... /.opam/system/bin/coqdoc
 configure: building remake...
-/tmp/ccG5wg7g.o: In function `main':
+/tmp/ccy057OO.o: In function `main':
 remake.cpp:(.text.startup+0x774): warning: the use of `tempnam' is dangerous, better use `mkstemp'
 configure: creating ./config.status
 config.status: creating Remakefile
@@ -1649,8 +1649,8 @@ Building src/Core/Fcore_generic_fmt.vo
 Building src/Core/Fcore_FLX.vo
 Building src/Core/Fcore_rnd.vo
 Building src/Core/Fcore_rnd_ne.vo
-Building src/Core/Fcore_FTZ.vo
 Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore_FTZ.vo
 Building src/Core/Fcore.vo
 Building src/Calc/Fcalc_bracket.vo
 Building src/Calc/Fcalc_digits.vo
@@ -1659,8 +1659,8 @@ Building src/Calc/Fcalc_ops.vo
 Building src/Calc/Fcalc_round.vo
 Building src/Calc/Fcalc_sqrt.vo
 Building src/Prop/Fprop_div_sqrt_error.vo
-Building src/Prop/Fprop_relative.vo
 Building src/Prop/Fprop_mult_error.vo
+Building src/Prop/Fprop_relative.vo
 Building src/Prop/Fprop_plus_error.vo
 Building src/Prop/Fprop_Sterbenz.vo
 Building src/Appli/Fappli_rnd_odd.vo
@@ -1687,24 +1687,24 @@ H3 : bound (rnd x)
 The term ""completeness (rnd x) H3 H1"" has type ""{m : R | is_lub (rnd x) m}""
 while it is expected to have type ""{x : ?A & ?P x}"".
 Failed to build src/Core/Fcore_rnd.vo
-Failed to build src/Core/Fcore_FTZ.vo
-Failed to build src/Core/Fcore_ulp.vo
 Failed to build src/Core/Fcore.vo
+Failed to build src/Core/Fcore_ulp.vo
+Failed to build src/Core/Fcore_FTZ.vo
+Failed to build src/Appli/Fappli_IEEE_bits.vo
 Failed to build src/Appli/Fappli_IEEE.vo
 Failed to build src/Appli/Fappli_rnd_odd.vo
-Failed to build src/Appli/Fappli_IEEE_bits.vo
-Failed to build src/Prop/Fprop_div_sqrt_error.vo
 Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Prop/Fprop_div_sqrt_error.vo
 Failed to build src/Prop/Fprop_mult_error.vo
-Failed to build src/Core/Fcore_generic_fmt.vo
-Failed to build src/Core/Fcore_rnd_ne.vo
 Failed to build src/Calc/Fcalc_round.vo
 Failed to build src/Core/Fcore_FLX.vo
-Failed to build src/Prop/Fprop_plus_error.vo
-Failed to build src/Prop/Fprop_Sterbenz.vo
-Failed to build all
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
 Failed to build src/Core/Fcore_FLT.vo
 Failed to build src/Core/Fcore_FIX.vo
+Failed to build all
+Failed to build src/Prop/Fprop_plus_error.vo
+Failed to build src/Prop/Fprop_Sterbenz.vo
 Finished src/Core/Fcore_float_prop.vo
 Warning: Obsolete option ""-dont-load-proofs"".
 Warning: Obsolete option ""-dont-load-proofs"".
@@ -1728,9 +1728,9 @@ Removing coq:flocq.2.3.0.
 # path                 /.opam/system/build/coq:flocq.2.3.0
 # compiler             system (4.02.0)
 # exit-code            1
-# env-file             /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8291-c61e7b.env
-# stdout-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8291-c61e7b.out
-# stderr-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8291-c61e7b.err
+# env-file             /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8290-c61e7b.env
+# stdout-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8290-c61e7b.out
+# stderr-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-8290-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Finished src/Core/Fcore_Zaux.vo
@@ -1745,11 +1745,11 @@ Removing coq:flocq.2.3.0.
 # Finished src/Calc/Fcalc_div.vo
 ### stderr ###
 # ...[truncated]
-# Failed to build src/Prop/Fprop_plus_error.vo
-# Failed to build src/Prop/Fprop_Sterbenz.vo
-# Failed to build all
 # Failed to build src/Core/Fcore_FLT.vo
 # Failed to build src/Core/Fcore_FIX.vo
+# Failed to build all
+# Failed to build src/Prop/Fprop_plus_error.vo
+# Failed to build src/Prop/Fprop_Sterbenz.vo
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
@@ -1771,7 +1771,7 @@ Building coq:flocq.2.4.0:
   ./remake -j4
   ./remake install
 Installing coq:flocq.2.4.0.
-",true,0,0,"",opam install -y --deps-only coq:flocq.2.4.0,0,1,"",opam install -y --verbose coq:flocq.2.4.0,1024,16,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.4.0,0,1,"",opam install -y --verbose coq:flocq.2.4.0,1024,18,"The following actions will be performed:
  - install   coq:flocq.2.4.0
 === 1 to install ===
 
@@ -1779,7 +1779,7 @@ Installing coq:flocq.2.4.0.
 [coq:flocq.2.4.0] Downloading https://gforge.inria.fr/frs/download.php/file/33979/flocq-2.4.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  187k  100  187k    0     0   985k      0 --:--:-- --:--:-- --:--:--  991k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  187k  100  187k    0     0   148k      0  0:00:01  0:00:01 --:--:--  148k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1799,7 +1799,7 @@ checking for coqc... /.opam/system/bin/coqc
 checking for coqdep... /.opam/system/bin/coqdep
 checking for coqdoc... /.opam/system/bin/coqdoc
 configure: building remake...
-/tmp/ccDS4vUf.o: In function `main':
+/tmp/ccaK5C21.o: In function `main':
 remake.cpp:(.text.startup+0x774): warning: the use of `tempnam' is dangerous, better use `mkstemp'
 configure: creating ./config.status
 config.status: creating Remakefile
@@ -1811,15 +1811,15 @@ Building src/Core/Fcore_defs.vo
 Building src/Core/Fcore_digits.vo
 Building src/Core/Fcore_float_prop.vo
 Building src/Core/Fcore_FIX.vo
-Building src/Core/Fcore_FLT.vo
 Warning: Obsolete option ""-dont-load-proofs"".
 Warning: Obsolete option ""-dont-load-proofs"".
 Building src/Core/Fcore_generic_fmt.vo
-Building src/Core/Fcore_FLX.vo
 Building src/Core/Fcore_rnd.vo
 Building src/Core/Fcore_rnd_ne.vo
-Building src/Core/Fcore_FTZ.vo
+Building src/Core/Fcore_FLT.vo
 Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore_FLX.vo
+Building src/Core/Fcore_FTZ.vo
 Building src/Core/Fcore.vo
 Building src/Calc/Fcalc_bracket.vo
 Building src/Calc/Fcalc_digits.vo
@@ -1828,8 +1828,8 @@ Building src/Calc/Fcalc_ops.vo
 Building src/Calc/Fcalc_round.vo
 Building src/Calc/Fcalc_sqrt.vo
 Building src/Prop/Fprop_div_sqrt_error.vo
-Building src/Prop/Fprop_relative.vo
 Building src/Prop/Fprop_mult_error.vo
+Building src/Prop/Fprop_relative.vo
 Building src/Prop/Fprop_plus_error.vo
 Building src/Prop/Fprop_Sterbenz.vo
 Building src/Appli/Fappli_rnd_odd.vo
@@ -1857,25 +1857,25 @@ H3 : bound (rnd x)
 The term ""completeness (rnd x) H3 H1"" has type ""{m : R | is_lub (rnd x) m}""
 while it is expected to have type ""{x : ?A & ?P x}"".
 Failed to build src/Core/Fcore_rnd.vo
-Failed to build src/Core/Fcore_ulp.vo
+Failed to build src/Core/Fcore_FLX.vo
 Failed to build src/Core/Fcore_FTZ.vo
 Failed to build src/Core/Fcore.vo
+Failed to build src/Appli/Fappli_double_round.vo
 Failed to build src/Appli/Fappli_IEEE_bits.vo
 Failed to build src/Appli/Fappli_IEEE.vo
-Failed to build src/Appli/Fappli_double_round.vo
-Failed to build src/Appli/Fappli_rnd_odd.vo
-Failed to build src/Prop/Fprop_mult_error.vo
 Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Prop/Fprop_plus_error.vo
+Failed to build src/Appli/Fappli_rnd_odd.vo
 Failed to build src/Prop/Fprop_div_sqrt_error.vo
 Failed to build src/Calc/Fcalc_round.vo
-Failed to build src/Core/Fcore_rnd_ne.vo
-Failed to build src/Core/Fcore_generic_fmt.vo
-Failed to build src/Core/Fcore_FLX.vo
+Failed to build src/Prop/Fprop_mult_error.vo
 Failed to build src/Core/Fcore_FLT.vo
-Failed to build src/Prop/Fprop_plus_error.vo
-Failed to build src/Prop/Fprop_Sterbenz.vo
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Core/Fcore_ulp.vo
 Failed to build all
 Failed to build src/Core/Fcore_FIX.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
+Failed to build src/Prop/Fprop_Sterbenz.vo
 Finished src/Core/Fcore_float_prop.vo
 Warning: Obsolete option ""-dont-load-proofs"".
 Warning: Obsolete option ""-dont-load-proofs"".
@@ -1899,9 +1899,9 @@ Removing coq:flocq.2.4.0.
 # path                 /.opam/system/build/coq:flocq.2.4.0
 # compiler             system (4.02.0)
 # exit-code            1
-# env-file             /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8889-c61e7b.env
-# stdout-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8889-c61e7b.out
-# stderr-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8889-c61e7b.err
+# env-file             /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8888-c61e7b.env
+# stdout-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8888-c61e7b.out
+# stderr-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-8888-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Finished src/Core/Fcore_Zaux.vo
@@ -1916,11 +1916,11 @@ Removing coq:flocq.2.4.0.
 # Finished src/Calc/Fcalc_div.vo
 ### stderr ###
 # ...[truncated]
-# Failed to build src/Core/Fcore_FLT.vo
-# Failed to build src/Prop/Fprop_plus_error.vo
-# Failed to build src/Prop/Fprop_Sterbenz.vo
+# Failed to build src/Core/Fcore_ulp.vo
 # Failed to build all
 # Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_generic_fmt.vo
+# Failed to build src/Prop/Fprop_Sterbenz.vo
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
@@ -1983,9 +1983,9 @@ Removing coq:ssreflect.1.5.0.
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9484-ad8886.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9484-ad8886.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9484-ad8886.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9483-ad8886.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9483-ad8886.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9483-ad8886.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
@@ -2033,8 +2033,8 @@ Installing coq:function-ninjas.1.0-beta0.
 [coq:function-ninjas.1.0-beta0] Downloading https://github.com/clarus/coq-function-ninjas/archive/beta0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    339      0 --:--:-- --:--:-- --:--:--   338
-100  1685  100  1685    0     0   2074      0 --:--:-- --:--:-- --:--:--  2074
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    366      0 --:--:-- --:--:-- --:--:--   367
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0  1685    0     0   2264      0 --:--:-- --:--:-- --:--:-- 11085
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2081,8 +2081,8 @@ Installing coq:function-ninjas.1.0.0.
 [coq:function-ninjas.1.0.0] Downloading https://github.com/clarus/coq-function-ninjas/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    353      0 --:--:-- --:--:-- --:--:--   354
-100  1687  100  1687    0     0   2343      0 --:--:-- --:--:-- --:--:--  2343
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    376      0 --:--:-- --:--:-- --:--:--   376
+100  1687  100  1687    0     0   2306      0 --:--:-- --:--:-- --:--:--  2306
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2106,7 +2106,7 @@ Copying ~/.opam/packages/coq:function-ninjas/coq:function-ninjas.1.0.0/files/coq
 Removing coq:function-ninjas.1.0.0.
   rm -R /.opam/system/lib/coq/user-contrib/FunctionNinjas
 ","",""
-coq:function-ninjas,dev,Error,opam install -y --dry-run coq:function-ninjas.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:function-ninjas,dev,UninstallError,opam install -y --dry-run coq:function-ninjas.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:function-ninjas.dev
 === 1 to install ===
@@ -2127,8 +2127,8 @@ Installing coq:function-ninjas.dev.
 [coq:function-ninjas.dev] Downloading https://github.com/clarus/coq-function-ninjas/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   134    0   134    0     0    376      0 --:--:-- --:--:-- --:--:--   376
-100  1684  100  1684    0     0   2361      0 --:--:-- --:--:-- --:--:--  2361
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   134    0   134    0     0    320      0 --:--:-- --:--:-- --:--:--   319
+100  1684  100  1684    0     0   2040      0 --:--:-- --:--:-- --:--:--  2040
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2194,9 +2194,9 @@ Removing coq:flocq.2.3.0.
 # path                 /.opam/system/build/coq:flocq.2.3.0
 # compiler             system (4.02.0)
 # exit-code            1
-# env-file             /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10346-c61e7b.env
-# stdout-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10346-c61e7b.out
-# stderr-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10346-c61e7b.err
+# env-file             /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10345-c61e7b.env
+# stdout-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10345-c61e7b.out
+# stderr-file          /.opam/system/build/coq:flocq.2.3.0/coq:flocq-10345-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Finished src/Core/Fcore_Zaux.vo
@@ -2204,18 +2204,18 @@ Removing coq:flocq.2.3.0.
 # Finished src/Core/Fcore_Raux.vo
 # Finished src/Core/Fcore_defs.vo
 # Finished src/Core/Fcore_float_prop.vo
-# Finished src/Calc/Fcalc_digits.vo
 # Finished src/Calc/Fcalc_ops.vo
+# Finished src/Calc/Fcalc_digits.vo
 # Finished src/Calc/Fcalc_bracket.vo
 # Finished src/Calc/Fcalc_sqrt.vo
 # Finished src/Calc/Fcalc_div.vo
 ### stderr ###
 # ...[truncated]
-# Failed to build src/Prop/Fprop_plus_error.vo
 # Failed to build src/Core/Fcore_FLX.vo
+# Failed to build src/Prop/Fprop_plus_error.vo
 # Failed to build all
-# Failed to build src/Core/Fcore_FLT.vo
 # Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_FLT.vo
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
@@ -2266,9 +2266,9 @@ Removing coq:flocq.2.4.0.
 # path                 /.opam/system/build/coq:flocq.2.4.0
 # compiler             system (4.02.0)
 # exit-code            1
-# env-file             /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10895-c61e7b.env
-# stdout-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10895-c61e7b.out
-# stderr-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10895-c61e7b.err
+# env-file             /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10894-c61e7b.env
+# stdout-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10894-c61e7b.out
+# stderr-file          /.opam/system/build/coq:flocq.2.4.0/coq:flocq-10894-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Finished src/Core/Fcore_Zaux.vo
@@ -2276,17 +2276,17 @@ Removing coq:flocq.2.4.0.
 # Finished src/Core/Fcore_Raux.vo
 # Finished src/Core/Fcore_defs.vo
 # Finished src/Core/Fcore_float_prop.vo
-# Finished src/Calc/Fcalc_digits.vo
 # Finished src/Calc/Fcalc_ops.vo
+# Finished src/Calc/Fcalc_digits.vo
 # Finished src/Calc/Fcalc_bracket.vo
 # Finished src/Calc/Fcalc_sqrt.vo
 # Finished src/Calc/Fcalc_div.vo
 ### stderr ###
 # ...[truncated]
-# Failed to build src/Core/Fcore_FLT.vo
-# Failed to build src/Prop/Fprop_Sterbenz.vo
-# Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_FLX.vo
 # Failed to build src/Prop/Fprop_plus_error.vo
+# Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Prop/Fprop_Sterbenz.vo
 # Failed to build all
 # Warning: Obsolete option ""-dont-load-proofs"".
 # Warning: Obsolete option ""-dont-load-proofs"".
@@ -2295,7 +2295,7 @@ Removing coq:flocq.2.4.0.
 # Warning: Obsolete option ""-dont-load-proofs"".
 
 ",true,0,0,"",true,0,0,"","",""
-coq:iterable,dev,Error,opam install -y --dry-run coq:iterable.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:iterable,dev,UninstallError,opam install -y --dry-run coq:iterable.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:function-ninjas.dev               [required by coq:iterable]
  - install   coq:iterable.dev
@@ -2335,8 +2335,8 @@ Installing coq:function-ninjas.dev.
 [coq:iterable.dev] Downloading https://github.com/clarus/coq-iterable/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   127    0   127    0     0    364      0 --:--:-- --:--:-- --:--:--   364
- 43  1958   43   855    0     0   1187      0  0:00:01 --:--:--  0:00:01  1187100  1958  100  1958    0     0   2718      0 --:--:-- --:--:-- --:--:-- 1077k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   127    0   127    0     0    357      0 --:--:-- --:--:-- --:--:--   357
+100  1958  100  1958    0     0   2742      0 --:--:-- --:--:-- --:--:--  2742
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2380,8 +2380,8 @@ Installing coq:list-string.0.0.1.
 [coq:list-string.0.0.1] Downloading https://github.com/clarus/coq-list-string/archive/0.0.1.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    359      0 --:--:-- --:--:-- --:--:--   359
-100  2814  100  2814    0     0   3886      0 --:--:-- --:--:-- --:--:--  3886
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    349      0 --:--:-- --:--:-- --:--:--   350
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2814  100  2814    0     0   3724      0 --:--:-- --:--:-- --:--:-- 14284
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2432,8 +2432,8 @@ Installing coq:list-string.1.0.0.
 [coq:list-string.1.0.0] Downloading https://github.com/clarus/coq-list-string/archive/1.0.0.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    358      0 --:--:-- --:--:-- --:--:--   359
-100  6919  100  6919    0     0   9081      0 --:--:-- --:--:-- --:--:--  9081
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    324      0 --:--:-- --:--:-- --:--:--   324
+100  6919  100  6919    0     0   8772      0 --:--:-- --:--:-- --:--:--  8772
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2471,9 +2471,9 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/ListString': No such file 
 # path                 /.opam/system/build/coq:list-string.1.0.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12014-c61e7b.env
-# stdout-file          /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12014-c61e7b.out
-# stderr-file          /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12014-c61e7b.err
+# env-file             /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12013-c61e7b.env
+# stdout-file          /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12013-c61e7b.out
+# stderr-file          /.opam/system/build/coq:list-string.1.0.0/coq:list-string-12013-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""."" ListString ""Comparison.v"" > ""Comparison.v.d"" || ( RV=$?; rm -f ""Comparison.v.d""; exit ${RV} )
@@ -2493,7 +2493,7 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/ListString': No such file 
 
 'opam install -y --verbose coq:list-string.1.0.0' failed.
 ",true,0,0,"","",""
-coq:list-string,dev,Error,opam install -y --dry-run coq:list-string.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:list-string,dev,UninstallError,opam install -y --dry-run coq:list-string.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:list-string.dev
 === 1 to install ===
@@ -2514,8 +2514,8 @@ Installing coq:list-string.dev.
 [coq:list-string.dev] Downloading https://github.com/clarus/coq-list-string/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    372      0 --:--:-- --:--:-- --:--:--   372
- 11  7600   11   852    0     0   1235      0  0:00:06 --:--:--  0:00:06  1235100  7600  100  7600    0     0  11013      0 --:--:-- --:--:-- --:--:-- 6589k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    343      0 --:--:-- --:--:-- --:--:--   343
+ 11  7600   11   852    0     0   1112      0  0:00:06 --:--:--  0:00:06  1112100  7600  100  7600    0     0   9919      0 --:--:-- --:--:-- --:--:-- 6589k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2629,9 +2629,9 @@ Removing coq:ssreflect.1.5.0.
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12555-c61e7b.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12555-c61e7b.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12555-c61e7b.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12554-c61e7b.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12554-c61e7b.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-12554-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
@@ -2676,7 +2676,7 @@ Building coq:moment.dev:
   make -j4
   make install
 Installing coq:moment.dev.
-",true,0,0,"",opam install -y --deps-only coq:moment.dev,0,5,"The following actions will be performed:
+",true,0,0,"",opam install -y --deps-only coq:moment.dev,0,6,"The following actions will be performed:
  - install   coq:function-ninjas.dev               [required by coq:moment]
  - install   coq:list-string.dev                   [required by coq:moment]
 === 2 to install ===
@@ -2704,8 +2704,8 @@ Installing coq:list-string.dev.
 [coq:moment.dev] Downloading https://github.com/clarus/coq-moment/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   125    0   125    0     0    356      0 --:--:-- --:--:-- --:--:--   356
-  0     0    0  6234    0     0   8840      0 --:--:-- --:--:-- --:--:--  8840
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   125    0   125    0     0    275      0 --:--:-- --:--:-- --:--:--   275
+100  6234  100  6234    0     0   6826      0 --:--:-- --:--:-- --:--:--  6826
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2737,9 +2737,9 @@ Removing coq:moment.dev.
 # path                 /.opam/system/build/coq:moment.dev
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:moment.dev/coq:moment-12924-c61e7b.env
-# stdout-file          /.opam/system/build/coq:moment.dev/coq:moment-12924-c61e7b.out
-# stderr-file          /.opam/system/build/coq:moment.dev/coq:moment-12924-c61e7b.err
+# env-file             /.opam/system/build/coq:moment.dev/coq:moment-12922-c61e7b.env
+# stdout-file          /.opam/system/build/coq:moment.dev/coq:moment-12922-c61e7b.out
+# stderr-file          /.opam/system/build/coq:moment.dev/coq:moment-12922-c61e7b.err
 ### stdout ###
 # ""coqdep"" -c -R ""."" Moment ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
 # ""coqdep"" -c -R ""."" Moment ""Date.v"" > ""Date.v.d"" || ( RV=$?; rm -f ""Date.v.d""; exit ${RV} )
@@ -2757,7 +2757,7 @@ Removing coq:moment.dev.
 
 'opam install -y --verbose coq:moment.dev' failed.
 ",true,0,0,"","",""
-coq:monad,dev,Error,opam install -y --dry-run coq:monad.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
+coq:monad,dev,UninstallError,opam install -y --dry-run coq:monad.dev coq.dev,0,1,"[NOTE] Package coq is already installed (current version is dev).
 The following actions will be performed:
  - install   coq:monad.dev
 === 1 to install ===
@@ -2778,8 +2778,8 @@ Installing coq:monad.dev.
 [coq:monad.dev] Downloading https://github.com/clarus/coq-monad/archive/master.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   124    0   124    0     0    352      0 --:--:-- --:--:-- --:--:--   352
-  0     0    0  1224    0     0   1725      0 --:--:-- --:--:-- --:--:--  1725
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   124    0   124    0     0    330      0 --:--:-- --:--:-- --:--:--   329
+  0     0    0  1224    0     0   1648      0 --:--:-- --:--:-- --:--:--  1648
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2822,7 +2822,7 @@ Installing coq:ssreflect.1.5.0.
 [coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  212k  100  212k    0     0  7815k      0 --:--:-- --:--:-- --:--:-- 7878k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  212k  100  212k    0     0  5929k      0 --:--:-- --:--:-- --:--:-- 6077k
 200
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2849,11 +2849,11 @@ ocamldep -slash -I ""src"" ""src/ssrmatching.mli"" > ""src/ssrmatching.mli.d"" |
 ocamlc -c -rectypes -thread  -I ""src"" -I ""/.opam/system/lib/coq/kernel"" -I ""/.opam/system/lib/coq/lib"" -I ""/.opam/system/lib/coq/library"" -I ""/.opam/system/lib/coq/parsing"" -I ""/.opam/system/lib/coq/pretyping"" -I ""/.opam/system/lib/coq/interp"" -I ""/.opam/system/lib/coq/printing"" -I ""/.opam/system/lib/coq/intf"" -I ""/.opam/system/lib/coq/proofs"" -I ""/.opam/system/lib/coq/tactics"" -I ""/.opam/system/lib/coq/tools"" -I ""/.opam/system/lib/coq/toplevel"" -I ""/.opam/system/lib/coq/stm"" -I ""/.opam/system/lib/coq/grammar"" -I ""/.opam/system/lib/coq/config"" -I ""/.opam/system/lib/coq//plugins/Derive"" -I ""/.opam/system/lib/coq//plugins/btauto"" -I ""/.opam/system/lib/coq//plugins/cc"" -I ""/.opam/system/lib/coq//plugins/decl_mode"" -I ""/.opam/system/lib/coq//plugins/extraction"" -I ""/.opam/system/lib/coq//plugins/firstorder"" -I ""/.opam/system/lib/coq//plugins/fourier"" -I ""/.opam/system/lib/coq//plugins/funind"" -I ""/.opam/system/lib/coq//plugins/micromega"" -I ""/.opam/system/lib/coq//plugins/nsatz"" -I ""/.opam/system/lib/coq//plugins/omega"" -I ""/.opam/system/lib/coq//plugins/quote"" -I ""/.opam/system/lib/coq//plugins/romega"" -I ""/.opam/system/lib/coq//plugins/rtauto"" -I ""/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/.opam/system/lib/coq//plugins/syntax"" -I ""/.opam/system/lib/coq//plugins/xml"" -I /.opam/system/lib/camlp5 src/ssrmatching.mli
 File ""src/ssrmatching.mli"", line 76, characters 14-34:
 Error: Unbound type constructor glob_constr_and_expr
-make[1]: *** [src/ssrmatching.cmi] Error 2
 Makefile.coq:337: recipe for target 'src/ssrmatching.cmi' failed
 make[1]: Leaving directory '/.opam/system/build/coq:ssreflect.1.5.0'
-make: *** [all] Error 2
+make[1]: *** [src/ssrmatching.cmi] Error 2
 Makefile:8: recipe for target 'all' failed
+make: *** [all] Error 2
 [ERROR] The compilation of coq:ssreflect.1.5.0 failed.
 Removing coq:ssreflect.1.5.0.
   rm -R /.opam/system/lib/coq/user-contrib/SSreflect
@@ -2867,9 +2867,9 @@ rm: cannot remove '/.opam/system/lib/coq/user-contrib/SSreflect': No such file o
 # path                 /.opam/system/build/coq:ssreflect.1.5.0
 # compiler             system (4.02.0)
 # exit-code            2
-# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13322-c61e7b.env
-# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13322-c61e7b.out
-# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13322-c61e7b.err
+# env-file             /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13320-c61e7b.env
+# stdout-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13320-c61e7b.out
+# stderr-file          /.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-13320-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # ""coqdep"" -c -R ""theories"" Ssreflect -I ""src"" ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
