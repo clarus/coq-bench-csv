@@ -1,0 +1,1765 @@
+Name,Version,Status,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:compcert,2.0.0,Error,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.0.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:compcert.2.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:compcert.2.0.0:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.0.0.
+",true,0,0,"",opam install -y --deps-only coq:compcert.2.0.0,0,1,"",opam install -y --verbose coq:compcert.2.0.0,1024,3,"The following actions will be performed:
+ - install   coq:compcert.2.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:compcert.2.0.0] Downloading http://compcert.inria.fr/release/compcert-2.0.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2047k  100 2047k    0     0  8223k      0 --:--:-- --:--:-- --:--:-- 8254k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:compcert/coq:compcert.2.0.0/files/coq:compcert.install to ~/.opam/system/build/coq:compcert.2.0.0/
+Building coq:compcert.2.0.0:
+  ./configure ia32-linux
+  make -j4
+Testing assembler support for CFI directives... yes
+
+CompCert configuration:
+    Target architecture........... ia32
+    Application binary interface.. standard
+    OS and development env........ linux
+    C compiler.................... gcc -m32
+    C preprocessor................ gcc -m32 -U__GNUC__ -E
+    Assembler..................... gcc -m32 -c
+    Assembler supports CFI........ true
+    Assembler for runtime lib..... gcc -m32 -c
+    Linker........................ gcc -m32
+    Math library.................. -lm
+    Binaries installed in......... /usr/local/bin
+    Runtime library provided...... true
+    Library files installed in.... /usr/local/lib/compcert
+    cchecklink tool supported..... false
+
+If anything above looks wrong, please edit file ./Makefile.config to correct.
+
+make proof
+make[1]: Entering directory `/home/bench/.opam/system/build/coq:compcert.2.0.0'
+COQC lib/Axioms.v
+COQC lib/Coqlib.v
+ocamlopt -o tools/ndfun str.cmxa tools/ndfun.ml
+COQC flocq/Core/Fcore_Zaux.v
+COQC lib/Wfsimpl.v
+Preprocessing ia32/SelectOp.vp
+Preprocessing backend/SelectLong.vp
+Preprocessing ia32/ConstpropOp.vp
+File ""./flocq/Core/Fcore_Zaux.v"", line 21, characters 0-21:
+Error: Cannot find library ZOdiv in loadpath
+make[1]: *** [flocq/Core/Fcore_Zaux.vo] Error 1
+make[1]: *** Waiting for unfinished jobs....
+File ""./lib/Coqlib.v"", line 572, characters 8-25:
+Error:
+In environment
+c : Z
+H : 0 < c
+x : Z
+y : Z
+H0 : 0 <= x * c
+H1 : x * c < y * c
+Unable to unify ""(?1961 * ?1963 ?= ?1962 * ?1963) = Gt -> False"" with
+ ""(0 ?= y) = Lt"".
+make[1]: *** [lib/Coqlib.vo] Error 1
+make[1]: Leaving directory `/home/bench/.opam/system/build/coq:compcert.2.0.0'
+make: *** [all] Error 2
+[ERROR] The compilation of coq:compcert.2.0.0 failed.
+Removing coq:compcert.2.0.0.
+  Nothing to do.
+
+
+#=== ERROR while installing coq:compcert.2.0.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:compcert.2.0.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-304-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-304-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-304-ad8886.err
+### stdout ###
+# ...[truncated]
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:compcert.2.0.0'
+# COQC lib/Axioms.v
+# COQC lib/Coqlib.v
+# ocamlopt -o tools/ndfun str.cmxa tools/ndfun.ml
+# COQC flocq/Core/Fcore_Zaux.v
+# COQC lib/Wfsimpl.v
+# Preprocessing ia32/SelectOp.vp
+# Preprocessing backend/SelectLong.vp
+# Preprocessing ia32/ConstpropOp.vp
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:compcert.2.0.0'
+### stderr ###
+# ...[truncated]
+# c : Z
+# H : 0 < c
+# x : Z
+# y : Z
+# H0 : 0 <= x * c
+# H1 : x * c < y * c
+# Unable to unify ""(?1961 * ?1963 ?= ?1962 * ?1963) = Gt -> False"" with
+#  ""(0 ?= y) = Lt"".
+# make[1]: *** [lib/Coqlib.vo] Error 1
+# make: *** [all] Error 2
+
+'opam install -y --verbose coq:compcert.2.0.0' failed.
+",true,0,0,"","","",""
+coq:compcert,2.3.2,Error,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.3.2,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.3.2 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   menhir.20140422                       [required by coq:compcert]
+ - install   coq:compcert.2.3.2
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+Building coq:compcert.2.3.2:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.3.2.
+",true,0,0,"",opam install -y --deps-only coq:compcert.2.3.2,0,16,"The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   menhir.20140422                       [required by coq:compcert]
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[default] Downloading https://opam.ocaml.org/archives/menhir.20140422+opam.tar.gz
+[default] Downloading https://opam.ocaml.org/archives/ocamlfind.1.5.5+opam.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+",opam install -y --verbose coq:compcert.2.3.2,1024,1,"The following actions will be performed:
+ - install   coq:compcert.2.3.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:compcert.2.3.2] Downloading http://compcert.inria.fr/release/compcert-2.3pl2.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 99 2365k   99 2361k    0     0  9281k      0 --:--:-- --:--:-- --:--:-- 9259k100 2365k  100 2365k    0     0  9286k      0 --:--:-- --:--:-- --:--:-- 9277k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:compcert/coq:compcert.2.3.2/files/coq:compcert.install to ~/.opam/system/build/coq:compcert.2.3.2/
+Building coq:compcert.2.3.2:
+  ./configure ia32-linux
+  make -j4
+Testing assembler support for CFI directives... yes
+Testing Coq... NOT FOUND
+Error: make sure Coq version 8.4pl3 is installed.
+Testing OCaml... version 4.01.0 -- good!
+Testing Menhir... version 20140422 -- good!
+One or several required tools are missing or too old.  Aborting.
+[ERROR] The compilation of coq:compcert.2.3.2 failed.
+Removing coq:compcert.2.3.2.
+  Nothing to do.
+
+
+#=== ERROR while installing coq:compcert.2.3.2 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure ia32-linux
+# path                 /home/bench/.opam/system/build/coq:compcert.2.3.2
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:compcert.2.3.2/coq:compcert-2898-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:compcert.2.3.2/coq:compcert-2898-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:compcert.2.3.2/coq:compcert-2898-ad8886.err
+### stdout ###
+# Testing assembler support for CFI directives... yes
+# Testing Coq... NOT FOUND
+# Error: make sure Coq version 8.4pl3 is installed.
+# Testing OCaml... version 4.01.0 -- good!
+# Testing Menhir... version 20140422 -- good!
+# One or several required tools are missing or too old.  Aborting.
+
+'opam install -y --verbose coq:compcert.2.3.2' failed.
+",true,0,0,"","","",""
+coq:compcert,2.4.0,Error,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.4.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.4.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   menhir.20140422                       [required by coq:compcert]
+ - install   coq:compcert.2.4.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+Building coq:compcert.2.4.0:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.4.0.
+",true,0,0,"",opam install -y --deps-only coq:compcert.2.4.0,0,18,"The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   menhir.20140422                       [required by coq:compcert]
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[default] Downloading https://opam.ocaml.org/archives/menhir.20140422+opam.tar.gz
+[default] Downloading https://opam.ocaml.org/archives/ocamlfind.1.5.5+opam.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+",opam install -y --verbose coq:compcert.2.4.0,1024,1,"The following actions will be performed:
+ - install   coq:compcert.2.4.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:compcert.2.4.0] Downloading http://compcert.inria.fr/release/compcert-2.4.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2390k  100 2390k    0     0  10.1M      0 --:--:-- --:--:-- --:--:-- 10.1M
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:compcert/coq:compcert.2.4.0/files/coq:compcert.install to ~/.opam/system/build/coq:compcert.2.4.0/
+Building coq:compcert.2.4.0:
+  ./configure ia32-linux
+  make -j4
+Testing assembler support for CFI directives... yes
+Testing Coq... NOT FOUND
+Error: make sure Coq version 8.4pl4 is installed.
+Testing OCaml... version 4.01.0 -- good!
+Testing Menhir... version 20140422 -- good!
+One or several required tools are missing or too old.  Aborting.
+[ERROR] The compilation of coq:compcert.2.4.0 failed.
+Removing coq:compcert.2.4.0.
+  Nothing to do.
+
+
+#=== ERROR while installing coq:compcert.2.4.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure ia32-linux
+# path                 /home/bench/.opam/system/build/coq:compcert.2.4.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-5430-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-5430-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-5430-ad8886.err
+### stdout ###
+# Testing assembler support for CFI directives... yes
+# Testing Coq... NOT FOUND
+# Error: make sure Coq version 8.4pl4 is installed.
+# Testing OCaml... version 4.01.0 -- good!
+# Testing Menhir... version 20140422 -- good!
+# One or several required tools are missing or too old.  Aborting.
+
+'opam install -y --verbose coq:compcert.2.4.0' failed.
+",true,0,0,"","","",""
+coq:coqeal:refinements,0.9.1,DepsError,ruby lint.rb stable ../stable/packages/coq:coqeal:refinements/coq:coqeal:refinements.0.9.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coqeal:refinements.0.9.1 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:coqeal:refinements]
+ - install   coq:coqeal:refinements.0.9.1
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+Building coq:coqeal:refinements.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:refinements.0.9.1.
+",true,0,0,"",opam install -y --deps-only coq:coqeal:refinements.0.9.1,1024,2,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:coqeal:refinements]
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:coqeal:theory.0.9.1] Downloading https://github.com/Barbichu/CoqEAL/raw/master/release/CoqEAL_theory.0.9.1.tgz
+[coq:math-comp.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5664-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5664-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5664-ad8886.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following failed
+ - install   coq:ssreflect.1.5.0
+Due to the errors, the following have been cancelled
+ - install   coq:coqeal:theory.0.9.1
+ - install   coq:math-comp.1.5.0
+",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:theory,0.9.1,DepsError,ruby lint.rb stable ../stable/packages/coq:coqeal:theory/coq:coqeal:theory.0.9.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coqeal:theory.0.9.1 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+",true,0,0,"",opam install -y --deps-only coq:coqeal:theory.0.9.1,1024,1,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:math-comp.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5896-d2d111.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5896-d2d111.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-5896-d2d111.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following failed
+ - install   coq:ssreflect.1.5.0
+Due to the errors, the following have been cancelled
+ - install   coq:math-comp.1.5.0
+",true,0,0,"",true,0,0,"","","",""
+coq:coquelicot,2.0.1,DepsError,ruby lint.rb stable ../stable/packages/coq:coquelicot/coq:coquelicot.2.0.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coquelicot.2.0.1 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:coquelicot]
+ - install   coq:coquelicot.2.0.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:coquelicot.2.0.1:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:coquelicot.2.0.1.
+",true,0,0,"",opam install -y --deps-only coq:coquelicot.2.0.1,1024,1,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:coquelicot]
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6115-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6115-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-6115-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+",true,0,0,"",true,0,0,"","","",""
+coq:corn,1.0.0,DepsError,ruby lint.rb stable ../stable/packages/coq:corn/coq:corn.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:corn.1.0.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:math-classes.1.0.2                [required by coq:corn]
+ - install   coq:corn.1.0.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:math-classes.1.0.2.
+Building coq:corn.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:corn.1.0.0.
+",true,0,0,"",opam install -y --deps-only coq:corn.1.0.0,1024,5,"The following actions will be performed:
+ - install   coq:math-classes.1.0.2                [required by coq:corn]
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:math-classes.1.0.2] Downloading https://github.com/clarus/math-classes/archive/1.0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+[ERROR] The compilation of coq:math-classes.1.0.2 failed.
+Removing coq:math-classes.1.0.2.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/MathClasses
+
+
+#=== ERROR while installing coq:math-classes.1.0.2 ============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:math-classes.1.0.2
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-6335-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-6335-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-6335-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R . MathClasses ""varieties/closed_terms.v"" > ""varieties/closed_terms.v.d"" || ( RV=$?; rm -f ""varieties/closed_terms.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/setoids.v"" > ""varieties/setoids.v.d"" || ( RV=$?; rm -f ""varieties/setoids.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/empty.v"" > ""varieties/empty.v.d"" || ( RV=$?; rm -f ""varieties/empty.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/open_terms.v"" > ""varieties/open_terms.v.d"" || ( RV=$?; rm -f ""varieties/open_terms.v.d""; exit ${RV} )
+# ""coqc""  -q  -R . MathClasses   misc/stdlib_hints
+# ""coqc""  -q  -R . MathClasses   implementations/ne_list
+# ""coqc""  -q  -R . MathClasses   misc/workaround_tactics
+# ""coqc""  -q  -R . MathClasses   quote/classquote
+# ""coqc""  -q  -R . MathClasses   misc/JMrelation
+# ""coqc""  -q  -R . MathClasses   interfaces/canonical_names
+### stderr ###
+# ...[truncated]
+# In nested Ltac calls to ""reflexivity"" and ""<coretactics::reflexivity>"", last
+# call failed.
+# Error:
+# Tactic failure:  The relation Ra is not a declared reflexive relation. Maybe you need to require the Setoid library.
+# make: *** [misc/JMrelation.vo] Error 1
+# make: *** Waiting for unfinished jobs....
+# File ""./implementations/ne_list.v"", line 9, characters 18-44:
+# Error: The reference Permutation_map_aux_Proper was not found in the current
+# environment.
+# make: *** [implementations/ne_list.vo] Error 1
+
+",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.2.0,Error,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.2.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.2.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:flocq.2.2.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.2.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.2.0.
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.2.0,0,1,"",opam install -y --verbose coq:flocq.2.2.0,1024,5,"The following actions will be performed:
+ - install   coq:flocq.2.2.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq.2.2.0] Downloading https://gforge.inria.fr/frs/download.php/32825/flocq-2.2.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   611k      0 --:--:-- --:--:-- --:--:--  613k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.2.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for coqc... /home/bench/.opam/system/bin/coqc
+checking for coqdep... /home/bench/.opam/system/bin/coqdep
+checking for coqdoc... /home/bench/.opam/system/bin/coqdoc
+configure: building remake...
+/tmp/ccAxJLi2.o: In function `server_mode(std::string const&, std::list<std::string, std::allocator<std::string> > const&)':
+remake.cpp:(.text+0x799a): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+configure: creating ./config.status
+config.status: creating Remakefile
+config.status: creating src/Flocq_version.v
+Building src/Flocq_version.vo
+Building src/Core/Fcore_Raux.vo
+Building src/Core/Fcore_Zaux.vo
+Building src/Core/Fcore_defs.vo
+Building src/Core/Fcore_digits.vo
+*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
+*** Warning: in file src/Core/Fcore_Zaux.v, library ZOdiv.v is required and has not been found in the loadpath!
+Building src/Core/Fcore_float_prop.vo
+*** Warning: in file src/Core/Fcore_digits.v, library ZOdiv.v is required and has not been found in the loadpath!
+*** Warning: in file src/Core/Fcore_digits.v, library ZOdiv.v is required and has not been found in the loadpath!
+Building src/Core/Fcore_FIX.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Building src/Core/Fcore_FLT.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Building src/Core/Fcore_generic_fmt.vo
+Building src/Core/Fcore_FLX.vo
+Building src/Core/Fcore_rnd.vo
+Building src/Core/Fcore_rnd_ne.vo
+Building src/Core/Fcore_FTZ.vo
+Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore.vo
+Building src/Calc/Fcalc_bracket.vo
+Building src/Calc/Fcalc_digits.vo
+Building src/Calc/Fcalc_div.vo
+Building src/Calc/Fcalc_ops.vo
+Building src/Calc/Fcalc_round.vo
+Building src/Calc/Fcalc_sqrt.vo
+Building src/Prop/Fprop_div_sqrt_error.vo
+Building src/Prop/Fprop_mult_error.vo
+Building src/Prop/Fprop_relative.vo
+Building src/Prop/Fprop_plus_error.vo
+Building src/Prop/Fprop_Sterbenz.vo
+Building src/Appli/Fappli_rnd_odd.vo
+Building src/Appli/Fappli_IEEE.vo
+Building src/Appli/Fappli_IEEE_bits.vo
+File ""./src/Core/Fcore_Zaux.v"", line 21, characters 0-21:
+Error: Cannot find library ZOdiv in loadpath
+Failed to build src/Core/Fcore_Zaux.vo
+Failed to build all
+Failed to build src/Core/Fcore_Raux.vo
+Failed to build src/Core/Fcore_digits.vo
+Failed to build src/Prop/Fprop_plus_error.vo
+Failed to build src/Appli/Fappli_IEEE.vo
+Failed to build src/Appli/Fappli_IEEE_bits.vo
+Failed to build src/Prop/Fprop_Sterbenz.vo
+Failed to build src/Calc/Fcalc_round.vo
+Failed to build src/Calc/Fcalc_sqrt.vo
+Failed to build src/Calc/Fcalc_div.vo
+Failed to build src/Calc/Fcalc_ops.vo
+Failed to build src/Calc/Fcalc_bracket.vo
+Failed to build src/Appli/Fappli_rnd_odd.vo
+Failed to build src/Calc/Fcalc_digits.vo
+Failed to build src/Prop/Fprop_mult_error.vo
+Failed to build src/Prop/Fprop_div_sqrt_error.vo
+Failed to build src/Core/Fcore_ulp.vo
+Failed to build src/Core/Fcore.vo
+Failed to build src/Core/Fcore_FTZ.vo
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Core/Fcore_rnd.vo
+Failed to build src/Core/Fcore_FLX.vo
+Failed to build src/Core/Fcore_FLT.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
+Failed to build src/Core/Fcore_FIX.vo
+Failed to build src/Core/Fcore_float_prop.vo
+Failed to build src/Core/Fcore_defs.vo
+[ERROR] The compilation of coq:flocq.2.2.0 failed.
+Removing coq:flocq.2.2.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Flocq
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Flocq': No such file or directory
+
+
+#=== ERROR while installing coq:flocq.2.2.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:flocq.2.2.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:flocq.2.2.0/coq:flocq-6902-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:flocq.2.2.0/coq:flocq-6902-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:flocq.2.2.0/coq:flocq-6902-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Building src/Calc/Fcalc_round.vo
+# Building src/Calc/Fcalc_sqrt.vo
+# Building src/Prop/Fprop_div_sqrt_error.vo
+# Building src/Prop/Fprop_mult_error.vo
+# Building src/Prop/Fprop_relative.vo
+# Building src/Prop/Fprop_plus_error.vo
+# Building src/Prop/Fprop_Sterbenz.vo
+# Building src/Appli/Fappli_rnd_odd.vo
+# Building src/Appli/Fappli_IEEE.vo
+# Building src/Appli/Fappli_IEEE_bits.vo
+### stderr ###
+# ...[truncated]
+# Failed to build src/Core/Fcore_FTZ.vo
+# Failed to build src/Core/Fcore_rnd_ne.vo
+# Failed to build src/Prop/Fprop_relative.vo
+# Failed to build src/Core/Fcore_rnd.vo
+# Failed to build src/Core/Fcore_FLX.vo
+# Failed to build src/Core/Fcore_FLT.vo
+# Failed to build src/Core/Fcore_generic_fmt.vo
+# Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_float_prop.vo
+# Failed to build src/Core/Fcore_defs.vo
+
+'opam install -y --verbose coq:flocq.2.2.0' failed.
+",true,0,0,"","","",""
+coq:flocq,2.3.0,Error,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.3.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.3.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:flocq.2.3.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.3.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.3.0.
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.3.0,0,1,"",opam install -y --verbose coq:flocq.2.3.0,1024,20,"The following actions will be performed:
+ - install   coq:flocq.2.3.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq.2.3.0] Downloading https://gforge.inria.fr/frs/download.php/33502/flocq-2.3.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  151k  100  151k    0     0   740k      0 --:--:-- --:--:-- --:--:--  744k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.3.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for coqc... /home/bench/.opam/system/bin/coqc
+checking for coqdep... /home/bench/.opam/system/bin/coqdep
+checking for coqdoc... /home/bench/.opam/system/bin/coqdoc
+configure: building remake...
+/tmp/ccXBfBMD.o: In function `main':
+remake.cpp:(.text.startup+0x76a): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+configure: creating ./config.status
+config.status: creating Remakefile
+config.status: creating src/Flocq_version.v
+Building src/Flocq_version.vo
+Building src/Core/Fcore_Raux.vo
+Building src/Core/Fcore_Zaux.vo
+Building src/Core/Fcore_defs.vo
+Building src/Core/Fcore_digits.vo
+Building src/Core/Fcore_float_prop.vo
+Building src/Core/Fcore_FIX.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Building src/Core/Fcore_FLT.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Building src/Core/Fcore_FLX.vo
+Building src/Core/Fcore_generic_fmt.vo
+Building src/Core/Fcore_rnd.vo
+Building src/Core/Fcore_rnd_ne.vo
+Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore_FTZ.vo
+Building src/Core/Fcore.vo
+Building src/Calc/Fcalc_bracket.vo
+Building src/Calc/Fcalc_digits.vo
+Building src/Calc/Fcalc_div.vo
+Building src/Calc/Fcalc_ops.vo
+Building src/Calc/Fcalc_round.vo
+Building src/Calc/Fcalc_sqrt.vo
+Building src/Prop/Fprop_div_sqrt_error.vo
+Building src/Prop/Fprop_mult_error.vo
+Building src/Prop/Fprop_relative.vo
+Building src/Prop/Fprop_plus_error.vo
+Building src/Prop/Fprop_Sterbenz.vo
+Building src/Appli/Fappli_rnd_odd.vo
+Building src/Appli/Fappli_IEEE.vo
+Building src/Appli/Fappli_IEEE_bits.vo
+Finished src/Flocq_version.vo
+Finished src/Core/Fcore_Zaux.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Core/Fcore_digits.vo
+Finished src/Core/Fcore_Raux.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Core/Fcore_defs.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+File ""./src/Core/Fcore_rnd.v"", line 42, characters 16-36:
+Error:
+In environment
+rnd : R -> R -> Prop
+x : R
+H1 : exists f : R, rnd x f
+H2 : round_pred_monotone rnd
+H3 : bound (rnd x)
+The term ""completeness (rnd x) H3 H1"" has type ""{m : R | is_lub (rnd x) m}""
+while it is expected to have type ""{x : ?A & ?P x}"".
+Failed to build src/Core/Fcore_rnd.vo
+Failed to build src/Core/Fcore_ulp.vo
+Failed to build src/Core/Fcore.vo
+Failed to build src/Core/Fcore_FTZ.vo
+Failed to build src/Appli/Fappli_IEEE_bits.vo
+Failed to build src/Appli/Fappli_rnd_odd.vo
+Failed to build src/Appli/Fappli_IEEE.vo
+Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Prop/Fprop_div_sqrt_error.vo
+Failed to build src/Prop/Fprop_mult_error.vo
+Failed to build src/Calc/Fcalc_round.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Core/Fcore_FLX.vo
+Failed to build src/Prop/Fprop_Sterbenz.vo
+Failed to build src/Prop/Fprop_plus_error.vo
+Failed to build all
+Failed to build src/Core/Fcore_FIX.vo
+Failed to build src/Core/Fcore_FLT.vo
+Finished src/Core/Fcore_float_prop.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Calc/Fcalc_digits.vo
+Finished src/Calc/Fcalc_ops.vo
+Finished src/Calc/Fcalc_bracket.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Calc/Fcalc_sqrt.vo
+Finished src/Calc/Fcalc_div.vo
+[ERROR] The compilation of coq:flocq.2.3.0 failed.
+Removing coq:flocq.2.3.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Flocq
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Flocq': No such file or directory
+
+
+#=== ERROR while installing coq:flocq.2.3.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:flocq.2.3.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:flocq.2.3.0/coq:flocq-7602-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:flocq.2.3.0/coq:flocq-7602-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:flocq.2.3.0/coq:flocq-7602-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Finished src/Core/Fcore_Zaux.vo
+# Finished src/Core/Fcore_digits.vo
+# Finished src/Core/Fcore_Raux.vo
+# Finished src/Core/Fcore_defs.vo
+# Finished src/Core/Fcore_float_prop.vo
+# Finished src/Calc/Fcalc_digits.vo
+# Finished src/Calc/Fcalc_ops.vo
+# Finished src/Calc/Fcalc_bracket.vo
+# Finished src/Calc/Fcalc_sqrt.vo
+# Finished src/Calc/Fcalc_div.vo
+### stderr ###
+# ...[truncated]
+# Failed to build src/Prop/Fprop_Sterbenz.vo
+# Failed to build src/Prop/Fprop_plus_error.vo
+# Failed to build all
+# Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Core/Fcore_FLT.vo
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+
+'opam install -y --verbose coq:flocq.2.3.0' failed.
+",true,0,0,"","","",""
+coq:flocq,2.4.0,Error,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.4.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.4.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:flocq.2.4.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.4.0.
+",true,0,0,"",opam install -y --deps-only coq:flocq.2.4.0,0,1,"",opam install -y --verbose coq:flocq.2.4.0,1024,20,"The following actions will be performed:
+ - install   coq:flocq.2.4.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq.2.4.0] Downloading https://gforge.inria.fr/frs/download.php/file/33979/flocq-2.4.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  187k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  187k  100  187k    0     0   867k      0 --:--:-- --:--:-- --:--:--  867k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for coqc... /home/bench/.opam/system/bin/coqc
+checking for coqdep... /home/bench/.opam/system/bin/coqdep
+checking for coqdoc... /home/bench/.opam/system/bin/coqdoc
+configure: building remake...
+/tmp/ccDeJaYZ.o: In function `main':
+remake.cpp:(.text.startup+0x76a): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+configure: creating ./config.status
+config.status: creating Remakefile
+config.status: creating src/Flocq_version.v
+Building src/Flocq_version.vo
+Building src/Core/Fcore_Raux.vo
+Building src/Core/Fcore_Zaux.vo
+Building src/Core/Fcore_defs.vo
+Building src/Core/Fcore_digits.vo
+Building src/Core/Fcore_float_prop.vo
+Building src/Core/Fcore_FIX.vo
+Building src/Core/Fcore_FLT.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Building src/Core/Fcore_generic_fmt.vo
+Building src/Core/Fcore_FLX.vo
+Building src/Core/Fcore_rnd.vo
+Building src/Core/Fcore_rnd_ne.vo
+Building src/Core/Fcore_FTZ.vo
+Building src/Core/Fcore_ulp.vo
+Building src/Core/Fcore.vo
+Building src/Calc/Fcalc_bracket.vo
+Building src/Calc/Fcalc_digits.vo
+Building src/Calc/Fcalc_div.vo
+Building src/Calc/Fcalc_ops.vo
+Building src/Calc/Fcalc_round.vo
+Building src/Calc/Fcalc_sqrt.vo
+Building src/Prop/Fprop_div_sqrt_error.vo
+Building src/Prop/Fprop_relative.vo
+Building src/Prop/Fprop_mult_error.vo
+Building src/Prop/Fprop_plus_error.vo
+Building src/Prop/Fprop_Sterbenz.vo
+Building src/Appli/Fappli_rnd_odd.vo
+Building src/Appli/Fappli_IEEE.vo
+Building src/Appli/Fappli_IEEE_bits.vo
+Building src/Appli/Fappli_double_round.vo
+Finished src/Flocq_version.vo
+Finished src/Core/Fcore_Zaux.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Core/Fcore_digits.vo
+Finished src/Core/Fcore_Raux.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Core/Fcore_defs.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+File ""./src/Core/Fcore_rnd.v"", line 42, characters 16-36:
+Error:
+In environment
+rnd : R -> R -> Prop
+x : R
+H1 : exists f : R, rnd x f
+H2 : round_pred_monotone rnd
+H3 : bound (rnd x)
+The term ""completeness (rnd x) H3 H1"" has type ""{m : R | is_lub (rnd x) m}""
+while it is expected to have type ""{x : ?A & ?P x}"".
+Failed to build src/Core/Fcore_rnd.vo
+Failed to build src/Core/Fcore_ulp.vo
+Failed to build src/Core/Fcore.vo
+Failed to build src/Core/Fcore_FTZ.vo
+Failed to build src/Appli/Fappli_IEEE.vo
+Failed to build src/Appli/Fappli_double_round.vo
+Failed to build src/Appli/Fappli_IEEE_bits.vo
+Failed to build src/Appli/Fappli_rnd_odd.vo
+Failed to build src/Prop/Fprop_mult_error.vo
+Failed to build src/Prop/Fprop_relative.vo
+Failed to build src/Prop/Fprop_div_sqrt_error.vo
+Failed to build src/Calc/Fcalc_round.vo
+Failed to build src/Core/Fcore_rnd_ne.vo
+Failed to build src/Core/Fcore_FLX.vo
+Failed to build src/Core/Fcore_generic_fmt.vo
+Failed to build src/Core/Fcore_FLT.vo
+Failed to build src/Prop/Fprop_plus_error.vo
+Failed to build all
+Failed to build src/Prop/Fprop_Sterbenz.vo
+Failed to build src/Core/Fcore_FIX.vo
+Finished src/Core/Fcore_float_prop.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Calc/Fcalc_digits.vo
+Finished src/Calc/Fcalc_ops.vo
+Finished src/Calc/Fcalc_bracket.vo
+Warning: Obsolete option ""-dont-load-proofs"".
+Warning: Obsolete option ""-dont-load-proofs"".
+Finished src/Calc/Fcalc_sqrt.vo
+Finished src/Calc/Fcalc_div.vo
+[ERROR] The compilation of coq:flocq.2.4.0 failed.
+Removing coq:flocq.2.4.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Flocq
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Flocq': No such file or directory
+
+
+#=== ERROR while installing coq:flocq.2.4.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:flocq.2.4.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-8420-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-8420-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-8420-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Finished src/Core/Fcore_Zaux.vo
+# Finished src/Core/Fcore_digits.vo
+# Finished src/Core/Fcore_Raux.vo
+# Finished src/Core/Fcore_defs.vo
+# Finished src/Core/Fcore_float_prop.vo
+# Finished src/Calc/Fcalc_digits.vo
+# Finished src/Calc/Fcalc_ops.vo
+# Finished src/Calc/Fcalc_bracket.vo
+# Finished src/Calc/Fcalc_sqrt.vo
+# Finished src/Calc/Fcalc_div.vo
+### stderr ###
+# ...[truncated]
+# Failed to build src/Core/Fcore_FLT.vo
+# Failed to build src/Prop/Fprop_plus_error.vo
+# Failed to build all
+# Failed to build src/Prop/Fprop_Sterbenz.vo
+# Failed to build src/Core/Fcore_FIX.vo
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+
+'opam install -y --verbose coq:flocq.2.4.0' failed.
+",true,0,0,"","","",""
+coq:fpmods,0.2.0,DepsError,ruby lint.rb stable ../stable/packages/coq:fpmods/coq:fpmods.0.2.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:fpmods.0.2.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:fpmods]
+ - install   coq:fpmods.0.2.0
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+Building coq:fpmods.0.2.0:
+  make -j4
+  make install
+Installing coq:fpmods.0.2.0.
+",true,0,0,"",opam install -y --deps-only coq:fpmods.0.2.0,1024,2,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:fpmods]
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:coqeal:theory.0.9.1] Downloading https://github.com/Barbichu/CoqEAL/raw/master/release/CoqEAL_theory.0.9.1.tgz
+[coq:math-comp.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9204-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9204-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-9204-ad8886.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following failed
+ - install   coq:ssreflect.1.5.0
+Due to the errors, the following have been cancelled
+ - install   coq:coqeal:theory.0.9.1
+ - install   coq:math-comp.1.5.0
+",true,0,0,"",true,0,0,"","","",""
+coq:function-ninjas,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:function-ninjas.1.0.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:function-ninjas.1.0.0.
+",true,0,0,"",opam install -y --deps-only coq:function-ninjas.1.0.0,0,1,"",opam install -y --verbose coq:function-ninjas.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:function-ninjas.1.0.0] Downloading https://github.com/clarus/coq-function-ninjas/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    295      0 --:--:-- --:--:-- --:--:--   294
+  0     0    0  1687    0     0   1816      0 --:--:-- --:--:-- --:--:--  1816
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -R . FunctionNinjas ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
+""coqc""  -q  -R . FunctionNinjas   All
+cd ""."" && for i in All.vo   ; do \
+	 install -d ""`dirname """"""/home/bench/.opam/system/lib/coq/user-contrib""/FunctionNinjas/$i`""; \
+	 install -m 0644 $i """"""/home/bench/.opam/system/lib/coq/user-contrib""/FunctionNinjas/$i; \
+	done
+Installing coq:function-ninjas.1.0.0.
+",opam remove -y coq:function-ninjas.1.0.0,0,1,"The following actions will be performed:
+ - remove    coq:function-ninjas.1.0.0
+=== 1 to remove ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:function-ninjas.1.0.0] 1.0.0.tar.gz is in the local cache, using it.
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq:function-ninjas.1.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas
+","","","/home/bench/.opam/system/install/coq:function-ninjas.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.vo
+1599
+/home/bench/.opam/system/lib/coq:function-ninjas/opam.config
+1"
+coq:interval,1.1.0,DepsError,ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.1.1.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:interval.1.1.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:flocq.2.4.0                       [required by coq:interval]
+ - install   coq:interval.1.1.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.4.0.
+Building coq:interval.1.1.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:interval.1.1.0.
+",true,0,0,"",opam install -y --deps-only coq:interval.1.1.0,1024,21,"The following actions will be performed:
+ - install   coq:flocq.2.4.0                       [required by coq:interval]
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq.2.4.0] Downloading https://gforge.inria.fr/frs/download.php/file/33979/flocq-2.4.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+[ERROR] The compilation of coq:flocq.2.4.0 failed.
+Removing coq:flocq.2.4.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Flocq
+
+
+#=== ERROR while installing coq:flocq.2.4.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:flocq.2.4.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-9821-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-9821-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:flocq.2.4.0/coq:flocq-9821-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Finished src/Core/Fcore_Zaux.vo
+# Finished src/Core/Fcore_digits.vo
+# Finished src/Core/Fcore_Raux.vo
+# Finished src/Core/Fcore_defs.vo
+# Finished src/Core/Fcore_float_prop.vo
+# Finished src/Calc/Fcalc_digits.vo
+# Finished src/Calc/Fcalc_ops.vo
+# Finished src/Calc/Fcalc_bracket.vo
+# Finished src/Calc/Fcalc_sqrt.vo
+# Finished src/Calc/Fcalc_div.vo
+### stderr ###
+# ...[truncated]
+# Failed to build src/Core/Fcore_FIX.vo
+# Failed to build src/Prop/Fprop_Sterbenz.vo
+# Failed to build all
+# Failed to build src/Core/Fcore_FLT.vo
+# Failed to build src/Prop/Fprop_plus_error.vo
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+# Warning: Obsolete option ""-dont-load-proofs"".
+
+",true,0,0,"",true,0,0,"","","",""
+coq:list-string,1.0.0,Error,ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:list-string.1.0.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:list-string.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:list-string.1.0.0.
+",true,0,0,"",opam install -y --deps-only coq:list-string.1.0.0,0,1,"",opam install -y --verbose coq:list-string.1.0.0,1024,3,"The following actions will be performed:
+ - install   coq:list-string.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:list-string.1.0.0] Downloading https://github.com/clarus/coq-list-string/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   129    0   129    0     0    282      0 --:--:-- --:--:-- --:--:--   282
+  0     0    0  6919    0     0   7681      0 --:--:-- --:--:-- --:--:--  7681
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:list-string.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -R . ListString ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Bool.v"" > ""Bool.v.d"" || ( RV=$?; rm -f ""Bool.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Case.v"" > ""Case.v.d"" || ( RV=$?; rm -f ""Case.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Char.v"" > ""Char.v.d"" || ( RV=$?; rm -f ""Char.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Comparison.v"" > ""Comparison.v.d"" || ( RV=$?; rm -f ""Comparison.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Conversion.v"" > ""Conversion.v.d"" || ( RV=$?; rm -f ""Conversion.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Etc.v"" > ""Etc.v.d"" || ( RV=$?; rm -f ""Etc.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""LString.v"" > ""LString.v.d"" || ( RV=$?; rm -f ""LString.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""Trim.v"" > ""Trim.v.d"" || ( RV=$?; rm -f ""Trim.v.d""; exit ${RV} )
+""coqdep"" -c -R . ListString ""UnitTests.v"" > ""UnitTests.v.d"" || ( RV=$?; rm -f ""UnitTests.v.d""; exit ${RV} )
+""coqc""  -q  -R . ListString   Bool
+""coqc""  -q  -R . ListString   LString
+""coqc""  -q  -R . ListString   Char
+File ""./Char.v"", line 3, characters 8-14:
+Syntax error: [export_token] expected after 'Require' (in [vernac:gallina_ext]).
+make: *** [Char.vo] Error 1
+[ERROR] The compilation of coq:list-string.1.0.0 failed.
+Removing coq:list-string.1.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/ListString
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/ListString': No such file or directory
+
+
+#=== ERROR while installing coq:list-string.1.0.0 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:list-string.1.0.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:list-string.1.0.0/coq:list-string-10623-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:list-string.1.0.0/coq:list-string-10623-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:list-string.1.0.0/coq:list-string-10623-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R . ListString ""Char.v"" > ""Char.v.d"" || ( RV=$?; rm -f ""Char.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""Comparison.v"" > ""Comparison.v.d"" || ( RV=$?; rm -f ""Comparison.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""Conversion.v"" > ""Conversion.v.d"" || ( RV=$?; rm -f ""Conversion.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""Etc.v"" > ""Etc.v.d"" || ( RV=$?; rm -f ""Etc.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""LString.v"" > ""LString.v.d"" || ( RV=$?; rm -f ""LString.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""Trim.v"" > ""Trim.v.d"" || ( RV=$?; rm -f ""Trim.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . ListString ""UnitTests.v"" > ""UnitTests.v.d"" || ( RV=$?; rm -f ""UnitTests.v.d""; exit ${RV} )
+# ""coqc""  -q  -R . ListString   Bool
+# ""coqc""  -q  -R . ListString   LString
+# ""coqc""  -q  -R . ListString   Char
+### stderr ###
+# File ""./Char.v"", line 3, characters 8-14:
+# Syntax error: [export_token] expected after 'Require' (in [vernac:gallina_ext]).
+# make: *** [Char.vo] Error 1
+
+'opam install -y --verbose coq:list-string.1.0.0' failed.
+",true,0,0,"","","",""
+coq:math-classes,1.0.2,Error,ruby lint.rb stable ../stable/packages/coq:math-classes/coq:math-classes.1.0.2,0,0,"The package is valid.
+",opam install -y --dry-run coq:math-classes.1.0.2 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:math-classes.1.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:math-classes.1.0.2.
+",true,0,0,"",opam install -y --deps-only coq:math-classes.1.0.2,0,1,"",opam install -y --verbose coq:math-classes.1.0.2,1024,4,"The following actions will be performed:
+ - install   coq:math-classes.1.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:math-classes.1.0.2] Downloading https://github.com/clarus/math-classes/archive/1.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   126    0   126    0     0    276      0 --:--:-- --:--:-- --:--:--   277
+  0  153k    0   854    0     0    939      0  0:02:47 --:--:--  0:02:47   939100  153k  100  153k    0     0  95227      0  0:00:01  0:00:01 --:--:--  206k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -R . MathClasses ""theory/fields.v"" > ""theory/fields.v.d"" || ( RV=$?; rm -f ""theory/fields.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_congruence.v"" > ""theory/ua_congruence.v.d"" || ( RV=$?; rm -f ""theory/ua_congruence.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/sequences.v"" > ""theory/sequences.v.d"" || ( RV=$?; rm -f ""theory/sequences.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/rings.v"" > ""theory/rings.v.d"" || ( RV=$?; rm -f ""theory/rings.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/rationals.v"" > ""theory/rationals.v.d"" || ( RV=$?; rm -f ""theory/rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/groups.v"" > ""theory/groups.v.d"" || ( RV=$?; rm -f ""theory/groups.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/quote_monoid.v"" > ""theory/quote_monoid.v.d"" || ( RV=$?; rm -f ""theory/quote_monoid.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_packed.v"" > ""theory/ua_packed.v.d"" || ( RV=$?; rm -f ""theory/ua_packed.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/int_abs.v"" > ""theory/int_abs.v.d"" || ( RV=$?; rm -f ""theory/int_abs.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/monoid_normalization.v"" > ""theory/monoid_normalization.v.d"" || ( RV=$?; rm -f ""theory/monoid_normalization.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_homomorphisms.v"" > ""theory/ua_homomorphisms.v.d"" || ( RV=$?; rm -f ""theory/ua_homomorphisms.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ring_ideals.v"" > ""theory/ring_ideals.v.d"" || ( RV=$?; rm -f ""theory/ring_ideals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_subalgebra.v"" > ""theory/ua_subalgebra.v.d"" || ( RV=$?; rm -f ""theory/ua_subalgebra.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/series.v"" > ""theory/series.v.d"" || ( RV=$?; rm -f ""theory/series.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/jections.v"" > ""theory/jections.v.d"" || ( RV=$?; rm -f ""theory/jections.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/integers.v"" > ""theory/integers.v.d"" || ( RV=$?; rm -f ""theory/integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_subvariety.v"" > ""theory/ua_subvariety.v.d"" || ( RV=$?; rm -f ""theory/ua_subvariety.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/forget_algebra.v"" > ""theory/forget_algebra.v.d"" || ( RV=$?; rm -f ""theory/forget_algebra.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/streams.v"" > ""theory/streams.v.d"" || ( RV=$?; rm -f ""theory/streams.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/monads.v"" > ""theory/monads.v.d"" || ( RV=$?; rm -f ""theory/monads.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_term_monad.v"" > ""theory/ua_term_monad.v.d"" || ( RV=$?; rm -f ""theory/ua_term_monad.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_products.v"" > ""theory/ua_products.v.d"" || ( RV=$?; rm -f ""theory/ua_products.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/nat_distance.v"" > ""theory/nat_distance.v.d"" || ( RV=$?; rm -f ""theory/nat_distance.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/adjunctions.v"" > ""theory/adjunctions.v.d"" || ( RV=$?; rm -f ""theory/adjunctions.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/setoids.v"" > ""theory/setoids.v.d"" || ( RV=$?; rm -f ""theory/setoids.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/products.v"" > ""theory/products.v.d"" || ( RV=$?; rm -f ""theory/products.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/shiftl.v"" > ""theory/shiftl.v.d"" || ( RV=$?; rm -f ""theory/shiftl.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/abs.v"" > ""theory/abs.v.d"" || ( RV=$?; rm -f ""theory/abs.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/categories.v"" > ""theory/categories.v.d"" || ( RV=$?; rm -f ""theory/categories.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/int_to_nat.v"" > ""theory/int_to_nat.v.d"" || ( RV=$?; rm -f ""theory/int_to_nat.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/strong_setoids.v"" > ""theory/strong_setoids.v.d"" || ( RV=$?; rm -f ""theory/strong_setoids.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/lattices.v"" > ""theory/lattices.v.d"" || ( RV=$?; rm -f ""theory/lattices.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/int_pow.v"" > ""theory/int_pow.v.d"" || ( RV=$?; rm -f ""theory/int_pow.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/dec_fields.v"" > ""theory/dec_fields.v.d"" || ( RV=$?; rm -f ""theory/dec_fields.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_transference.v"" > ""theory/ua_transference.v.d"" || ( RV=$?; rm -f ""theory/ua_transference.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/cut_minus.v"" > ""theory/cut_minus.v.d"" || ( RV=$?; rm -f ""theory/cut_minus.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ring_congruence.v"" > ""theory/ring_congruence.v.d"" || ( RV=$?; rm -f ""theory/ring_congruence.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_subalgebraT.v"" > ""theory/ua_subalgebraT.v.d"" || ( RV=$?; rm -f ""theory/ua_subalgebraT.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/functors.v"" > ""theory/functors.v.d"" || ( RV=$?; rm -f ""theory/functors.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/finite_sets.v"" > ""theory/finite_sets.v.d"" || ( RV=$?; rm -f ""theory/finite_sets.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/forget_variety.v"" > ""theory/forget_variety.v.d"" || ( RV=$?; rm -f ""theory/forget_variety.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/nat_pow.v"" > ""theory/nat_pow.v.d"" || ( RV=$?; rm -f ""theory/nat_pow.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/naturals.v"" > ""theory/naturals.v.d"" || ( RV=$?; rm -f ""theory/naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/hom_functor.v"" > ""theory/hom_functor.v.d"" || ( RV=$?; rm -f ""theory/hom_functor.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""theory/ua_mapped_operations.v"" > ""theory/ua_mapped_operations.v.d"" || ( RV=$?; rm -f ""theory/ua_mapped_operations.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""functors/constant.v"" > ""functors/constant.v.d"" || ( RV=$?; rm -f ""functors/constant.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/fast_naturals.v"" > ""implementations/fast_naturals.v.d"" || ( RV=$?; rm -f ""implementations/fast_naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/ZType_integers.v"" > ""implementations/ZType_integers.v.d"" || ( RV=$?; rm -f ""implementations/ZType_integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/positive_semiring_elements.v"" > ""implementations/positive_semiring_elements.v.d"" || ( RV=$?; rm -f ""implementations/positive_semiring_elements.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/dyadics.v"" > ""implementations/dyadics.v.d"" || ( RV=$?; rm -f ""implementations/dyadics.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/option.v"" > ""implementations/option.v.d"" || ( RV=$?; rm -f ""implementations/option.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/QType_rationals.v"" > ""implementations/QType_rationals.v.d"" || ( RV=$?; rm -f ""implementations/QType_rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/NType_naturals.v"" > ""implementations/NType_naturals.v.d"" || ( RV=$?; rm -f ""implementations/NType_naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/peano_naturals.v"" > ""implementations/peano_naturals.v.d"" || ( RV=$?; rm -f ""implementations/peano_naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/mset_finite_set.v"" > ""implementations/mset_finite_set.v.d"" || ( RV=$?; rm -f ""implementations/mset_finite_set.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/fast_rationals.v"" > ""implementations/fast_rationals.v.d"" || ( RV=$?; rm -f ""implementations/fast_rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/intfrac_rationals.v"" > ""implementations/intfrac_rationals.v.d"" || ( RV=$?; rm -f ""implementations/intfrac_rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/fast_integers.v"" > ""implementations/fast_integers.v.d"" || ( RV=$?; rm -f ""implementations/fast_integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/list_finite_set.v"" > ""implementations/list_finite_set.v.d"" || ( RV=$?; rm -f ""implementations/list_finite_set.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/nonzero_field_elements.v"" > ""implementations/nonzero_field_elements.v.d"" || ( RV=$?; rm -f ""implementations/nonzero_field_elements.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/modular_ring.v"" > ""implementations/modular_ring.v.d"" || ( RV=$?; rm -f ""implementations/modular_ring.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/stdlib_rationals.v"" > ""implementations/stdlib_rationals.v.d"" || ( RV=$?; rm -f ""implementations/stdlib_rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/semiring_pairs.v"" > ""implementations/semiring_pairs.v.d"" || ( RV=$?; rm -f ""implementations/semiring_pairs.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/stdlib_binary_integers.v"" > ""implementations/stdlib_binary_integers.v.d"" || ( RV=$?; rm -f ""implementations/stdlib_binary_integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/list.v"" > ""implementations/list.v.d"" || ( RV=$?; rm -f ""implementations/list.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/field_of_fractions.v"" > ""implementations/field_of_fractions.v.d"" || ( RV=$?; rm -f ""implementations/field_of_fractions.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/polynomials.v"" > ""implementations/polynomials.v.d"" || ( RV=$?; rm -f ""implementations/polynomials.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/ne_list.v"" > ""implementations/ne_list.v.d"" || ( RV=$?; rm -f ""implementations/ne_list.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/bool.v"" > ""implementations/bool.v.d"" || ( RV=$?; rm -f ""implementations/bool.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/stdlib_binary_naturals.v"" > ""implementations/stdlib_binary_naturals.v.d"" || ( RV=$?; rm -f ""implementations/stdlib_binary_naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/nonneg_integers_naturals.v"" > ""implementations/nonneg_integers_naturals.v.d"" || ( RV=$?; rm -f ""implementations/nonneg_integers_naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/natpair_integers.v"" > ""implementations/natpair_integers.v.d"" || ( RV=$?; rm -f ""implementations/natpair_integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""implementations/nonneg_semiring_elements.v"" > ""implementations/nonneg_semiring_elements.v.d"" || ( RV=$?; rm -f ""implementations/nonneg_semiring_elements.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/varieties.v"" > ""categories/varieties.v.d"" || ( RV=$?; rm -f ""categories/varieties.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/orders.v"" > ""categories/orders.v.d"" || ( RV=$?; rm -f ""categories/orders.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/JMcat.v"" > ""categories/JMcat.v.d"" || ( RV=$?; rm -f ""categories/JMcat.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/algebras.v"" > ""categories/algebras.v.d"" || ( RV=$?; rm -f ""categories/algebras.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/setoids.v"" > ""categories/setoids.v.d"" || ( RV=$?; rm -f ""categories/setoids.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/categories.v"" > ""categories/categories.v.d"" || ( RV=$?; rm -f ""categories/categories.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/unit.v"" > ""categories/unit.v.d"" || ( RV=$?; rm -f ""categories/unit.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/empty.v"" > ""categories/empty.v.d"" || ( RV=$?; rm -f ""categories/empty.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/functors.v"" > ""categories/functors.v.d"" || ( RV=$?; rm -f ""categories/functors.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/dual.v"" > ""categories/dual.v.d"" || ( RV=$?; rm -f ""categories/dual.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""categories/product.v"" > ""categories/product.v.d"" || ( RV=$?; rm -f ""categories/product.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/setoid_tactics.v"" > ""misc/setoid_tactics.v.d"" || ( RV=$?; rm -f ""misc/setoid_tactics.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/decision.v"" > ""misc/decision.v.d"" || ( RV=$?; rm -f ""misc/decision.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/workaround_tactics.v"" > ""misc/workaround_tactics.v.d"" || ( RV=$?; rm -f ""misc/workaround_tactics.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/JMrelation.v"" > ""misc/JMrelation.v.d"" || ( RV=$?; rm -f ""misc/JMrelation.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/stdlib_hints.v"" > ""misc/stdlib_hints.v.d"" || ( RV=$?; rm -f ""misc/stdlib_hints.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/workarounds.v"" > ""misc/workarounds.v.d"" || ( RV=$?; rm -f ""misc/workarounds.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/util.v"" > ""misc/util.v.d"" || ( RV=$?; rm -f ""misc/util.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""misc/propholds.v"" > ""misc/propholds.v.d"" || ( RV=$?; rm -f ""misc/propholds.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/rings.v"" > ""orders/rings.v.d"" || ( RV=$?; rm -f ""orders/rings.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/rationals.v"" > ""orders/rationals.v.d"" || ( RV=$?; rm -f ""orders/rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/semirings.v"" > ""orders/semirings.v.d"" || ( RV=$?; rm -f ""orders/semirings.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/integers.v"" > ""orders/integers.v.d"" || ( RV=$?; rm -f ""orders/integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/minmax.v"" > ""orders/minmax.v.d"" || ( RV=$?; rm -f ""orders/minmax.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/orders.v"" > ""orders/orders.v.d"" || ( RV=$?; rm -f ""orders/orders.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/maps.v"" > ""orders/maps.v.d"" || ( RV=$?; rm -f ""orders/maps.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/lattices.v"" > ""orders/lattices.v.d"" || ( RV=$?; rm -f ""orders/lattices.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/dec_fields.v"" > ""orders/dec_fields.v.d"" || ( RV=$?; rm -f ""orders/dec_fields.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/nat_int.v"" > ""orders/nat_int.v.d"" || ( RV=$?; rm -f ""orders/nat_int.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""orders/naturals.v"" > ""orders/naturals.v.d"" || ( RV=$?; rm -f ""orders/naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""quote/classquote.v"" > ""quote/classquote.v.d"" || ( RV=$?; rm -f ""quote/classquote.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/sequences.v"" > ""interfaces/sequences.v.d"" || ( RV=$?; rm -f ""interfaces/sequences.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/rationals.v"" > ""interfaces/rationals.v.d"" || ( RV=$?; rm -f ""interfaces/rationals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/ua_basic.v"" > ""interfaces/ua_basic.v.d"" || ( RV=$?; rm -f ""interfaces/ua_basic.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/canonical_names.v"" > ""interfaces/canonical_names.v.d"" || ( RV=$?; rm -f ""interfaces/canonical_names.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/integers.v"" > ""interfaces/integers.v.d"" || ( RV=$?; rm -f ""interfaces/integers.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/orders.v"" > ""interfaces/orders.v.d"" || ( RV=$?; rm -f ""interfaces/orders.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/monads.v"" > ""interfaces/monads.v.d"" || ( RV=$?; rm -f ""interfaces/monads.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/universal_algebra.v"" > ""interfaces/universal_algebra.v.d"" || ( RV=$?; rm -f ""interfaces/universal_algebra.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/abstract_algebra.v"" > ""interfaces/abstract_algebra.v.d"" || ( RV=$?; rm -f ""interfaces/abstract_algebra.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/vectorspace.v"" > ""interfaces/vectorspace.v.d"" || ( RV=$?; rm -f ""interfaces/vectorspace.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/functors.v"" > ""interfaces/functors.v.d"" || ( RV=$?; rm -f ""interfaces/functors.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/additional_operations.v"" > ""interfaces/additional_operations.v.d"" || ( RV=$?; rm -f ""interfaces/additional_operations.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/finite_sets.v"" > ""interfaces/finite_sets.v.d"" || ( RV=$?; rm -f ""interfaces/finite_sets.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""interfaces/naturals.v"" > ""interfaces/naturals.v.d"" || ( RV=$?; rm -f ""interfaces/naturals.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/abgroup.v"" > ""varieties/abgroup.v.d"" || ( RV=$?; rm -f ""varieties/abgroup.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/rings.v"" > ""varieties/rings.v.d"" || ( RV=$?; rm -f ""varieties/rings.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/groups.v"" > ""varieties/groups.v.d"" || ( RV=$?; rm -f ""varieties/groups.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/semirings.v"" > ""varieties/semirings.v.d"" || ( RV=$?; rm -f ""varieties/semirings.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/semigroups.v"" > ""varieties/semigroups.v.d"" || ( RV=$?; rm -f ""varieties/semigroups.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/monoids.v"" > ""varieties/monoids.v.d"" || ( RV=$?; rm -f ""varieties/monoids.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/closed_terms.v"" > ""varieties/closed_terms.v.d"" || ( RV=$?; rm -f ""varieties/closed_terms.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/setoids.v"" > ""varieties/setoids.v.d"" || ( RV=$?; rm -f ""varieties/setoids.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/empty.v"" > ""varieties/empty.v.d"" || ( RV=$?; rm -f ""varieties/empty.v.d""; exit ${RV} )
+""coqdep"" -c -R . MathClasses ""varieties/open_terms.v"" > ""varieties/open_terms.v.d"" || ( RV=$?; rm -f ""varieties/open_terms.v.d""; exit ${RV} )
+""coqc""  -q  -R . MathClasses   misc/stdlib_hints
+""coqc""  -q  -R . MathClasses   implementations/ne_list
+""coqc""  -q  -R . MathClasses   misc/workaround_tactics
+""coqc""  -q  -R . MathClasses   quote/classquote
+""coqc""  -q  -R . MathClasses   misc/JMrelation
+""coqc""  -q  -R . MathClasses   interfaces/canonical_names
+File ""./misc/JMrelation.v"", line 8, characters 21-32:
+In nested Ltac calls to ""reflexivity"" and ""<coretactics::reflexivity>"", last
+call failed.
+Error:
+Tactic failure:  The relation Ra is not a declared reflexive relation. Maybe you need to require the Setoid library.
+make: *** [misc/JMrelation.vo] Error 1
+make: *** Waiting for unfinished jobs....
+File ""./implementations/ne_list.v"", line 9, characters 18-44:
+Error: The reference Permutation_map_aux_Proper was not found in the current
+environment.
+make: *** [implementations/ne_list.vo] Error 1
+[ERROR] The compilation of coq:math-classes.1.0.2 failed.
+Removing coq:math-classes.1.0.2.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/MathClasses
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/MathClasses': No such file or directory
+
+
+#=== ERROR while installing coq:math-classes.1.0.2 ============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:math-classes.1.0.2
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-10945-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-10945-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:math-classes.1.0.2/coq:math-classes-10945-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R . MathClasses ""varieties/closed_terms.v"" > ""varieties/closed_terms.v.d"" || ( RV=$?; rm -f ""varieties/closed_terms.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/setoids.v"" > ""varieties/setoids.v.d"" || ( RV=$?; rm -f ""varieties/setoids.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/empty.v"" > ""varieties/empty.v.d"" || ( RV=$?; rm -f ""varieties/empty.v.d""; exit ${RV} )
+# ""coqdep"" -c -R . MathClasses ""varieties/open_terms.v"" > ""varieties/open_terms.v.d"" || ( RV=$?; rm -f ""varieties/open_terms.v.d""; exit ${RV} )
+# ""coqc""  -q  -R . MathClasses   misc/stdlib_hints
+# ""coqc""  -q  -R . MathClasses   implementations/ne_list
+# ""coqc""  -q  -R . MathClasses   misc/workaround_tactics
+# ""coqc""  -q  -R . MathClasses   quote/classquote
+# ""coqc""  -q  -R . MathClasses   misc/JMrelation
+# ""coqc""  -q  -R . MathClasses   interfaces/canonical_names
+### stderr ###
+# ...[truncated]
+# In nested Ltac calls to ""reflexivity"" and ""<coretactics::reflexivity>"", last
+# call failed.
+# Error:
+# Tactic failure:  The relation Ra is not a declared reflexive relation. Maybe you need to require the Setoid library.
+# make: *** [misc/JMrelation.vo] Error 1
+# make: *** Waiting for unfinished jobs....
+# File ""./implementations/ne_list.v"", line 9, characters 18-44:
+# Error: The reference Permutation_map_aux_Proper was not found in the current
+# environment.
+# make: *** [implementations/ne_list.vo] Error 1
+
+'opam install -y --verbose coq:math-classes.1.0.2' failed.
+",true,0,0,"","","",""
+coq:math-comp,1.5.0,DepsError,ruby lint.rb stable ../stable/packages/coq:math-comp/coq:math-comp.1.5.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:math-comp.1.5.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+",true,0,0,"",opam install -y --deps-only coq:math-comp.1.5.0,1024,1,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11467-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11467-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11467-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+",true,0,0,"",true,0,0,"","","",""
+coq:ssreflect,1.5.0,Error,ruby lint.rb stable ../stable/packages/coq:ssreflect/coq:ssreflect.1.5.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:ssreflect.1.5.0 coq.hott,0,1,"[NOTE] Package coq is already installed (current version is hott).
+The following actions will be performed:
+ - install   coq:ssreflect.1.5.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+",true,0,0,"",opam install -y --deps-only coq:ssreflect.1.5.0,0,1,"",opam install -y --verbose coq:ssreflect.1.5.0,1024,1,"The following actions will be performed:
+ - install   coq:ssreflect.1.5.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect.1.5.0] Downloading http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  212k  100  212k    0     0  8779k      0 --:--:-- --:--:-- --:--:-- 8863k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+coq_makefile -f Make > Makefile.coq
+mkdir -p bin
+make -f Makefile.coq all
+make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+ocamldep -slash -I src ""src/ssrmatching.mli"" > ""src/ssrmatching.mli.d"" || ( RV=$?; rm -f ""src/ssrmatching.mli.d""; exit ${RV} )
+""coqdep"" -c -I src ""theories/ssreflect.mllib"" > ""theories/ssreflect.mllib.d"" || ( RV=$?; rm -f ""theories/ssreflect.mllib.d""; exit ${RV} )
+""coqdep"" -c -I src ""src/ssrmatching.ml4"" > ""src/ssrmatching.ml4.d"" || ( RV=$?; rm -f ""src/ssrmatching.ml4.d""; exit ${RV} )
+""coqdep"" -c -I src ""src/ssreflect.ml4"" > ""src/ssreflect.ml4.d"" || ( RV=$?; rm -f ""src/ssreflect.ml4.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrmatching.v"" > ""theories/ssrmatching.v.d"" || ( RV=$?; rm -f ""theories/ssrmatching.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/ssreflect.v"" > ""theories/ssreflect.v.d"" || ( RV=$?; rm -f ""theories/ssreflect.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrfun.v"" > ""theories/ssrfun.v.d"" || ( RV=$?; rm -f ""theories/ssrfun.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+File ""src/ssrmatching.mli"", line 76, characters 14-34:
+Error: Unbound type constructor glob_constr_and_expr
+make[1]: *** [src/ssrmatching.cmi] Error 2
+make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+make: *** [all] Error 2
+[ERROR] The compilation of coq:ssreflect.1.5.0 failed.
+Removing coq:ssreflect.1.5.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Ssreflect
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect': No such file or directory
+
+
+#=== ERROR while installing coq:ssreflect.1.5.0 ===============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:ssreflect.1.5.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11750-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11750-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:ssreflect.1.5.0/coq:ssreflect-11750-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrbool.v"" > ""theories/ssrbool.v.d"" || ( RV=$?; rm -f ""theories/ssrbool.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/eqtype.v"" > ""theories/eqtype.v.d"" || ( RV=$?; rm -f ""theories/eqtype.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/ssrnat.v"" > ""theories/ssrnat.v.d"" || ( RV=$?; rm -f ""theories/ssrnat.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/seq.v"" > ""theories/seq.v.d"" || ( RV=$?; rm -f ""theories/seq.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/choice.v"" > ""theories/choice.v.d"" || ( RV=$?; rm -f ""theories/choice.v.d""; exit ${RV} )
+# ""coqdep"" -c -R theories Ssreflect -I src ""theories/fintype.v"" > ""theories/fintype.v.d"" || ( RV=$?; rm -f ""theories/fintype.v.d""; exit ${RV} )
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# make[1]: Entering directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+# ocamlc -c -rectypes  -I src -I ""/home/bench/.opam/system/lib/coq/kernel"" -I ""/home/bench/.opam/system/lib/coq/lib"" -I ""/home/bench/.opam/system/lib/coq/library"" -I ""/home/bench/.opam/system/lib/coq/parsing"" -I ""/home/bench/.opam/system/lib/coq/pretyping"" -I ""/home/bench/.opam/system/lib/coq/interp"" -I ""/home/bench/.opam/system/lib/coq/printing"" -I ""/home/bench/.opam/system/lib/coq/intf"" -I ""/home/bench/.opam/system/lib/coq/proofs"" -I ""/home/bench/.opam/system/lib/coq/tactics"" -I ""/home/bench/.opam/system/lib/coq/tools"" -I ""/home/bench/.opam/system/lib/coq/toplevel"" -I ""/home/bench/.opam/system/lib/coq/stm"" -I ""/home/bench/.opam/system/lib/coq/grammar"" -I ""/home/bench/.opam/system/lib/coq//plugins/Derive"" -I ""/home/bench/.opam/system/lib/coq//plugins/btauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/cc"" -I ""/home/bench/.opam/system/lib/coq//plugins/decl_mode"" -I ""/home/bench/.opam/system/lib/coq//plugins/extraction"" -I ""/home/bench/.opam/system/lib/coq//plugins/firstorder"" -I ""/home/bench/.opam/system/lib/coq//plugins/fourier"" -I ""/home/bench/.opam/system/lib/coq//plugins/funind"" -I ""/home/bench/.opam/system/lib/coq//plugins/micromega"" -I ""/home/bench/.opam/system/lib/coq//plugins/nsatz"" -I ""/home/bench/.opam/system/lib/coq//plugins/omega"" -I ""/home/bench/.opam/system/lib/coq//plugins/quote"" -I ""/home/bench/.opam/system/lib/coq//plugins/romega"" -I ""/home/bench/.opam/system/lib/coq//plugins/rtauto"" -I ""/home/bench/.opam/system/lib/coq//plugins/setoid_ring"" -I ""/home/bench/.opam/system/lib/coq//plugins/syntax"" -I ""/home/bench/.opam/system/lib/coq//plugins/xml"" -I /home/bench/.opam/system/lib/camlp5 src/ssrmatching.mli
+# make[1]: Leaving directory `/home/bench/.opam/system/build/coq:ssreflect.1.5.0'
+### stderr ###
+# File ""src/ssrmatching.mli"", line 76, characters 14-34:
+# Error: Unbound type constructor glob_constr_and_expr
+# make[1]: *** [src/ssrmatching.cmi] Error 2
+# make: *** [all] Error 2
+
+'opam install -y --verbose coq:ssreflect.1.5.0' failed.
+",true,0,0,"","","",""
