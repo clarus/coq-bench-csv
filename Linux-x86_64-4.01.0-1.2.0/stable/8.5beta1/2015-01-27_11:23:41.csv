@@ -1,0 +1,683 @@
+Name,Version,Status,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:compcert,2.0.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.0.0 coq.8.5beta1,768,2,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:compcert.2.0.0,0,3,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev+ltacprof                  [required by coq:compcert]
+ - install   coq:compcert.2.0.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building coq:compcert.2.0.0:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.0.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:compcert,2.3.2,NotCompatible,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.3.2,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.3.2 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:compcert.2.3.2,0,4,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   coq.8.4.dev+ltacprof                  [required by coq:compcert]
+ - install   menhir.20140422                       [required by coq:compcert]
+ - install   coq:compcert.2.3.2
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+Building coq:compcert.2.3.2:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.3.2.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:compcert,2.4.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.4.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:compcert.2.4.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:compcert.2.4.0,0,3,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   coq.8.4.dev+ltacprof                  [required by coq:compcert]
+ - install   menhir.20140422                       [required by coq:compcert]
+ - install   coq:compcert.2.4.0
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Building menhir.20140422:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+Installing menhir.20140422.
+Building coq:compcert.2.4.0:
+  ./configure ia32-linux
+  make -j4
+Installing coq:compcert.2.4.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:refinements,0.9.1,NotCompatible,ruby lint.rb stable ../stable/packages/coq:coqeal:refinements/coq:coqeal:refinements.0.9.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coqeal:refinements.0.9.1 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:coqeal:refinements -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:coqeal:refinements.0.9.1,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:coqeal:refinements]
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:coqeal:refinements]
+ - install   coq:coqeal:refinements.0.9.1
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+Building coq:coqeal:refinements.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:refinements.0.9.1.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:theory,0.9.1,NotCompatible,ruby lint.rb stable ../stable/packages/coq:coqeal:theory/coq:coqeal:theory.0.9.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coqeal:theory.0.9.1 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:coqeal:theory -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:coqeal:theory.0.9.1,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:coqeal:theory]
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coquelicot,2.0.1,NotCompatible,ruby lint.rb stable ../stable/packages/coq:coquelicot/coq:coquelicot.2.0.1,0,0,"The package is valid.
+",opam install -y --dry-run coq:coquelicot.2.0.1 coq.8.5beta1,768,2,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:coquelicot -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:coquelicot.2.0.1,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:coquelicot]
+ - install   coq:ssreflect.1.5.0                   [required by coq:coquelicot]
+ - install   coq:coquelicot.2.0.1
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:coquelicot.2.0.1:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:coquelicot.2.0.1.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:corn,1.0.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:corn/coq:corn.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:corn.1.0.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:corn -> coq:math-classes = 1.0.2 -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:corn.1.0.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:corn]
+ - install   coq:math-classes.1.0.2                [required by coq:corn]
+ - install   coq:corn.1.0.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:math-classes.1.0.2.
+Building coq:corn.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:corn.1.0.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.2.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.2.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.2.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:flocq.2.2.0,0,3,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev+ltacprof                  [required by coq:flocq]
+ - install   coq:flocq.2.2.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building coq:flocq.2.2.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.2.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.3.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.3.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.3.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:flocq.2.3.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev+ltacprof                  [required by coq:flocq]
+ - install   coq:flocq.2.3.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building coq:flocq.2.3.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.3.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.4.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.4.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:flocq.2.4.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:flocq.2.4.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev+ltacprof                  [required by coq:flocq]
+ - install   coq:flocq.2.4.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev+ltacprof:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev+ltacprof.
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.4.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:fpmods,0.2.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:fpmods/coq:fpmods.0.2.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:fpmods.0.2.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:fpmods -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:fpmods.0.2.0,0,3,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:fpmods]
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0                   [required by coq:coqeal:theory]
+ - install   coq:coqeal:theory.0.9.1               [required by coq:fpmods]
+ - install   coq:fpmods.0.2.0
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+Building coq:coqeal:theory.0.9.1:
+  make -j4
+  make install
+Installing coq:coqeal:theory.0.9.1.
+Building coq:fpmods.0.2.0:
+  make -j4
+  make install
+Installing coq:fpmods.0.2.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:function-ninjas,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:function-ninjas.1.0.0 coq.8.5beta1,0,1,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:function-ninjas.1.0.0.
+",true,0,0,"",ulimit -Sv 2000000; opam install -y --deps-only coq:function-ninjas.1.0.0,0,1,"",ulimit -Sv 2000000; opam install -y --verbose coq:function-ninjas.1.0.0,0,2,"The following actions will be performed:
+ - install   coq:function-ninjas.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:function-ninjas.1.0.0] Downloading https://github.com/clarus/coq-function-ninjas/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133    0   133    0     0    366      0 --:--:-- --:--:-- --:--:--   365
+100  1687  100  1687    0     0   2305      0 --:--:-- --:--:-- --:--:--  2305
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:function-ninjas.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -R ""."" FunctionNinjas ""All.v"" > ""All.v.d"" || ( RV=$?; rm -f ""All.v.d""; exit ${RV} )
+""coqc""  -q  -R ""."" FunctionNinjas   All
+cd ""."" && for i in All.vo All.v All.glob  ./.coq-native/NFunctionNinjas_All.cmi    ./.coq-native/NFunctionNinjas_All.cmx  ./.coq-native/NFunctionNinjas_All.cmxs   ; do \
+ install -d ""`dirname """"""/home/bench/.opam/system/lib/coq/user-contrib""/FunctionNinjas/$i`""; \
+ install -m 0644 $i """"""/home/bench/.opam/system/lib/coq/user-contrib""/FunctionNinjas/$i; \
+done
+Installing coq:function-ninjas.1.0.0.
+",opam remove -y coq:function-ninjas.1.0.0,0,1,"The following actions will be performed:
+ - remove    coq:function-ninjas.1.0.0
+=== 1 to remove ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:function-ninjas.1.0.0] 1.0.0.tar.gz is in the local cache, using it.
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq:function-ninjas.1.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas
+","","","/home/bench/.opam/system/install/coq:function-ninjas.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.v
+198
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.vo
+1597
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.glob
+434
+/home/bench/.opam/system/lib/coq:function-ninjas/opam.config
+1"
+coq:interval,1.1.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.1.1.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:interval.1.1.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:interval -> coq:flocq >= 2.4.0 -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:interval.1.1.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:interval]
+ - install   coq:flocq.2.4.0                       [required by coq:interval]
+ - install   coq:interval.1.1.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:flocq.2.4.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:flocq.2.4.0.
+Building coq:interval.1.1.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+Installing coq:interval.1.1.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:list-string,1.0.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:list-string.1.0.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:list-string -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:list-string.1.0.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:list-string]
+ - install   coq:list-string.1.0.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:list-string.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:list-string.1.0.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:math-classes,1.0.2,NotCompatible,ruby lint.rb stable ../stable/packages/coq:math-classes/coq:math-classes.1.0.2,0,0,"The package is valid.
+",opam install -y --dry-run coq:math-classes.1.0.2 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:math-classes -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:math-classes.1.0.2,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:math-classes]
+ - install   coq:math-classes.1.0.2
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:math-classes.1.0.2:
+  ./configure.sh
+  make -j4
+  make install
+Installing coq:math-classes.1.0.2.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:math-comp,1.5.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:math-comp/coq:math-comp.1.5.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:math-comp.1.5.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:math-comp -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:math-comp.1.5.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:math-comp]
+ - install   coq:ssreflect.1.5.0                   [required by coq:math-comp]
+ - install   coq:math-comp.1.5.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+Building coq:math-comp.1.5.0:
+  make -j4
+  make install
+Installing coq:math-comp.1.5.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:plouffe,1.0.0,LintError,ruby lint.rb stable ../stable/packages/coq:plouffe/coq:plouffe.1.0.0,256,0,"The description should end by a dot (.) to ensure uniformity.
+",true,0,0,"",true,0,0,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:ssreflect,1.5.0,NotCompatible,ruby lint.rb stable ../stable/packages/coq:ssreflect/coq:ssreflect.1.5.0,0,0,"The package is valid.
+",opam install -y --dry-run coq:ssreflect.1.5.0 coq.8.5beta1,768,0,"[NOTE] Package coq is already installed (current version is 8.5beta1).
+The following dependencies couldn't be met:
+  - coq:ssreflect -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --dry-run coq:ssreflect.1.5.0,0,2,"The following actions will be performed:
+ - remove    coq.8.5beta1
+=== 1 to remove ===
+
+=-=- Removing Packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Removing coq.8.5beta1.
+[WARNING] Directory /home/bench/.opam/system/lib/coq is not empty, not removing
+The following actions will be performed:
+ - install   coq.8.4.dev                           [required by coq:ssreflect]
+ - install   coq:ssreflect.1.5.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq.8.4.dev:
+  ./configure -configdir /home/bench/.opam/system/lib/coq/config -mandir /home/bench/.opam/system/man -docdir /home/bench/.opam/system/doc -prefix /home/bench/.opam/system -usecamlp5 -camlp5dir /home/bench/.opam/system/lib/camlp5 -coqide no
+  make -j4
+  make install
+Installing coq.8.4.dev.
+Building coq:ssreflect.1.5.0:
+  make -j4
+  make install
+Installing coq:ssreflect.1.5.0.
+",true,0,0,"",true,0,0,"",true,0,0,"","","",""
