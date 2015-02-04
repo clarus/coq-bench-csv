@@ -1,0 +1,119 @@
+Name,Version,Status,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:list-string,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"",opam install -y --dry-run coq:list-string.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:list-string.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:list-string.1.0.0,0,7,"",opam remove -y coq:list-string.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-string.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.vo
+14836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.vo
+29836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.vo
+103259
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.vo
+20786
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.vo
+3043
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.vo
+39597
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.vo
+109008
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.vo
+7901
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.vo
+21110
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.vo
+20496
+/home/bench/.opam/system/lib/coq:list-string/opam.config
+1"
+coq:list-plus,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:list-plus/coq:list-plus.1.0.0,0,0,"",opam install -y --dry-run coq:list-plus.1.0.0 coq.8.4.5,0,2,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:list-plus.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:list-plus.1.0.0,0,3,"",opam remove -y coq:list-plus.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-plus.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListPlus/All.vo
+2819
+/home/bench/.opam/system/lib/coq:list-plus/opam.config
+1"
+coq:function-ninjas,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"",opam install -y --dry-run coq:function-ninjas.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:function-ninjas.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:function-ninjas.1.0.0,0,8,"",opam remove -y coq:function-ninjas.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:function-ninjas.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.vo
+1595
+/home/bench/.opam/system/lib/coq:function-ninjas/opam.config
+1"
+coq:iterable,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:iterable/coq:iterable.1.0.0,0,0,"",opam install -y --dry-run coq:iterable.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:iterable.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:iterable.1.0.0,0,4,"",opam remove -y coq:iterable.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:iterable.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Iterable/All.vo
+21287
+/home/bench/.opam/system/lib/coq:iterable/opam.config
+1"
+coq:error-handlers,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:error-handlers/coq:error-handlers.1.0.0,0,0,"",opam install -y --dry-run coq:error-handlers.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:error-handlers.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:error-handlers.1.0.0,0,3,"",opam remove -y coq:error-handlers.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:error-handlers.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ErrorHandlers/All.vo
+2017
+/home/bench/.opam/system/lib/coq:error-handlers/opam.config
+1"
+coq:concurrency:proxy,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:concurrency:proxy/coq:concurrency:proxy.1.0.0,0,0,"",opam install -y --dry-run coq:concurrency:proxy.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:concurrency:proxy.1.0.0,0,27,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:concurrency:proxy.1.0.0,0,4,"",opam remove -y coq:concurrency:proxy.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:proxy.install
+69
+/home/bench/.opam/system/bin/coqConcurrencyProxy.byte
+448903
+/home/bench/.opam/system/bin/coqConcurrencyProxy.native
+1545136
+/home/bench/.opam/system/lib/coq:concurrency:proxy/opam.config
+1"
+coq:list-string,2.0.0,Success,ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.2.0.0,0,0,"",opam install -y --dry-run coq:list-string.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:list-string.2.0.0,0,5,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:list-string.2.0.0,0,9,"",opam remove -y coq:list-string.2.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-string.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.vo
+14836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.vo
+27612
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.vo
+121768
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.vo
+20786
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.vo
+3043
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.vo
+21373
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.vo
+94925
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.vo
+7901
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.vo
+21110
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.vo
+20496
+/home/bench/.opam/system/lib/coq:list-string/opam.config
+1"
+coq:moment,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:moment/coq:moment.1.0.0,0,0,"",opam install -y --dry-run coq:moment.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:moment.1.0.0,0,4,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:moment.1.0.0,0,14,"",opam remove -y coq:moment.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:moment.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/All.vo
+16235
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Time.vo
+35088
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Date.vo
+440002
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Moment.vo
+30533
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/TestHelpers.vo
+4820
+/home/bench/.opam/system/lib/coq:moment/opam.config
+1"
+coq:concurrency:system,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:concurrency:system/coq:concurrency:system.1.0.0,0,0,"",opam install -y --dry-run coq:concurrency:system.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:concurrency:system.1.0.0,0,2,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:concurrency:system.1.0.0,0,10,"",opam remove -y coq:concurrency:system.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:system.install
+1
+/home/bench/.opam/system/lib/coq:concurrency:system/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Events.vo
+73442
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Extraction.vo
+71213
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Computation.vo
+34044
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Run.vo
+52613
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Test.vo
+34259
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/StdLib.vo
+23657"
+coq:concurrency:pluto,1.0.0,Success,ruby lint.rb stable ../stable/packages/coq:concurrency:pluto/coq:concurrency:pluto.1.0.0,0,0,"",opam install -y --dry-run coq:concurrency:pluto.1.0.0 coq.8.4.5,0,2,"",true,0,0,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --deps-only coq:concurrency:pluto.1.0.0,0,27,"",ulimit -Sv 2000000; opam list; timeout 5m opam install -y --verbose coq:concurrency:pluto.1.0.0,0,9,"",opam remove -y coq:concurrency:pluto.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:pluto.install
+95
+/home/bench/.opam/system/bin/pluto.byte
+417676
+/home/bench/.opam/system/bin/pluto.native
+1356152
+/home/bench/.opam/system/lib/coq:concurrency:pluto/opam.config
+1"
